@@ -1,0 +1,839 @@
+ID,Gender,Friends_count,Followers_count,Avg_Tweet,Avg_Word_length,Avg_Sentence_length,Avg_Punctuation,Avg_Capitalized_Words,Avg_Slang_words,Avg_emojis,Avg_words_found,tweets,retweets,images,urls
+259065232,M,48,157,5.84,6,11,3905,3.78,10,0,"[u'uber', u'r', u'vs', u'u']",469,0,0.0021,0.0235
+2979295036,M,834,520,7.06,6,14,3289,3.43,197,477,"[u'btw', u'omg', u'buddy', u'g', u'congrats', u'fav', u'ur', u'bro', u'r', u'u', u'wtf', u'kinda', u'luv']",434,50,0.0517,0.5888
+132647115,M,380,217,0.57,5,12,3170,16.88,5,873,"[u'bro', u'x', u'r', u'u', u'lol']",300,15,0.073,0.946
+3031914133,M,234,77,0.91,5,12,3036,0.14,2,15,[u'uber'],280,0,0,0.9857
+103270515,M,1597,837,15.88,5,11,2836,0.83,18,25,"[u'swag', u'kinda', u'lol', u'r', u'u', u'wtf', u'smh', u'x', u'nvm', u'wanna']",560,40,0.0217,0.3917
+1513604743,F,338,239,3.7,7,10,2652,3.76,2,7,"[u'r', u'g']",378,22,0.01,0.92
+49649821,M,1810,2919,1.55,4,16,2619,3.09,12,44,"[u'g', u'r', u'perv', u'msg', u'x', u'aka']",431,21,0.1394,0.6217
+25745158,M,318,6485,52.74,5,15,2558,1.13,23,111,"[u'iggy', u'lil', u'lol', u'fml', u'vs', u'u', u'kinda', u'r', u'wanna']",383,17,0.02,0.93
+25422792,F,1021,603,2.33,5,13,2473,0.89,41,269,"[u'omg', u'luv', u'lil', u'dope', u'atm', u'fav', u'lol', u'ur', u'til', u'r', u'u']",364,2,0,0.9727
+52554906,M,3150,1568,0.92,8,10,2461,0.48,2,61,"[u'r', u'congrats']",270,235,0.0139,0.3762
+552371398,F,1283,333,2.49,6,11,2421,2.61,23,111,"[u'omg', u""c'mon"", u'g', u'nah', u'fyi', u'lmao', u'lol', u'yawn', u'r', u'u', u'kinda', u'jk', u'aka', u'bff']",577,23,0.18,0.4967
+40275479,F,104,4656,1.27,5,14,2390,0.07,10,21,"[u'omg', u'cuz', u'lol', u'til', u'u', u'kinda', u'smh', u'omw']",375,25,0.0425,0.84
+62517001,F,2535,3331,41.09,5,14,2362,5.24,120,37,"[u'flick', u'btw', u'lmao', u'ty', u'congrats', u'lol', u'bro', u'r', u'u']",337,462,0.025,0.2991
+3674836277,M,58,98,1.33,4,16,2275,4.64,10,149,"[u'lol', u'thanx']",326,9,0.006,0.9731
+142709459,M,459,410,5.46,5,11,2265,1.27,10,1,"[u'lmao', u'congrats', u'thx', u'lol', u'r', u'u', u'b-day']",372,28,0,0.2075
+56890592,F,253,2535,6,4,18,2247,2.65,144,800,"[u'g', u'thx', u'fyi', u'plz', u'asap', u'b4', u'r', u'u', u'4ward', u'2day']",455,12,0.0835,0.9422
+24013474,M,2784,2775,24.45,5,9,2229,2.05,52,7,"[u'btw', u'ugh', u'omg', u""c'mon"", u'congrats', u'pro', u'fyi', u'fav', u'tyvm', u'lol', u'vs', u'wtf', u'buddy', u'lmao']",520,79,0.2154,0.2955
+16968765,M,2938,2695,17.99,4,14,2191,3.41,15,20,"[u'btw', u'g', u'congrats', u'fyi', u'r', u'smh', u'tfw', u'wanna', u'whoa']",353,46,0.0251,0.6241
+24294764,M,684,7914,3.26,5,12,2167,3.65,182,77,"[u'uber', u'pro', u'bro', u'vs', u'sec', u'buddy', u'ty', u'lol', u'fml', u'smh', u'msg', u'idk', u'omg', u'asap', u'plz', u'cya', u'wtf', u'lmao', u'g', u'atm', u'u', u'congrats', u'aka', u'wanna']",526,124,0.2969,0.4662
+158816628,M,32,903,0.85,4,11,2150,3.16,51,64,"[u'mvp', u'ru', u'bf', u'scrub', u'bestie', u'congrats', u'dope', u'thx', u'fav', u'lol', u'vs', u'kinda', u'lmk', u'aka', u'deets', u'm8']",383,17,0,0.955
+8.72E+17,M,424,84,0.47,5,18,2108,4.01,27,8,"[u'btw', u'omg', u'congrats', u'ty', u'lol', u'vs', u'pls', u'aka', u'wanna']",353,51,0.0149,0.8218
+21026095,M,1983,1859,42.73,5,14,2075,3.35,0,0,[],352,48,0.585,0.855
+492617058,M,2116,1340,7.49,4,17,2053,3.5,19,25,"[u'ru', u'congrats', u'app', u'pro', u'bro', u'r', u'wtf', u'jk', u'eu', u'dope']",434,51,0,0.433
+8.00E+17,F,133,44,1.67,5,12,2037,1.02,24,4,"[u""c'mon"", u'bozo', u'bravo', u'lol', u'ppl', u'r', u'aka']",465,15,0,0.0958
+3540051,M,118,211,1.06,6,12,2012,0.52,2,22,[u'vs'],334,2,0,0.9821
+307349199,M,2825,2858,5.1,4,18,2009,0.64,7,0,"[u'u', u'pls', u'lol']",410,3,0.0145,0.9637
+134422136,M,58,120,5.06,20,6,1990,12.76,4,2,"[u'uber', u'r', u'buddy']",400,0,0,0.7225
+34585196,M,352,709,10.52,4,15,1940,1.27,19,69,"[u'btw', u'luv', u'bravo', u'bro', u'fb', u'r', u'u', u'wtf', u'wanna']",306,210,0.0349,0.2655
+87542310,M,1023,1097,5.06,4,14,1933,6.21,13,5,"[u'wtf', u'omg', u'bestie', u'vs', u'cuz', u'r', u'kinda', u'aka', u'wanna', u'bff']",444,1,0,0.8607
+921920156,M,603,187,1.32,6,12,1932,0.7,14,0,"[u'g', u'asap', u'congrats', u'lol', u'gal', u'wtf']",383,76,0.0806,0.4052
+184311007,M,452,361,1.69,5,11,1932,3.94,21,303,"[u'uber', u'omg', u'g', u'nah', u'fyi', u'fav', u""i'ma"", u'ppl', u'vs', u'dope', u'wtf', u'x', u'app', u'wanna', u'brb']",392,8,0.125,0.49
+53100986,M,849,3518,3.73,4,18,1886,1.84,11,0,"[u'g', u'pro', u'bro', u'r', u'u', u'x']",331,57,0,0.6598
+235768743,M,1166,1075,1.63,5,17,1878,2.03,50,0,"[u'pls', u'congrats', u'bravo', u'fav', u'lol', u'fb', u'r', u'u', u'yum', u'cutie', u'wanna']",341,5,0.0347,0.6243
+11850692,F,608,833,4.8,4,14,1875,1.69,34,247,"[u'bae', u'ugh', u'pls', u'lmao', u'g', u'thx', u'lil', u'wanna', u'congrats', u'lol', u'ppl', u'til', u'vs', u'u', u'imo', u'ga', u'bravo', u'deets']",326,92,0.0981,0.4641
+1901462414,M,23,9,0.46,4,18,1857,4.22,106,0,"[u'ltr', u'g', u'lil', u'atm', u'hw', u'lol', u'ppl', u'r', u'u', u'wtf', u'x', u'ur', u'no1']",399,1,0.025,0.6825
+376154503,M,88,1514,13.07,5,14,1838,9.12,24,11,"[u'nk', u'nm', u'g', u'til', u'eu', u'fb', u'vs', u'u', u'ga', u'np', u'sec', u'r', u""c'mon""]",368,32,0.08,0.565
+226769474,M,1255,1107,1.5,5,13,1816,0.86,22,531,"[u'ru', u'omg', u'bestie', u'congrats', u'vs', u'lol', u'ur', u'r', u'u', u'kinda', u'cutie', u'whoa']",366,3,0.0298,0.9621
+544419402,M,772,839,2.83,5,15,1805,1.24,35,51,"[u'btw', u'g', u'ty', u'thx', u'gr8', u'ur', u'b4', u'vs', u'u', u'imo', u'twt', u'x', u'r']",302,98,0.005,0.44
+2333129595,M,943,1762,5.68,4,15,1802,1.68,20,0,"[u'mvp', u'app', u'phat', u'imo', u'yawn', u'r', u'x', u'aka', u'tc']",394,61,0.0154,0.2264
+221098962,M,878,3466,13.29,5,14,1790,1.28,22,3,"[u'g', u'imo', u'vs', u'u', u'lol', u'x']",400,0,0.0525,0.255
+989113290,M,227,1852,1.34,5,14,1780,3.75,38,95,"[u'pls', u'omg', u'congrats', u'app', u'asap', u'fav', u'cuz', u'lol', u'ppl', u'b4', u'u', u'x', u'thx']",318,21,0.0472,0.6637
+55191207,M,568,3454,3.1,4,16,1779,2.15,32,0,"[u'gg', u'btw', u'swag', u'omg', u'g', u'ngl', u'wanna', u'nah', u'vs', u'cuz', u'lol', u'bro', u'r', u'irl', u'imo', u'kinda', u'smh', u'u', u'nvm', u'lul']",428,98,0.0247,0.2738
+1315572535,M,229,249,1.55,4,13,1759,1.25,7,43,"[u'bravo', u'lol', u'lua', u'r', u'u', u'eu']",338,105,0.1625,0.5305
+855641628,F,1060,544,3.82,5,18,1755,0.58,279,543,"[u'otoh', u'btw', u'4u', u'omg', u'thx', u'bday', u'congrats', u'fav', u'lol', u'ur', u'b4', u'yawn', u'r', u'u', u'wtg', u'wanna', u'no1']",425,4,0.2284,0.6177
+376159441,F,76,287,5.37,5,15,1736,2.11,6,0,"[u'pro', u'buddy', u'g', u'ppl']",373,27,0,0.38
+4530022333,M,1479,583,2.56,6,12,1735,1.71,7,238,"[u'omg', u'luv', u'bday', u'lol', u'yum', u'thanx']",398,2,0,0.99
+727056229,F,5161,5224,2.9,4,18,1734,7.16,27,0,"[u'g', u'congrats', u'lol', u'fb', u'r', u'u', u'aka', u'wanna']",312,81,0.0483,0.5522
+192760019,M,675,224,1.8,5,15,1727,1.15,9,0,"[u'lulz', u'nah', u'lol', u'gg', u'r', u'u', u'x', u'tfw']",330,70,0.0675,0.5075
+2734365924,M,100,180,0.58,7,11,1721,0.86,0,0,[],273,19,0.8459,0.9349
+2504660090,F,302,203,0.34,5,14,1720,1.62,18,600,"[u'ru', u'bae', u""c'mon"", u'bday', u'vs', u'lil', u'gal', u'kinda', u'aka', u'wanna']",267,18,0.007,0.9018
+125344847,F,1509,2721,4.27,6,12,1715,2.64,19,164,"[u'bf', u'ugh', u'omg', u'kinda', u'ftw', u'asap', u'g', u'fb', u'r', u'irl', u'b-day', u'x', u'wanna', u'shoulda']",379,21,0.14,0.4275
+27116949,M,433,1550,5.09,4,13,1694,1.58,16,37,"[u'swag', u'pls', u'congrats', u'fyi', u'lol', u'u']",383,73,0.0219,0.5855
+879814729,M,689,358,0.97,5,13,1693,2.08,19,26,"[u'g', u'app', u'fav', u'cuz', u'ppl', u'r', u'u', u'wtf', u'msg']",361,19,0.0342,0.6368
+1558290756,M,84,327,3.75,5,10,1685,5.36,67,96,"[u'flick', u'bro', u""c'mon"", u'lmao', u'luv', u'lil', u'app', u'vs', u'btw', u'lol', u'til', u'r', u'u', u'wtf', u'kinda', u'x', u'aka', u'nah', u'wb']",397,3,0.245,0.375
+3262298128,M,353,137,7.66,5,12,1684,4.13,30,73,"[u'ugh', u'omg', u'kinda', u'ty', u'ngl', u'dunno', u'nah', u'congrats', u'lol', u'fml', u'r', u'irl', u'idk', u'wtf', u'sec', u'cutie', u'whoa']",421,131,0.0217,0.096
+8.05E+17,F,3101,1566,22.98,6,11,1683,6.21,45,144,"[u'btw', u'ugh', u'pls', u'kinda', u'luv', u'ty', u'pro', u'fyi', u'lol', u'ppl', u'asap', u'vs', u'wtf', u'x', u'omg', u'r', u'nah']",390,248,0.0204,0.4028
+93890121,M,2125,792,3.11,5,12,1679,4.05,49,44,"[u'x', u'nk', u'omg', u'ga', u'luv', u'app', u'cuz', u'lol', u'r', u'u', u'wtf', u'smh', u'yum']",362,30,0.0102,0.8444
+875141604,F,239,201,4.58,5,15,1676,1.29,50,22,"[u'uber', u'kinda', u'pro', u'ppl', u'bro', u'vs', u'imo', u'rpg', u'buddy', u'ngl', u'lol', u'whoa', u'fav', u'wtf', u'tfw', u'lmao', u'g', u'r', u'u', u'idk', u'armpit', u'x', u'wanna']",384,16,0.055,0.385
+23826987,M,395,405,5.17,4,12,1667,1.36,100,5,"[u'ugh', u'ppl', u'bro', u'gf', u'imo', u'buddy', u'ngl', u'nah', u'cuz', u'lol', u'm2', u'friggin', u'whoa', u'goof', u'omg', u'fyi', u'kinda', u'lvl', u'gg', u'lmao', u'g', u'dunno', u'goofy', u'x', u'wanna']",467,44,0.0372,0.229
+24647958,F,169,4387,2.41,4,16,1665,2.64,6,566,"[u'u', u'btw', u'omg', u'lotta', u'g']",400,16,0.0048,0.9375
+2813614712,M,2751,972,2.92,4,13,1665,0.54,19,0,"[u'mvp', u'nk', u'twt', u'wtf', u'g', u'congrats', u'bravo', u'cuz', u'fml', u'r', u'u', u'b-day']",449,75,0.1145,0.3263
+29857145,M,1164,356,0.64,6,12,1655,2.11,1,13,[u'pro'],222,41,0.0152,0.7719
+2851722084,M,522,807,0.51,4,16,1650,4.12,17,45,"[u'lil', u'dope', u'cuz', u'ppl', u'bro', u'smh']",388,12,0.0075,0.94
+17443395,F,1275,2659,3.54,5,12,1641,2.34,30,2,"[u'uber', u'ikr', u'ugh', u'ftw', u'congrats', u'app', u'thx', u'cuz', u'lol', u'whoa', u'bro', u'goofy', u'u', u'yum', u'kinda', u'x', u'tfw', u'r', u'pro']",385,39,0.1981,0.5448
+45692557,M,993,2160,1.99,5,11,1636,3.14,47,338,"[u'gg', u'nuh', u'ftw', u'nah', u'cuz', u'lol', u'til', u'r', u'kinda', u'jk', u'tfw', u'wanna', u'tbd', u'buddy']",383,17,0.3375,0.5225
+260572528,M,560,83,0.67,5,16,1625,2.77,22,3,"[u'btw', u'g', u'fyi', u'cuz', u'ppl', u'yawn', u'vs', u'sec', u'wtf', u'u', u'r']",296,104,0.0125,0.3975
+239161779,F,129,109,0.54,5,14,1622,0.17,11,244,"[u'omg', u'yolo', u'vs', u'lol', u'bae', u'yum', u'idk', u'kinda', u'wanna']",247,10,0,0.9611
+750165691,M,305,591,3.73,5,8,1602,5.69,68,9,"[u'dope', u'ga', u'g', u'congrats', u'ngl', u'hmu', u'nah', u'cuz', u'lol', u'bro', u'vs', u'u', u'idk', u'wtf', u'lmk', u'app', u'wanna', u'shoulda', u'lotta']",626,59,0.0204,0.1445
+7.67E+17,M,116,133,1.08,5,11,1596,1.86,183,209,"[u'ppl', u'bro', u'vs', u'imo', u'rpg', u'buddy', u'congrats', u'lil', u'nah', u'lol', u'smh', u'msg', u'whoa', u'dope', u'wtf', u'mvp', u'g', u'ur', u'r', u'u', u'idk', u'aight', u'aka', u'wanna']",497,3,0.094,0.476
+113430807,M,1932,451,5.98,3,11,1592,9.3,30,12,"[u'b4', u'2nite', u'luv', u'ty', u'lil', u'lol', u'til', u'r', u'yum', u'friggin', u'2day', u'u']",400,0,0.06,1
+2993049333,M,368,114,2.61,5,14,1587,1.33,9,1,"[u'mvp', u'ty', u'app', u'lol', u'u', u'wtf']",491,31,0.0498,0.3429
+20255244,F,3030,2643,1.31,5,12,1581,1.64,8,80,"[u'x', u'fav', u'bff', u'kinda']",350,53,0,0.7519
+22093585,F,740,211,4.81,4,12,1570,1.38,77,111,"[u'btw', u'omg', u'g', u'lil', u'cuz', u'lol', u'ppl', u'gf', u'gal', u'irl', u'kinda', u'smh', u'u', u'r', u'wanna']",435,14,0.0557,0.4388
+896691265,M,1775,176,1.02,4,12,1564,1.62,41,0,"[u'ltr', u'omg', u""c'mon"", u'congrats', u'fav', u'lol', u'ur', u'b4', u'cya', u'r', u'u', u'pls', u'aka']",456,19,0,0.5074
+75301223,M,350,135,2.08,5,10,1563,1.97,36,9,"[u'mvp', u'omg', u'buddy', u'app', u'lol', u'rofl', u'bro', u'vs', u'ga', u'gl', u'mma', u'shoulda']",375,25,0.0575,0.475
+77824432,M,2138,3199,3.16,5,14,1558,2.99,19,4,"[u'flick', u'ugh', u'omg', u""c'mon"", u'congrats', u'fav', u'lol', u'til', u'rpg', u'friggin', u'eu', u'x', u'wanna']",311,124,0.0667,0.2805
+39206945,M,902,905,3.62,3,10,1555,8.25,14,29,"[u'u', u'lol', u'ga']",450,10,0.8717,0.9326
+25382695,M,506,352,3.01,5,14,1549,2.49,23,107,"[u'til', u'ugh', u'omg', u'lmao', u'g', u'ty', u'app', u'vs', u'lol', u'bro', u'r', u'u', u'wtf', u'wanna', u'whoa']",281,7,0.0139,0.5417
+440499185,F,1996,3512,1.04,4,19,1547,2.16,7,0,"[u'ru', u'btw', u'bent', u'congrats', u'pro', u'u', u'aka']",304,94,0.0025,0.5201
+24425305,M,1214,976,2.74,5,11,1542,1.32,6,0,"[u'lil', u'u', u'bff', u'wtf']",376,24,0,0.8125
+242535054,F,830,155,1.07,5,13,1540,28.41,12,2,"[u'gl', u'app', u'fyi', u'tc', u'g']",384,16,0.175,0.685
+1020424538,M,95,64,0.73,4,16,1529,1.67,12,0,"[u'nah', u'r', u'u', u'kinda']",336,4,0.0029,0.3794
+20773615,M,863,1101,3.35,4,11,1525,4.41,13,55,"[u'ugh', u'lotta', u'congrats', u'til', u'vs', u'yum', u'ic']",352,48,0.535,0.74
+5446992,M,1214,1306,9.64,4,12,1520,2.92,12,128,"[u'til', u'swag', u'buddy', u'ga']",364,89,0.0287,0.6049
+15831426,F,51,48,0.39,4,17,1518,1.32,29,6,"[u'congrats', u'pro', u'yawn', u'r', u'u', u'cu']",378,11,0,0.4859
+33008653,F,110,58,0.31,5,15,1512,7.96,9,180,"[u'x', u'pro', u'u', u'app', u'lol']",235,8,0.0412,0.9259
+2876041031,F,4408,5080,20.25,5,12,1511,1.51,20,7,"[u'btw', u'ugh', u'pls', u'congrats', u'dunno', u'nah', u'bf', u'ur', u'bro', u'u', u'wtf', u'wanna', u'pro']",406,394,0.0088,0.3262
+38271920,F,4853,10132,2.84,4,13,1497,1.3,9,17,"[u'r', u'lol', u'icymi', u'congrats']",360,94,0.2952,0.6916
+51119308,F,1000,1272,1.88,4,14,1494,3.42,36,76,"[u'pro', u'fwiw', u'ugh', u""c'mon"", u'g', u'fav', u'app', u'vs', u'plz', u'lol', u'til', u'r', u'nsfw', u'wtf', u'2day', u'u', u'tfw', u'nvm', u'dork']",342,27,0.1355,0.542
+393772664,F,121,31,0.35,5,11,1491,1.87,20,8,"[u'ugh', u'omg', u'buddy', u'app', u'lol', u'nk', u'r']",321,18,0.0147,0.0649
+45611507,F,488,2119,4.33,4,12,1489,6.42,24,108,"[u'uber', u'omg', u'g', u'lil', u'dunno', u'lol', u'ur', u'r', u'u', u'kinda', u'x', u'wanna']",372,28,0.19,0.4275
+1948343803,F,936,618,1,5,11,1486,1.67,55,243,"[u'sec', u'ugh', u'omg', u'luv', u'congrats', u'bday', u'bravo', u'app', u'irl', u'fav', u'plz', u'ur', u'til', u'lil', u'r', u'u', u'wtf', u'x', u'nvm', u'gf', u'wanna']",373,27,0.24,0.3975
+1536491971,F,440,367,3.46,4,16,1469,0.89,32,37,"[u'omg', u'kinda', u'luv', u'bday', u'lol', u'g', u'yum', u'ga', u'msg', u'buddy']",374,71,0.0607,0.1775
+1230606488,F,752,1609,0.95,5,13,1468,3.56,29,91,"[u'swag', u'btw', u'nc', u'omg', u'g', u'congrats', u'tbr', u'bf', u'lol', u'4u', u'fml', u'ugh', u'x']",310,89,0.0526,0.208
+608631025,M,2074,2867,3.84,5,12,1466,1.49,16,14,"[u'r', u'u', u'ur', u'yuge', u'ty']",312,88,0.095,0.4025
+16102098,M,1154,1891,5.84,5,11,1463,1.56,40,60,"[u'uber', u'pro', u'omg', u'pls', u'g', u'asap', u'wanna', u'app', u'thx', u'lol', u'ur', u'bro', u'scrub', u'vs', u'u', u'dunno', u'x', u'tfw', u'ppl', u'deets', u'nah']",410,17,0.0937,0.3068
+29755795,M,549,2320,1.14,6,11,1459,1.48,105,581,"[u'bae', u'g', u'congrats', u'lil', u'cuz', u'plz', u'bro', u'vs', u'u', u'wtf', u'x', u'np', u'lolz', u'wanna']",303,111,0.0169,0.6449
+310888741,M,1388,696,1.29,5,17,1446,2.63,17,8,"[u'btw', u'nk', u'buddy', u'g', u'pro', u'lol', u'vs', u'idk', u'whoa']",227,173,0.0025,0.4625
+38219867,M,1844,654,0.2,5,13,1444,2.12,69,1,"[u'goof', u'lmao', u'congrats', u'pro', u'cuz', u'lol', u'bro', u'vs', u'kinda', u'smh']",231,0,0.2857,0.6234
+1155417270,F,2087,684,14.98,6,11,1440,1.47,8,73,"[u'bae', u'ugh', u'pro', u'vs', u'gal', u'wanna', u'app']",359,41,0.2725,0.8175
+23388995,M,1364,749,2.97,5,11,1440,1.7,21,4,"[u'ugh', u'omg', u'buddy', u'lol', u'u', u'smh']",407,32,0.0547,0.3303
+209895738,M,1651,1148,1.37,5,8,1438,0.77,5,123,"[u'app', u'omg', u'g']",328,5,0.7838,0.961
+367438436,F,1120,773,1.97,4,16,1433,2.05,69,184,"[u'ugh', u'ppl', u'bro', u'vs', u'congrats', u'lil', u'nah', u'cuz', u'lol', u'msg', u'whoa', u'omg', u'dope', u'np', u'fb', u'wtf', u'b4', u'g', u'ur', u'r', u'u', u'idk', u'x', u'sry', u'wanna']",334,45,0.0844,0.4274
+17941941,M,895,1058,10.7,5,10,1430,1.11,2,0,"[u'b4', u'kinda']",312,87,0.0551,0.7444
+430028245,M,1320,6001,4.06,4,14,1428,1.82,7,0,"[u'omg', u'nc', u'fb', u'nsfw', u'wtf', u'x']",314,86,0.0325,0.4225
+4573705042,M,5370,5120,1.42,5,15,1424,4.42,11,2,"[u'uber', u'congrats', u'thx', u'lol', u'ilt', u'vs', u'u', u'ic', u'r']",256,168,0.0283,0.5802
+223266867,F,2233,2806,46.46,4,12,1417,4.95,105,17,"[u'uber', u'ugh', u'wtf', u'app', u'ppl', u'bro', u'ima', u'lil', u'nah', u'cuz', u'lol', u'yum', u'cutie', u'pro', u'bf', u'omg', u'asap', u'hmu', u'dope', u""i'ma"", u'kinda', u'lvl', u'g', u'ur', u'r', u'u', u'idk', u'x', u'wanna']",453,94,0.0603,0.0878
+483592596,M,1236,492,3.54,5,14,1407,7.83,50,16,"[u'pls', u'omg', u'congrats', u'pro', u'ppl', u'vs', u'u', u'ga', u'sec', u'ur']",221,134,0.0366,0.2761
+82428491,M,803,594,8.69,5,14,1398,1.29,32,44,"[u'buddy', u'ugh', u'bent', u'app', u'plz', u'lol', u'vs', u'ga', u'whoa', u'lees']",319,103,0.0237,0.2322
+857268356,F,104,601,3.19,6,8,1380,0.97,7,52,"[u'u', u'lol', u'congrats']",357,0,0,0.9972
+117633976,F,284,195,1.76,4,15,1370,2.19,12,286,"[u'ugh', u'omg', u'app', u'lol', u'gf', u'friggin']",303,8,0.0868,0.164
+19053078,M,2539,10361,15.15,4,13,1370,1.14,19,43,"[u'mvp', u'ugh', u'2nite', u'gal', u'lol', u'ppl', u'b4', u'vs', u'u', u'kinda', u'aka', u'pro', u""c'mon""]",381,12,0.0025,0.7125
+1324298652,M,34,49,3.72,4,8,1367,0.17,3,298,[u'u'],400,0,0,0.99
+31129627,M,5795,14699,4.61,5,15,1361,2.6,18,185,"[u'ikr', u'omg', u""c'mon"", u'g', u'thx', u'lol', u'ppl', u'fb', u'vs', u'sec', u'kinda', u'wanna']",288,112,0.05,0.4075
+1093357128,M,179,72,0.58,4,15,1361,0.28,5,35,"[u'msg', u'aka']",314,5,0,0.9561
+218582770,M,488,196,1.66,4,13,1358,0.65,5,0,"[u'ugh', u'bravo', u'tfw', u'nc']",266,50,0.0316,0.5791
+3123760882,M,199,136,0.66,4,17,1357,3.98,31,0,"[u'g', u'pro', u'nc', u'ppl', u'u', u'smh']",304,156,0.0022,0.2478
+112905923,M,504,300,0.59,4,14,1334,0.91,6,18,"[u'pro', u'wanna', u'aka', u'g']",380,20,0.245,0.785
+2288553703,M,1537,1062,12.85,4,15,1330,3.95,32,116,"[u'btw', u'ugh', u'omg', u'lmao', u'nah', u'fyi', u'lol', u'ur', u'idk', u'kinda', u'jk', u'pls', u'app', u'cutie', u'wanna', u'shoulda']",394,137,0.064,0.1431
+77913714,F,333,268,2.73,4,14,1320,1.18,9,11,"[u'uber', u'omg', u'gud', u'pro', u'fyi', u'aka', u'wanna']",403,15,0.0215,0.488
+259532920,M,572,98,1.23,5,9,1316,1.17,9,1,"[u'nk', u'vs', u'u', u'wtf', u'eu', u'whoa']",384,30,0.0169,0.1111
+3038180375,F,1896,608,0.4,5,10,1313,2.33,7,131,"[u'app', u'kinda', u'lol']",332,67,0.0877,0.7519
+97599082,M,608,9609,3.95,5,12,1312,2.33,13,9,"[u'bent', u'congrats', u'nah', u'tc', u'lol', u'whoa', u'r', u'u', u'kinda', u'msg', u'pro']",338,62,0.035,0.3025
+26446347,F,227,236,1.01,5,14,1308,0.34,13,300,"[u'ugh', u'fav', u'lol', u'r', u'wtf', u'wanna']",309,114,0.1868,0.4066
+137845718,F,999,1468,14.29,4,12,1306,3.77,44,190,"[u'til', u'omg', u'lmao', u'congrats', u'nah', u'ty', u'lol', u'bro', u'ga', u'gal', u'idk', u'wtf', u'aight', u'x', u'nvm', u'wanna', u'app', u'ily']",359,60,0.0883,0.284
+525115791,M,813,1067,1.06,5,15,1306,3.27,11,23,"[u'ugh', u'congrats', u'vs', u'r', u'sec', u'u', u'cul']",257,48,0.0689,0.8262
+311397992,F,509,2959,3.59,4,14,1304,3.15,52,44,"[u'ugh', u'app', u'gf', u'vs', u'imo', u'2day', u'ld', u'ty', u'nah', u'lol', u'til', u'smh', u'msg', u'm8', u'omg', u'jk', u'lmao', u'g', u'dunno', u'congrats', u'ur', u'r', u'u', u'idk', u'x']",406,57,0.0799,0.203
+342476966,M,439,817,0.62,5,15,1304,13.39,13,220,"[u'congrats', u'lil', u'bravo', u'dope', u'cuz', u'bro', u'vs', u'pro']",247,49,0.0304,0.7601
+141031954,F,252,155,1.14,4,12,1302,2.62,29,40,"[u'btw', u'nk', u'omg', u'g', u'vs', u'bf', u'ur', u'b4', u'sec', u'r', u'rly', u'yum', u'wtf', u'friggin', u'u', u'ppl']",319,81,0.0675,0.345
+127403836,M,449,656,6.56,4,16,1301,1.84,91,794,"[u'swag', u'lmao', u'luv', u'lil', u'lol', u'g', u'wu', u'u', u'aka', u'wanna']",397,3,0,0.9875
+96448067,F,488,436,4.33,4,12,1294,1.54,86,149,"[u'ima', u'uber', u'swag', u'lmao', u'nah', u'bf', u'lol', u'cuz', u'gf', u'bae', u'u', u'idk', u'kinda', u'smh', u'aka', u'wanna']",220,39,0.0927,0.2896
+50394315,M,327,103,0.04,4,15,1292,1.54,16,1,"[u'uber', u'nah', u'vs', u'iac', u'ppl', u'r', u'u', u'nsfw', u'ur']",336,17,0.0737,0.6289
+1890651588,F,422,189,2.16,3,10,1291,9.46,11,23,"[u'ugh', u'lmao', u'g', u'lol', u'wtf', u'wanna']",376,24,0,0.835
+1333968354,M,824,365,0.54,5,14,1290,1.37,3,26,"[u'pro', u'u']",284,0,0.6408,0.9965
+70381188,F,232,94,0.17,4,15,1289,0.03,0,13,[],400,0,0.03,0.995
+328847280,M,567,3653,4.5,4,7,1289,2.63,9,243,"[u'uber', u'ugh', u'omg', u'bae', u'wanna', u'whoa']",206,97,0.1155,0.2673
+8531732,M,8021,13395,15.01,5,12,1287,1.46,3,4,"[u'r', u'vs', u'whoa']",291,162,0.1148,0.3687
+122828925,M,2982,2957,3.82,5,12,1285,4.27,16,4,"[u'buddy', u'congrats', u'app', u'lol', u'vs', u'u', u'r', u'pro']",277,123,0.03,0.09
+2588722885,M,29,15,1.56,4,12,1282,17.38,16,0,"[u'r', u'vs', u'u', u'g']",399,0,0.0025,0.99
+454426932,M,515,293,1.52,5,9,1275,0.95,7,183,"[u'ugh', u'wanna', u'g', u'lol']",330,3,0,0.988
+57323515,M,839,731,3.5,4,14,1272,2.23,26,0,"[u'ru', u'ugh', u'pls', u'congrats', u'pro', u'fyi', u'imo', u'r', u'u', u'lol', u'kinda', u'wanna', u'app']",255,145,0.025,0.49
+34453655,M,790,699,3.28,4,16,1268,1.76,19,3,"[u'g', u'bravo', u'app', u'vs', u'imo', u'r', u'lol', u'ga', u'tfw', u'pro']",253,279,0.0169,0.2932
+2374475899,F,152,715,0.94,5,13,1266,1.48,31,35,"[u'ugh', u'omg', u'g', u'congrats', u'lil', u'dunno', u'lol', u'vs', u'u', u'idk', u'kinda', u'ic', u'gl', u'whoa']",306,94,0.0475,0.225
+41442069,M,1022,354,3.16,5,12,1263,1.43,5,25,"[u'aka', u'ugh', u'u', u""c'mon"", u'bent']",325,135,0.0565,0.2804
+22300303,M,853,1180,6.85,5,11,1261,1.88,33,230,"[u'flick', u'uber', u'bff', u'ftw', u'thx', u'dope', u'congrats', u'fav', u'plz', u'ur', u'vs', u'u', u'kinda', u'smh', u'irl', u'r', u'wanna']",377,23,0.2825,0.4375
+102257043,M,728,209,1.08,6,9,1260,3.16,38,305,"[u'wtf', u'til', u'omg', u'lotta', u'congrats', u'wanna', u'nah', u'asap', u'cuz', u'lol', u'bro', u'cya', u'r', u'u', u'kinda', u'smh', u'aight', u'deets']",322,27,0.0143,0.2034
+328261167,F,306,481,6,6,10,1255,11.5,11,93,"[u'ru', u'omg', u'buddy', u'lol', u'u', u'aka', u'bff']",298,175,0.0465,0.3129
+2610191,M,7560,6916,15.23,4,12,1247,1.7,16,6,"[u'uber', u'app', u'bro', u'r', u'u', u'whoa']",427,87,0.0467,0.679
+540826745,F,1268,822,1.22,4,13,1246,2.16,17,7,"[u'uber', u'yolo', u'ugh', u'omg', u'bent', u'congrats', u'pro', u'fyi', u'fav', u'vs', u'fb', u'r', u'idk', u'aka']",341,125,0.0536,0.324
+36210851,F,141,139,5.19,4,12,1243,1.15,26,140,"[u'mvp', u'uber', u'app', u'hw', u'lol', u'vs', u'sec', u'smh', u'msg', u'wanna']",285,157,0.0045,0.2602
+19830558,M,185,316,1.16,4,11,1238,5.28,26,83,"[u'buddy', u'ftw', u'thx', u'zomg', u'cuz', u'ur', u'fb', u'r', u'u', u'wanna']",252,4,0.0742,0.6016
+8.26E+17,F,456,851,1.28,4,12,1237,0.88,12,85,"[u'ugh', u'omg', u'lmao', u'pro', u'vs', u'lol', u'r', u'wtf', u'jk', u'pls', u'scrub']",346,54,0.265,0.705
+18018126,F,640,129,1.27,5,15,1235,5.56,22,112,"[u'ugh', u'bravo', u'r', u'u', u'icymi', u'becuz']",206,297,0.0477,0.2565
+2293242726,M,1257,3724,4.08,4,16,1235,3.12,13,5,"[u'btw', u'asap', u'dunno', u'pro', u'congrats', u'lol', u'msg', u'u', u'icymi', u'eu']",328,71,0.0551,0.416
+15085830,M,1396,2920,26.38,5,9,1233,2.71,43,114,"[u'uber', u'ugh', u'omg', u'app', u'lol', u'u', u'pls', u'wanna']",383,17,0.1475,0.2325
+50179868,F,323,2009,49.87,4,9,1231,0.65,73,147,"[u'ugh', u'omg', u'lmao', u'nah', u'fav', u'lol', u'ppl', u'idk', u'wtf', u'smh', u'dope', u'lotta']",514,62,0.0434,0.3455
+7537222,M,406,7941,1.41,4,15,1228,1.19,38,9,"[u'mvp', u'btw', u'app', u'fav', u'lol', u'ur', u'vs', u'u', u'r', u'tbd']",295,15,0.1,0.3452
+8.24E+17,M,99,0,1.77,4,7,1227,1.26,0,0,[],400,0,0.0075,0.9975
+40848283,F,603,415,1.68,4,9,1222,12.16,8,32,"[u'g', u'lol', u'ur', u'u', u'wanna', u'becuz']",400,0,0.005,0.995
+8.39E+17,M,509,207,1.68,4,17,1222,8.26,43,4,"[u'mvp', u'lmao', u'g', u'congrats', u'pro', u'nc', u'vs', u'sec', u'icymi', u'msg', u'wanna']",290,110,0.075,0.4225
+1209406531,M,31,1,0.02,5,15,1221,1.94,3,4,"[u'r', u'u', u'g']",58,1,0,0.1186
+64407317,M,113,73,0.27,5,11,1219,1.41,4,36,"[u'btw', u'u', u'lol', u'kinda']",259,52,0.0289,0.1833
+815951898,F,1232,743,1.77,4,9,1216,2.86,43,98,"[u'bro', u'ugh', u'omg', u'asap', u'lol', u'til', u'wtf', u'x', u'wanna', u'whoa']",363,66,0.0746,0.1212
+116784989,M,1010,14544,34.83,4,11,1214,3.05,45,107,"[u'uber', u'btw', u'ugh', u'omg', u'wtf', u'g', u'congrats', u'pro', u'jk', u'bro', u'vs', u'kinda', u'smh', u'x']",371,171,0.0646,0.1956
+304793033,F,78,20,0.26,4,16,1213,2.49,19,10,"[u'ru', u'btw', u'ugh', u'pro', u'ur', u'b4', u'vs', u'u', u'ga', u'r', u'nah']",293,107,0,0.6325
+299963884,M,295,116,1.51,5,12,1205,2.22,37,257,"[u'ima', u'mvp', u'wtf', u'lmao', u'ty', u'nah', u'cuz', u'lol', u'plz', u'bro', u'vs', u'u', u'kinda', u'smh', u'ppl', u'wanna', u'lees']",339,61,0.1225,0.295
+339359817,M,2811,1523,11.91,4,5,1204,1.88,45,71,"[u'uber', u'lmao', u'nah', u'cuz', u'lol', u'bro', u'u', u'idk', u'wtf', u'smh', u'wanna']",171,228,0.0276,0.2356
+55960113,M,455,569,0.83,4,14,1199,0.52,5,71,"[u'x', u'vs', u'g', u'congrats']",317,83,0.0125,0.74
+3353015890,M,909,946,10.5,4,11,1195,7.41,202,142,"[u'ugh', u'ppl', u'bro', u'pls', u'ima', u'nah', u'cuz', u'lol', u'smh', u'omg', u'asap', u'hmu', u'dope', u'hw', u'wtf', u'jk', u'lmao', u'gud', u'ur', u'r', u'u', u'idk', u'wanna']",456,159,0.026,0.2195
+29220457,M,308,721,1.97,4,15,1193,1.8,8,9,"[u'uber', u'asap', u'nah', u'gud', u'fb', u'r', u'smh']",294,84,0.0291,0.5582
+98552769,M,178,110,0.06,4,16,1192,3.04,14,4,"[u'flick', u'ru', u'buddy', u'congrats', u'lil', u'gal', u'u']",183,18,0.0299,0.7313
+190521328,F,482,2352,8.77,4,9,1189,4.06,63,156,"[u'ima', u'til', u'ugh', u'omg', u'lil', u'nah', u'atm', u'fav', u'lol', u'bro', u'vs', u'u', u'idk', u'wtf', u'smh', u'aka', u'wanna', u'whoa']",433,141,0.0244,0.1429
+30792939,M,662,1770,5.89,4,10,1189,3.91,55,340,"[u'btw', u'2nite', u'g', u'congrats', u'lil', u'nah', u'bro', u'dope', u'kinda', u'friggin', u'x', u'aka', u'wanna', u'whoa']",311,88,0.1278,0.6491
+16118004,F,4629,13560,3.91,4,13,1186,2.62,14,79,"[u'ugh', u'dope', u'vs', u'lol', u'a3', u'bae', u'aka']",304,82,0.0389,0.7591
+90703340,F,1832,3148,3.25,4,13,1184,0.96,16,2,"[u'uber', u'ugh', u'kinda', u'app', u'lol', u'bro', u'vs', u'irl', u'wtf', u'sec']",379,21,0.035,0.72
+2866253653,M,197,324,3.1,4,9,1181,0.79,53,264,"[u'btw', u'dope', u'lol', u'bro', u'r', u'omw', u'idk', u'x', u'wanna', u'u']",357,41,0.0779,0.1658
+8.04E+17,F,298,426,8.36,5,10,1179,4.14,19,56,"[u'ru', u'omg', u'buddy', u'ppl', u'r', u'u', u'eu', u'cutie', u'lmao']",320,79,0.0301,0.4361
+28867927,M,1590,6433,1.13,4,14,1176,1.4,24,28,"[u'ugh', u'gg', u'fyi', u'pls', u'nk', u'g', u'congrats', u'til', u'pro', u'thx', u'lol', u'shoulda', u'bro', u'goofy', u'u', u'kinda', u'jk', u'omg', u'whoa', u'ru']",390,10,0.055,0.48
+168730229,M,464,1656,1.68,5,12,1176,3.25,18,0,"[u'btw', u'thx', u'bravo', u'congrats', u'vs', u'u', u'x']",308,28,0.25,0.9018
+450111658,M,290,462,3.42,6,8,1175,10.36,11,0,"[u'thx', u'whoa', u'u', u'kinda', u'smh', u'friggin', u'aka', u'shoulda']",257,143,0.2525,0.475
+74231581,M,40,26,0.05,4,18,1174,1.26,5,59,"[u'uber', u'g', u'nah', u'wtf', u'kinda']",285,44,0.0334,0.1641
+36101389,M,1018,1151,7.89,4,14,1173,3.08,21,65,"[u'wtf', u""c'mon"", u'icymi', u'g', u'lil', u'dope', u'pro', u'wu', u'r', u'kinda', u'aka', u'whoa', u'buddy']",227,333,0.0107,0.2375
+48753944,M,845,8508,1.04,5,10,1173,1.96,39,22,"[u'uber', u'bro', u'omg', u'2nite', u'luv', u'thx', u'pro', u'asap', u'ur', u'til', u'r', u'u', u'congrats', u'wtf', u'x', u'aka', u'wanna']",311,107,0.1411,0.2847
+921399386,M,615,8314,21.02,5,10,1172,4.6,23,9,"[u'ugh', u'bae', u'pls', u'lmao', u'congrats', u'wanna', u'dope', u'asap', u'lol', u'tbd', u'bro', u'vs', u'kinda', u'friggin', u'mma', u'shoulda', u'buddy']",378,22,0.165,0.25
+65412393,M,1130,649,4.09,5,9,1168,2.06,23,176,"[u'flick', u'fwiw', u'ugh', u'g', u'asap', u'bday', u'lol', u'ppl', u'r', u'u', u'imo', u'smh', u'x', u'aka']",335,101,0.0528,0.2592
+3137190118,F,48,13,0.36,4,14,1167,4.99,13,21,"[u'bae', u'bday', u'vs', u'r', u'yum', u'x']",209,41,0.676,0.784
+37927877,M,168,184,0.21,7,9,1167,0.97,0,1,[],203,3,0,0.9709
+4235404450,M,936,82,0.36,4,18,1165,2.59,16,0,"[u'btw', u'kinda', u'vs', u'r', u'u', u'yuge']",280,8,0.0035,0.8056
+28345779,M,3172,11663,3.01,4,15,1158,2.11,13,2,"[u'swag', u'pls', u'g', u'asap', u'congrats', u'r', u'b-day', u'2day', u'aka']",289,111,0.1475,0.6725
+20183596,F,1215,3878,8.48,5,9,1157,1.85,10,147,"[u'amigo', u'x', u'bae', u'omg', u'asap']",345,55,0.2925,0.5
+97929960,M,2106,1001,0.9,4,11,1157,3.38,47,552,"[u'ima', u'hml', u'lmao', u'g', u'bday', u'hmu', u'nah', u'fav', u'cuz', u'lol', u'ppl', u'bro', u'lil', u'omw', u'smh', u'x', u'wanna', u'dope']",380,20,0.055,0.3775
+2456582082,M,813,358,0.97,5,13,1157,2.19,17,34,"[u'qq', u'ugh', u'wb', u'g', u'congrats', u'lil', u'nah', u'thx', u'lol', u'r', u'brah', u'tfw', u'gl', u'wanna']",259,89,0.0402,0.4914
+3946151843,M,992,199,0.2,5,14,1151,0.88,2,0,"[u'bak', u'congrats']",228,30,0.2016,0.8682
+24261502,M,1110,2961,61.04,4,11,1151,0.95,72,163,"[u'kinda', u'bozo', u'pro', u'ppl', u'b4', u'lotta', u'congrats', u'lil', u'nah', u'cuz', u'lol', u'smh', u'wtf', u'nvm', u'shoulda', u'buddy', u'bro', u'lmao', u'g', u'dunno', u'r', u'aight', u'x', u'wanna']",353,47,0.025,0.23
+199247233,M,1751,3158,2.76,4,14,1149,1.07,21,27,"[u'wtf', u'ftw', u'congrats', u'bravo', u'app', u'thx', u'icymi', u'imo', u'fb', u'r', u'kinda', u'x', u'tfw', u'aka']",320,80,0.05,0.4475
+829776360,F,702,393,0.52,4,12,1146,10,46,140,"[u'uber', u'ugh', u'kinda', u'app', u'ppl', u'gf', u'brb', u'whoa', u'bf', u'omg', u'asap', u'bday', u'plz', u'yawn', u'fb', u'lmk', u'wtf', u'tfw', u'r', u'idk', u'x', u'aka', u'wanna']",322,66,0.0851,0.3428
+3073431480,F,165,51,0.1,5,8,1145,6.54,29,155,"[u'ugh', u'pls', u'lmao', u'app', u'dope', u'lol', u'ppl', u'r', u'u', u'nah']",269,58,0.2661,0.3853
+138993273,F,116,623,0.5,5,8,1135,3.7,15,164,"[u'ugh', u'lotta', u'g', u'asap', u'dope', u'fav', u'plz', u'bro', u'r', u'u', u'friggin', u'lolz']",417,29,0.222,0.4955
+308146043,F,42,1,0.21,5,13,1134,3.03,30,4,"[u'omg', u'lol', u'ur', u'b4', u'r', u'u', u'wtf', u'smh', u'gj']",322,24,0.0029,0.2803
+910550268,M,366,124,0.43,3,12,1134,3.48,26,104,"[u'omg', u'lmao', u'vs', u'bae', u'u', u'ez', u'x', u'r']",363,0,0.0028,0.9669
+51108097,F,2532,2691,6.12,4,12,1132,3.07,7,217,"[u'ima', u'x', u'kinda', u'lol', u'buddy']",245,360,0.0215,0.3504
+575902505,M,80,46,0.24,6,10,1131,2.48,2,48,"[u'lil', u'u']",273,1,0.0036,0.8723
+22235278,M,1860,1647,5.92,4,9,1130,4.26,21,40,"[u'swag', u'omg', u'congrats', u'dunno', u'nah', u'fyi', u'plz', u'lol', u'bro', u'kinda', u'pls', u'mma', u'whoa']",430,14,0.1486,0.5608
+66837342,F,434,2040,18.01,4,16,1121,12.46,2,515,"[u'x', u'cul']",333,12,0,0.9275
+108063748,F,1195,1047,8.91,4,11,1119,4.5,27,137,"[u'btw', u'ugh', u'pls', u'kinda', u'g', u'thx', u'lil', u'nah', u'tyvm', u'ur', u'til', u'vs', u'u', u'perv', u'wtf', u'omg', u'aka', u'r', u'nk']",301,597,0.0278,0.2695
+1932834361,F,340,431,3.33,4,13,1118,1.14,94,141,"[u'ima', u'uber', u'wtf', u'ugh', u'lmao', u'g', u'bozo', u'dope', u'ez', u'fb', u'lol', u'bro', u'g2g', u'fml', u'u', u'idk', u'kinda', u'smh', u'swag', u'wanna', u'shoulda']",383,17,0.0225,0.1175
+3177761799,F,5406,4980,1.67,5,14,1109,3.91,12,2,"[u'omg', u'bff', u'nc', u'lol', u'til', u'a3', u'yum', u'pls']",202,78,0.0714,0.35
+251481373,F,700,879,2.16,5,11,1103,1.23,47,497,"[u'ty', u'omg', u'lmao', u'g', u'congrats', u'tbr', u'fav', u'cuz', u'lol', u'til', u'a3', u'u', u'wtf', u'smh', u'friggin', u'fb', u'yw']",320,79,0.1153,0.391
+476104613,M,1030,2137,1.4,5,12,1102,2.41,18,773,"[u'btw', u'congrats', u'lil', u'bravo', u'nah', u'vs', u'u', u'x', u'aka', u'r', u'whoa']",251,227,0.0063,0.3828
+242450700,M,53,130,0.13,4,17,1099,1.41,5,2,"[u'x', u'gal', u'fyi', u'app', u'whoa']",193,23,0.0972,0.3056
+16414337,F,697,1685,8.9,4,8,1098,1.38,58,67,"[u'bf', u'ugh', u'omg', u'lmao', u'nah', u'fml', u'lol', u'bro', u'fb', u'bae', u'wtf', u'wanna', u'whoa']",402,139,0.2736,0.4492
+1524178814,F,36,37,0.94,4,12,1098,2.83,97,159,"[u'btw', u'ugh', u'kinda', u'ppl', u'pls', u'no1', u'bff', u'lil', u'nah', u'lol', u'til', u'irl', u'whoa', u'bf', u'omg', u'bday', u'hmu', u'dope', u'fb', u'omw', u'wtf', u'lmao', u'g', u'ur', u'bae', u'u', u'idk', u'rly', u'wanna', u'ily']",391,14,0.279,0.3309
+8.52E+17,M,308,69,2.68,4,13,1098,1.25,12,42,"[u'fwiw', u'omg', u'g', u'dunno', u'dope', u'lol', u'u', u'app', u'nah']",354,239,0.0202,0.3997
+22496235,F,1005,5716,1.08,4,15,1097,1.83,31,9,"[u'uber', u'h8', u'bae', u'pls', u'omg', u'nah', u'bf', u'lol', u'ppl', u'r', u'u', u'idk', u'kinda', u'smh', u'omw', u'aka', u'wanna']",363,37,0.18,0.39
+49646581,M,388,5542,3.21,5,9,1094,1.28,12,20,"[u'btw', u'buddy', u'lol', u'bro', u'fb', u'gal', u'x']",317,82,0.0576,0.193
+227405310,F,220,128,0.15,5,13,1087,3.51,6,800,"[u'swag', u'thx', u'app', u'u', u'yum', u'wanna']",224,6,0.0826,0.3957
+631410587,F,595,906,4.38,4,15,1086,1.67,20,45,"[u'btw', u'ugh', u'omg', u'buddy', u'g', u'congrats', u'bday', u'app', u'ty', u'lol', u'r', u'tfw']",327,59,0.1891,0.4378
+277426268,M,2179,733,1.05,4,13,1083,3.68,20,7,"[u'bro', u'kinda', u'thx', u'app', u'til', u'fb', u'vs', u'u', u'wtf', u'r']",254,135,0.1311,0.4653
+15841961,M,1676,5120,10.67,5,8,1082,1.36,46,215,"[u'uber', u'g', u'congrats', u'pro', u'lol', u'ppl', u'bro', u'vs', u'dope', u'r', u'app']",390,47,0.1739,0.4851
+4562505497,F,1506,2022,31.39,4,11,1081,0.79,100,182,"[u'btw', u'ugh', u'app', u'ppl', u'lol', u'buddy', u'ty', u'imo', u'smh', u'friggin', u'sux', u'omg', u""c'mon"", u'dope', u'plz', u'wtf', u'yw', u'lmao', u'g', u'thx', u'idk', u'b-day', u'wanna']",342,58,0.0625,0.21
+537302878,F,67,199,1.2,4,14,1081,3.41,5,31,"[u'cutie', u'pro', u'vs', u'lol']",397,3,0.015,0.99
+4827378145,M,42,11381,1.9,4,15,1081,1.38,10,0,"[u'uber', u'g', u'pro', u'bro', u'vs', u'u', u'msg', u'r']",361,67,0.0771,0.2874
+28048959,M,1276,973,4.53,4,11,1080,1.81,9,47,"[u'otoh', u'bent', u'g', u'vs', u'lol', u'r']",346,54,0.025,0.6325
+43394038,F,914,1719,5.64,4,12,1079,2.87,17,85,"[u'bent', u'congrats', u'lol', u'ur', u'foxy', u'r', u'kinda']",338,62,0.05,0.235
+7.36E+17,F,112,332,1.32,4,15,1071,13.87,27,3,"[u'uber', u'pls', u'wtf', u'g', u'dunno', u'lol', u'r', u'u', u'kinda', u'jk', u'aight', u'x', u'tfw', u'scrub', u'aka']",389,10,0.1404,0.2481
+193857458,M,133,14115,3.86,6,11,1071,5.6,2,2,"[u'bestie', u'congrats']",222,85,0.241,0.7134
+297733154,M,371,92,1.68,4,13,1069,1.15,6,6,"[u'g', u'fyi', u'b4', u'u', u'cutie', u'whoa']",320,72,0.0357,0.148
+1061040007,M,336,68,0.23,5,11,1065,5.98,13,74,"[u'swag', u'ty', u'gal', u'cuz', u'ur', u'bro', u'vs', u'u', u'x', u'wanna']",189,36,0.0044,0.84
+113568735,M,111,431,2.08,4,15,1064,0.34,2,112,"[u'u', u'congrats']",270,130,0.005,0.2925
+24123877,M,1094,1262,10.76,4,12,1063,5.41,12,0,"[u'b4', u""c'mon"", u'congrats', u'lil', u'bro', u'til', u'icymi', u'wanna', u'whoa']",248,152,0.0625,0.265
+2905876469,F,603,282,0.65,5,10,1062,5.5,98,218,"[u'ugh', u'bro', u'vs', u'imo', u'omg', u'brb', u'congrats', u'nah', u'cuz', u'lol', u'til', u'bae', u'smh', u'bf', u'pls', u'bday', u'dope', u'kinda', u'jk', u'deets', u'lmao', u'g', u'ur', u'r', u'u', u'idk', u'x', u'ily']",349,57,0.0985,0.33
+42825369,F,9972,11879,23.11,5,13,1061,2.8,6,30,"[u'fyi', u'scrub', u'vs', u'g', u'congrats']",217,460,0.0443,0.1743
+40919148,M,769,418,1.67,5,13,1061,2.46,19,33,"[u'goof', u'ugh', u'omg', u'congrats', u'vs', u'lol', u'ppl', u'bro', u'goofy', u'sec', u'smh', u'u']",244,155,0.0276,0.2406
+52944231,M,1355,1133,11.25,4,12,1061,2.03,35,123,"[u'til', u'x', u'g', u'thx', u'zomg', u'nah', u'fav', u'lol', u'ppl', u'bro', u'omw', u'idk', u'rly', u'u', u'ur', u'app']",451,53,0.246,0.3333
+14130186,M,1103,824,1.93,5,11,1055,1.13,25,17,"[u'swag', u'pls', u'buddy', u'g', u'congrats', u'gal', u'nah', u'pro', u'whoa', u'bro', u'fb', u'vs', u'u', u'kinda', u'x', u'app']",320,82,0.0721,0.2065
+3969052414,M,713,953,20.19,5,9,1053,6.15,61,56,"[u'ima', u'gg', u'ugh', u'lmao', u'luv', u'gud', u'dope', u'xxx', u'lol', u'bro', u'vs', u'u', u'idk', u'wtf', u'smh', u'nvm', u'wanna', u'nah']",453,194,0.0711,0.1793
+141726392,M,1206,1625,1.49,6,12,1052,3.83,14,42,"[u'g', u'thx', u'cuz', u'u', u'b-day', u'2day']",165,225,0.0205,0.2538
+120847278,M,277,401,1.72,4,11,1051,2.5,5,4,"[u'amigo', u'r', u'cul', u'lol']",280,9,0.1661,0.7578
+1117038721,F,137,175,0.84,5,13,1046,0.15,2,311,[u'lil'],253,0,0,0.9921
+1548404041,F,606,653,0.68,4,15,1046,1.45,33,2,"[u'fav', u'fb', u'r', u'u', u'pro']",225,40,0.0642,0.7736
+39448145,M,267,379,9.46,5,13,1044,2.18,15,25,"[u'bro', u'ur', u'lmao', u'nah', u'lol', u'brb', u'til', u'u', u'wtf', u'smh', u'eu', u'gl', u'whoa']",319,81,0.0425,0.315
+234782211,M,191,235,2.96,4,10,1043,18.98,14,490,"[u'lmao', u'congrats', u'lol', u'til', u'wtf', u'x']",400,0,0,1
+95318326,F,1827,545,9.14,5,13,1042,3.65,30,0,"[u'tyvm', u'irl', u'omg', u'g', u'thx', u'nah', u'ty', u'lol', u'til', u'r', u'u', u'wtf', u'lolz', u'x', u'wanna']",192,381,0.0332,0.2513
+2188889065,F,206,281,2.13,4,14,1040,1.03,18,120,"[u'btw', u'congrats', u'app', u'imo', u'ppl', u'fb', u'u']",280,110,0.1154,0.5897
+393575726,M,850,8244,5.08,4,11,1040,2.58,12,2,"[u'thx', u'bday', u'pro', u'congrats', u'fav', u'lol', u'til', u'u', u'aka']",352,48,0.0875,0.75
+16543984,M,1948,556,7.17,4,11,1040,3.54,7,117,"[u'aka', u'dope', u'r', u'app', u'g']",366,79,0.1191,0.391
+245448468,M,174,58,0.27,5,10,1039,1.32,17,8,"[u'g', u'ty', u'lol', u'til', u'r', u'u']",297,0,0,0.8956
+1043656686,M,538,428,0.9,5,15,1038,8.31,61,197,"[u'btw', u'g', u'congrats', u'fav', u'cuz', u'bro', u'r', u'u', u'aka', u'wanna', u'no1']",228,30,0.1008,0.6977
+503609863,F,1573,1538,49.19,4,10,1033,1.99,64,14,"[u'uber', u'app', u'bro', u'ima', u'buddy', u'ngl', u'nah', u'lol', u'fml', u'smh', u'cutie', u'omg', u'jk', u'nvm', u'shoulda', u'cul', u'lmao', u'bae', u'u', u'idk', u'aight', u'wanna']",491,300,0.0291,0.1934
+1059330391,F,48,141,3.48,4,14,1032,2.63,31,110,"[u'bff', u'nah', u'lol', u'ur', u'bro', u'r', u'u']",223,23,0.1098,0.5976
+31474301,M,476,293,7.11,4,12,1031,2.26,55,7,"[u'mvp', u'btw', u'iggy', u'buddy', u'g', u'plz', u'lol', u'bro', u'vs', u'wtf', u'omg', u'shoulda']",327,92,0.0048,0.3652
+33686092,F,646,3891,3.72,5,14,1028,0.66,5,97,"[u'bday', u'x', u'app', u'pro']",219,17,0.0042,0.839
+184647962,M,1742,2938,5.54,4,13,1027,3.26,37,88,"[u'ru', u'btw', u'omg', u'ga', u'g', u'fav', u'cuz', u'plz', u'til', u'r', u'u', u'idk', u'kinda', u'smh', u'wanna', u'no1']",327,73,0.1125,0.485
+259034828,M,772,1118,1.37,4,11,1027,0.52,186,63,"[u'congrats', u'gg', u'r', u'omg', u'ga', u'thx', u'nah', u'fyi', u'fav', u'lol', u'ur', u'bro', u'vs', u'u', u'idk', u'wtf', u'app', u'imo', u'wanna', u'dope', u'lmao']",394,52,0.2018,0.2937
+14039452,M,2155,2640,13.66,4,11,1026,1.15,38,53,"[u'wtf', u'g', u'asap', u'app', u'fyi', u'thx', u'pro', u'nah', u'bro', u'lua', u'fb', u'u', u'imo', u'kinda', u'friggin', u'x', u'whoa']",383,17,0.285,0.705
+170772716,M,3187,11388,31.37,5,10,1024,1.89,20,1,"[u'btw', u'buddy', u'lol', u'brb', u'bro', u'r', u'kinda', u'aka', u'wanna', u'tc']",319,280,0.0301,0.1235
+262439039,M,786,468,4.11,4,10,1016,3.46,28,28,"[u'ugh', u'ru', u'btw', u'nc', u'ga', u'hmu', u'app', u'atm', u'imo', u'vs', u'u', u'lol', u'wtf', u'x', u'nm']",369,131,0.004,0.196
+3249916609,M,719,420,4.66,4,12,1014,14.13,88,56,"[u'ima', u'uber', u'omg', u'g', u'pro', u'coz', u'vs', u'cuz', u""i'ma"", u'ppl', u'bro', u'fb', u'r', u'u', u'lol', u'kinda', u'nah', u'x', u'ur', u'wanna', u'dope']",383,17,0.0625,0.1375
+188997398,M,290,3099,1.41,5,8,1005,0.35,5,178,"[u'uber', u'bro', u'vs', u'wtf', u'congrats']",349,51,0.1275,0.2325
+51303125,F,815,805,3.26,4,9,1003,7.41,75,78,"[u'bf', u'ugh', u'pls', u'lmao', u'g', u'lil', u'hmu', u'lol', u'brb', u'r', u'irl', u'kinda', u'omg', u'nvm', u'wanna', u'u', u'luv']",372,101,0.0592,0.1078
+601520145,M,266,66,0.31,4,10,1003,1.31,14,101,"[u'g', u'congrats', u'lil', u'lol', u'ppl', u'r', u'x']",212,2,0.0047,0.9579
+1444476324,M,303,162,19.33,4,8,1002,3.07,77,36,"[u'btw', u'pls', u'lmao', u'g', u'thx', u'lil', u'nah', u'lol', u'vs', u'u', u'imo', u'kinda', u'smh', u'wanna']",460,121,0.0207,0.1239
+201782709,F,909,3150,39.88,4,9,997,6.16,117,58,"[u'ima', u'dope', u'ugh', u'omg', u'lmao', u'lil', u'nah', u'jk', u'fav', u'lol', u'ppl', u'bae', u'u', u'idk', u'smh', u'ur', u'wanna', u'app']",460,228,0.0392,0.2529
+39455009,M,551,2387,24.09,4,11,997,2.66,28,73,"[u'ima', u'uber', u'ugh', u'omg', u""c'mon"", u'asap', u'lil', u'nah', u'fyi', u'vs', u'lol', u'gf', u'r', u'pls', u'idk', u'bestie', u'iggy', u'lmao']",323,245,0.0599,0.1937
+14514289,M,2353,1356,2.2,4,12,997,1.72,4,5,"[u'bday', u'vs', u'congrats']",288,58,0.4017,0.7948
+17818461,F,1909,5965,1.64,4,11,993,2.26,28,104,"[u'uber', u'ugh', u'pls', u'icymi', u'congrats', u'nah', u'thx', u'fav', u'lol', u'b4', u'u', u'kinda', u'irl', u'aka', u'tfw']",257,143,0.08,0.4025
+807201294,M,1999,2975,10.01,8,10,989,3.78,16,33,"[u'lol', u'ur', u'bro', u'vs', u'u', u'eu']",141,252,0.0127,0.2901
+20627081,F,2603,2751,1.96,5,12,987,1.64,7,113,"[u'congrats', u'ppl', u'gal', u'u', u'np', u'aka']",267,193,0.0043,0.4565
+213378894,F,310,237,0.76,4,15,985,1.18,7,561,"[u'lil', u'cya', u'wanna', u'aka', u'kinda']",252,0,0,0.9881
+2501041534,M,618,1650,0.74,4,18,984,2.05,36,6,"[u'fyi', u'2nite', u'congrats', u'app', u'ty', u'lol', u'r', u'icymi']",281,67,0.1552,0.7184
+281492276,M,236,344,23.23,4,11,983,2.01,31,32,"[u'btw', u'omg', u'bff', u'bozo', u'atm', u'cuz', u'ppl', u'r', u'u', u'idk', u'aka', u'wanna', u'lmao']",405,237,0.0265,0.243
+270996358,F,309,5979,0.74,4,13,981,2.3,13,38,"[u'bestie', u'congrats', u'app', u'irl', u'wtf', u'u', u'tfw', u'brb', u'sux']",298,49,0.147,0.317
+7.11E+17,F,575,1346,3.05,4,10,980,9.49,59,30,"[u'ikr', u'btw', u'omg', u'lmao', u'g', u'ty', u'lil', u'shid', u'ur', u'fb', u'r', u'u', u'lol', u'wtf', u'smh', u'kinda', u'yum', u'wanna', u'brb', u'idk']",354,46,0.0725,0.1625
+1628477984,F,187,64,0.42,5,11,977,0.9,2,113,"[u'bravo', u'yum']",236,213,0,0.2895
+3599036534,M,460,158,4.59,4,14,977,7.8,57,18,"[u'btw', u'ugh', u'kinda', u'ppl', u'milf', u'vs', u'imo', u'omg', u'tyvm', u'ty', u'nah', u'lol', u'irl', u'smh', u'm8', u'fwiw', u'pls', u'zzz', u'dope', u'wtf', u'mvp', u'lmao', u'g', u'thx', u'r', u'idk', u'x', u'wanna']",378,22,0.085,0.31
+256701684,F,438,301,1.74,4,10,976,1.63,29,387,"[u'dope', u'omg', u'wtf', u'lil', u'nah', u'fav', u'ppl', u'bro', u'r', u'u', u'ga', u'nvm', u'dwi', u'wanna', u'app', u'lmao']",432,95,0.0835,0.1499
+297732920,F,445,385,67.61,6,12,972,0.66,2,80,[u'lol'],134,266,0.0025,0.295
+554141157,M,41,37,0.17,5,17,970,1.85,39,6,"[u'btw', u'pro', u'ur', u'r', u'u', u'ppl']",171,77,0.0323,0.2056
+42026653,M,2261,1746,7.17,3,10,970,6.06,13,8,"[u'btw', u'congrats', u'asap', u'vs', u'r', u'u']",357,122,0.0021,0.691
+8413962,M,722,1920,1.27,4,13,969,1.16,11,11,"[u'lotta', u'pro', u'u', u'whoa', u'congrats']",232,18,0.128,0.372
+55983507,M,1064,1287,8.36,5,9,968,2.53,37,114,"[u'uber', u'bf', u'ugh', u'omg', u'congrats', u'app', u'lol', u'u', u'idk', u'jk', u'wanna']",261,26,0.007,0.216
+295397077,F,1111,1248,3.13,4,14,966,5.77,13,156,"[u'congrats', u'nah', u'ur', u'r', u'u', u'wtf', u'x']",231,229,0.0978,0.3848
+456322233,M,646,152,1.38,4,10,966,3.96,65,180,"[u'mvp', u'plz', u'ugh', u'omg', u'congrats', u'lil', u'bravo', u'nah', u'cuz', u'ur', u'fb', u'r', u'u', u'thanx', u'ez', u'ppl', u'wanna', u'shoulda']",278,123,0.0125,0.3666
+193462688,F,256,166,0.6,5,13,962,1.09,4,63,"[u'x', u'nah', u'fav']",235,59,0.0986,0.7619
+80920904,M,276,447,2.06,4,15,961,1.19,29,78,"[u'congrats', u'bday', u'pro', u'lol', u'vs', u'x', u'wanna', u'nah']",203,117,0.0281,0.3219
+38699401,F,3086,1442,1.29,4,13,960,1.4,9,10,"[u'lil', u'nc', u'congrats', u'lol', u'smh']",258,7,0.0151,0.4226
+542623700,F,153,283,4.8,4,11,959,2.37,93,107,"[u'kinda', u'ppl', u'gf', u'omg', u'buddy', u'congrats', u'lil', u'nah', u'cuz', u'lol', u'smh', u'np', u'pls', u'bday', u'dope', u'fb', u'omw', u'wtf', u'jk', u'lmao', u'gud', u'ur', u'r', u'u', u'idk', u'rly']",333,64,0.0504,0.0655
+16989805,M,448,472,3.02,4,14,959,0.86,15,10,"[u'ugh', u'buddy', u'lil', u'imo', u'yum', u'jk', u'x']",328,104,0.1204,0.2083
+26506037,M,1935,881,1.08,4,16,958,4.75,19,0,"[u'g', u'congrats', u'pro', u'fyi', u'ur', u'vs', u'irl', u'u']",267,106,0.0241,0.4906
+2902099254,F,126,418,7.54,4,12,957,4.34,58,74,"[u'ugh', u'omg', u'wtf', u'congrats', u'lil', u'pro', u'asap', u'lol', u'nk', u'idk', u'kinda', u'wanna', u'whoa']",281,119,0.0425,0.1975
+410893128,F,1642,1878,5.43,4,15,957,0.55,2,255,"[u'lil', u'cuz']",186,48,0,0.7436
+115166941,M,411,264,0.33,4,14,956,1.68,13,24,"[u'uber', u'g', u'congrats', u'pro', u'afaik', u'imo', u'pervy', u'vs', u'x', u'tfw', u'r']",272,85,0.0588,0.4734
+15107034,F,1893,1712,27.6,4,12,952,1.24,16,13,"[u'uber', u'x', u'app', u'pro', u'lol']",396,4,0.025,0.945
+23381821,M,172,59,1.43,5,19,947,1.86,2,0,[u'r'],399,1,0.0075,0.755
+2759399473,M,1050,1573,2.85,4,17,945,2.06,15,12,"[u'fwiw', u'btw', u'g', u'msg', u'vs', u'u', u'eu', u'sec', u'r']",207,193,0.035,0.3275
+100605030,M,2629,1571,2.92,5,13,943,1.28,22,6,"[u'ima', u'til', u'btw', u'omg', u'lil', u'lol', u'ppl', u'bro', u'fb', u'vs', u'u', u'smh', u'nvm']",271,129,0.0525,0.245
+163333154,M,582,96,0.63,4,11,939,5.26,18,8,"[u'ugh', u'app', u'lol', u'sec', u'msg', u'whoa']",270,79,0.0287,0.3152
+17874742,M,2928,2636,6.24,4,10,938,3.49,21,43,"[u'btw', u'ugh', u'omg', u'kinda', u'g', u'congrats', u'dunno', u'nah', u'ppl', u'u', u'wtf', u'wanna']",333,141,0.3017,0.4789
+83396915,M,2632,4640,2,5,11,932,1.49,12,10,"[u'pls', u'g', u'dunno', u'til', u'fb', u'vs', u'u', u'r', u'whoa']",259,103,0.0994,0.6602
+6878432,F,668,533,1.29,4,11,929,1.12,35,38,"[u'uber', u'til', u'ugh', u'omg', u'bff', u'congrats', u'app', u'asap', u'lol', u'bro', u'gal', u'jk', u'x', u'wanna', u'lmao']",307,26,0.2853,0.3904
+99536577,F,896,1452,6.33,5,9,926,0.69,2,318,[u'bravo'],386,15,0.1471,0.9002
+97711206,M,1503,294,1.02,6,10,922,1.58,18,10,"[u'congrats', u'app', u'thx', u'cuz', u'lol', u'r', u'u', u'perv', u'wanna', u'whoa']",225,9,0.1709,0.235
+215851551,M,968,350,0.66,6,8,922,4.89,12,151,"[u'mvp', u'thx', u'bravo', u'app', u'bro', u'vs', u'smh', u'aka', u'wanna']",252,34,0.1294,0.3741
+569142332,F,466,259,1.57,4,12,919,3,48,127,"[u'ugh', u'ppl', u'imo', u'ima', u'buddy', u'nah', u'lol', u'til', u'bf', u'omg', u'asap', u'bday', u'fav', u'rly', u'kinda', u'tfw', u'lmao', u'r', u'u', u'idk', u'aight', u'aka', u'wanna']",393,68,0.039,0.2213
+47525400,F,714,3025,9.57,4,10,919,8.29,45,77,"[u'uber', u'ugh', u'kinda', u'app', u'ppl', u'b4', u'lulz', u'sec', u'ima', u'buddy', u'lil', u'nah', u'lol', u'smh', u'lolz', u'whoa', u'sux', u'omg', u'omw', u'wtf', u'bro', u'dunno', u'ur', u'u', u'wanna']",420,20,0.0977,0.1682
+2230479480,F,3952,12680,11.62,5,11,916,0.9,12,0,"[u'ikr', u'btw', u'ga', u'congrats', u'fyi', u'til', u'kinda']",256,37,0.1775,0.5188
+237980690,F,358,264,1.72,4,11,915,7.32,4,0,"[u'r', u'yum', u'vs', u'lol']",203,6,0.0813,0.8947
+73187896,M,2069,2308,2.12,4,13,910,1.29,12,20,"[u'vs', u'congrats']",239,34,0,0.8535
+16206265,F,703,1405,3.73,4,17,909,2.71,12,1,"[u'ugh', u'omg', u'g', u'nah', u'fyi', u'imo', u'bro', u'gal', u'pls', u'aka']",266,134,0.0625,0.1925
+1475781222,M,2235,2738,51.58,6,9,909,0.33,27,182,"[u'btw', u'ty', u'dunno', u'nah', u'congrats', u'lol', u'wanna']",297,103,0.1025,0.22
+2324134221,M,1502,1245,3.57,4,10,908,1.66,18,101,"[u'app', u'lmao', u'bday', u'pro', u'lol', u'bro', u'lil', u'r', u'u', u'wtf', u'ez', u'aka', u'nah']",356,254,0.082,0.2656
+178877696,F,260,234,0.63,5,14,905,0.39,5,1,"[u'amigo', u'cul', u'r', u'vs', u'bravo']",251,138,0.0823,0.1542
+18829604,M,278,344,1.83,4,11,904,1.76,9,12,"[u'kinda', u'vs', u'r', u'icymi', u'jk', u'wanna']",309,91,0.06,0.245
+4085400802,F,159,186,1.45,5,11,901,7.24,55,610,"[u'tyvm', u'omg', u'lmao', u'nah', u'fyi', u'pls', u'ermahgerd', u'lol', u'ur', u'bro', u'r', u'yum', u'idk', u'wtf', u'kinda', u'u', u'wanna', u'shoulda']",305,113,0.0431,0.1172
+53664810,F,754,729,0.13,5,10,900,1.22,2,1,"[u'x', u'cuz']",202,25,0.2996,0.7533
+35054949,F,633,1421,2.64,4,11,898,1.84,134,499,"[u'btw', u'ugh', u'app', u'ppl', u'b4', u'gf', u'vs', u'bff', u'lil', u'nah', u'lol', u'smh', u'omg', u'bday', u'dope', u'bestie', u'bro', u'lmao', u'coz', u'ur', u'r', u'u', u'aka', u'wanna']",335,65,0.3475,0.4225
+67486357,F,370,13164,5.63,5,11,894,4.65,40,243,"[u'uber', u'swag', u'ugh', u'omg', u'bff', u'g', u'asap', u'lil', u'app', u'fav', u'plz', u'lol', u'ur', u'lmk', u'u', u'wtf', u'jk', u'aka', u'wanna', u'dope', u'ily']",325,39,0.2418,0.4863
+42687237,M,240,289,1.82,4,15,886,0.9,12,17,"[u'congrats', u'app', u'lol', u'vs', u'jk', u'x', u'tfw', u'aka']",276,153,0.1399,0.4149
+206942798,M,285,440,6.99,4,11,885,0.6,72,148,"[u'uber', u'ima', u'h8', u'ugh', u'kinda', u'lil', u'dope', u'cuz', u'lol', u'ppl', u'bro', u'gf', u'r', u'u', u'idk', u'wtf', u'rolf', u'nvm', u'ur', u'wanna', u'goofy']",361,39,0.08,0.4425
+15319019,M,168,59,0.55,5,11,884,3.27,13,3,"[u'bff', u'lil', u'fav', u'ppl', u'bday', u'r', u'u']",170,39,0.0287,0.799
+67486141,F,2271,1293,50.19,5,10,883,4.81,19,117,"[u'flick', u'lmao', u'congrats', u'nc', u'fav', u'lol', u'ga', u'wanna']",182,218,0.065,0.24
+7.52E+17,M,446,166,2.02,4,12,883,1.55,22,32,"[u'uber', u'pls', u'g', u'congrats', u'pro', u'lol', u'ur', u'bro', u'r', u'u', u'yuge', u'aka', u'ppl', u'wanna', u'goofy']",325,171,0.0605,0.379
+63619760,M,103,41,0.16,4,13,882,3.02,4,0,"[u'app', u'vs', u'swag']",210,15,0.1067,0.7511
+120357061,F,119,160,1.96,5,13,880,1.37,13,607,"[u'congrats', u'bday', u'fav', u'lol', u'ur', u'r', u'u', u'bestie']",251,0,0.004,1
+375952232,M,437,566,7.42,5,9,880,1.85,15,26,"[u'uber', u'omg', u'bro', u'vs', u'u', u'kinda', u'wanna']",347,57,0.3045,0.396
+8.30E+17,F,4976,1811,15.84,5,16,879,59.8,28,205,"[u'omg', u'g', u'asap', u'ppl', u'r', u'u', u'wtf', u'aka', u'ur']",164,614,0.0013,0.1003
+47000860,M,7650,7758,0.89,5,11,879,5.77,4,18,"[u'bro', u'wanna']",208,11,0.0274,0.2283
+3043828834,M,1761,5949,10.2,4,9,872,1.67,7,7,"[u'x', u'tfw', u'hf', u'lol', u'kinda']",377,140,0.0387,0.3153
+3084082010,M,438,120,0.46,5,11,870,1.57,27,69,"[u'omg', u'cuz', u'lol', u'ur', u'vs', u'u', u'perv', u'kinda', u'r', u'mma']",222,136,0.1117,0.3324
+48582610,M,561,453,7.13,4,13,866,1.52,12,8,"[u'flick', u'mvp', u'wtf', u'tc', u'imo']",363,37,0.0075,0.16
+574445964,M,7719,12622,5.35,5,8,863,3.03,17,1,"[u'nc', u'u', u'g']",235,50,0.0386,0.6281
+37008489,M,399,1573,2.68,4,13,863,0.74,16,1,"[u'btw', u'omg', u'buddy', u'g', u'congrats', u'dope', u'pro', u'ppl', u'lol', u'kinda', u'whoa']",241,24,0.1283,0.3811
+18584210,M,2763,4551,10.45,4,11,861,1.58,7,39,"[u'thx', u'dope', u'u', u'icymi', u'smh', u'x']",287,113,0.045,0.4725
+167927318,M,1949,1697,20.27,5,11,859,1.25,12,6,"[u'pro', u'vs', u'lol']",256,378,0.0142,0.183
+611236735,F,846,703,3.35,4,9,858,1.82,25,199,"[u'ima', u'btw', u'omg', u'congrats', u'app', u'plz', u'lol', u'ppl', u'idk', u'kinda', u'smh', u'nah']",309,315,0.0657,0.2596
+137434691,F,951,563,20.78,5,10,858,6.91,56,152,"[u'btw', u'omg', u'lmao', u'ty', u'nah', u'congrats', u'dope', u'bf', u'lol', u'bro', u'u', u'idk', u'pls', u'cutie', u'wanna', u'whoa']",308,292,0.0333,0.0567
+55054309,M,695,535,27.21,4,7,856,4.56,30,30,"[u'uber', u'lmk', u'ugh', u'omg', u'lmao', u'nah', u'fav', u'btw', u'lol', u'yawn', u'vs', u'u', u'wtf', u'smh', u'pls', u'app', u'pro']",362,88,0.0444,0.3089
+99783236,M,596,1795,1.51,5,11,856,0.93,3,6,"[u'pro', u'u']",251,152,0.1141,0.2457
+22057540,M,1850,360,1,4,9,850,3.95,94,82,"[u'btw', u'wtf', u'ppl', u'bro', u'buddy', u'congrats', u'lil', u'nah', u'cuz', u'lol', u'tbd', u'msg', u'sux', u'fwiw', u'omg', u'bday', u'dope', u'plz', u'kinda', u'jk', u'cyo', u'shoulda', u'mvp', u'lmao', u'g', u'thx', u'r', u'u', u'idk']",345,51,0.0152,0.601
+7.74E+17,M,120,170,0.92,6,7,850,0.19,1,662,[u'u'],342,67,0.0782,0.1369
+1202770676,M,774,298,2.33,4,10,848,6.5,45,39,"[u'amigo', u'ur', u'r', u'u', u'eu', u'cu']",332,104,0.0619,0.1307
+77252726,F,1250,2075,0.47,5,14,847,2.77,10,40,"[u'bravo', u'thx', u'congrats']",237,126,0.0413,0.5234
+1330522164,F,2082,3295,3.32,4,12,845,3.41,47,130,"[u'ima', u'ugh', u'omg', u'lmao', u'congrats', u'bday', u'hmu', u'app', u'fyi', u'vs', u'ur', u'fav', u'gf', u'lil', u'u', u'idk', u'wtf', u'kinda', u'aka', u'ppl', u'wanna']",395,240,0.1638,0.3496
+865336304,F,165,175,0.2,5,16,842,3.15,10,22,"[u'ty', u'thx', u'ppl', u'a3', u'u', u'wtf']",140,138,0.0288,0.2986
+7157832,M,1707,1543,5.42,4,7,842,2.26,12,17,"[u'ugh', u'congrats', u'dunno', u'pro', u'imo', u'nah', u'r', u'wtf', u'aka', u'whoa']",273,127,0.005,0.3725
+377637971,M,234,1403,3.97,5,10,842,2.36,33,95,"[u'ima', u'b4', u'ugh', u'pls', u'thx', u'lil', u'hmu', u'nah', u'imo', u'bro', u'vs', u'sec', u'lol', u'kinda', u'smh', u'app', u'whoa']",231,106,0.0148,0.1543
+20211026,F,742,3004,9.35,5,8,841,0.76,62,68,"[u'uber', u'ugh', u'pro', u'bro', u'vs', u'imo', u'bff', u'ty', u'lil', u'lol', u'til', u'fml', u'smh', u'omg', u'bday', u'fyi', u'fav', u'plz', u'fb', u'omw', u'nvm', u'buddy', u'ur', u'u', u'idk', u'x', u'aka', u'wanna']",370,30,0.125,0.1975
+6154842,M,106,826,0.11,4,14,839,1.6,12,211,"[u'buddy', u'lil', u'cuz', u'fb', u'jk', u'x', u'aka', u'bff']",223,35,0.0039,0.8527
+372639514,F,155,332,14.99,4,11,836,2.44,46,59,"[u'lmao', u'g', u'app', u'atm', u'lol', u'ur', u'r', u'u', u'kinda', u'smh', u'yum', u'aka', u'wanna', u'nah']",354,68,0.0592,0.3957
+125749453,F,2000,2307,3.65,4,10,833,1.17,6,100,"[u'g', u'lol']",372,28,0,0.9225
+32441858,M,749,428,2.94,5,10,833,2.02,7,37,"[u'x', u'app', u'vs']",226,42,0.2164,0.6679
+47626248,M,208,93,0.35,4,14,832,2.83,18,1330,"[u'omg', u'bff', u'dope', u'lol', u'bro', u'u', u'kinda', u'aka', u'wanna']",308,7,0.0444,0.9206
+3149811892,M,248,352,0.71,6,10,832,25.76,2,80,"[u'x', u'u']",129,132,0.1341,0.4904
+52085088,M,1769,714,1.98,4,12,832,0.83,16,14,"[u'wtf', u'btw', u'ugh', u'omg', u'lmao', u'app', u'lol', u'bro', u'kinda', u'mma']",247,46,0.0478,0.0785
+1959044540,M,570,327,16.89,4,10,831,2.82,33,81,"[u'btw', u'omg', u'wb', u'lil', u'ur', u'bro', u'u', u'idk', u'kinda', u'aight', u'nm', u'wanna', u'buddy']",366,34,0.1375,0.2275
+24410135,F,1127,4362,1.69,5,13,828,0.83,21,88,"[u'cutie', u'pls', u'g', u'congrats', u'bday', u'fav', u'lol', u'bro', u'gal', u'u', u'r', u'wanna']",218,20,0,0.7647
+35459695,M,1607,615,3.05,5,8,825,13.46,18,68,"[u'ugh', u'pls', u'g', u'congrats', u'plz', u'lol', u'wtf', u'omg', u'wanna']",298,82,0.1605,0.3079
+24279910,F,487,1655,1.93,5,13,823,3.27,20,84,"[u'omg', u'ftw', u'asap', u'gal', u'app', u'congrats', u'vs', u'lol', u'r', u'u', u'ga', u'smh']",249,4,0.1344,0.4032
+13368482,M,993,486,1.1,5,12,823,1.81,9,0,"[u""c'mon"", u'congrats', u'zzz', u'r', u'ga', u'kinda', u'buddy']",183,36,0.0365,0.4521
+42987821,M,1616,527,4.14,4,13,823,1.98,8,47,"[u'mvp', u'vs', u'kinda']",345,141,0.0062,0.1564
+42743391,F,1711,384,1.15,4,9,821,0.24,11,82,"[u'bent', u'congrats', u'bravo', u'lol', u'ur', u'u', u'wtf']",294,15,0.0421,0.8997
+70833926,F,1309,570,4.09,4,10,820,3.11,18,57,"[u'2nite', u'lil', u'dunno', u'fyi', u'fav', u'a3', u'u', u'wanna']",224,218,0.0226,0.4593
+42961882,M,1643,4238,0.82,4,13,820,0.75,7,13,"[u'uber', u'congrats', u'fyi', u'irl', u'ty', u'whoa']",224,176,0.0875,0.3675
+21145074,M,2997,2845,27.81,4,10,818,1.2,2,0,"[u'atm', u'wtf']",358,42,0.4825,0.8875
+16957423,M,1751,2416,5.21,5,9,811,3.12,11,66,"[u'ugh', u'omg', u'g', u'app', u'ur', u'gal', u'goofy']",270,201,0.0913,0.2314
+1330435483,F,539,6240,1.97,4,11,807,1.87,3,0,"[u'friggin', u'r', u'buddy']",218,224,0.0068,0.31
+261901923,F,545,663,3.88,4,11,806,0.6,62,134,"[u'uber', u'ru', u'plz', u'sry', u'omg', u'luv', u'thx', u'bday', u'pro', u'cuz', u'lol', u'ppl', u'lil', u'r', u'u', u'idk', u'sec', u'ur', u'wanna', u'app', u'sux']",293,106,0.0602,0.2231
+38883960,F,238,243,5.87,4,9,805,4,20,27,"[u'mvp', u'omg', u'app', u'fyi', u'plz', u'lol', u'ppl', u'idk', u'wtf', u'smh', u'pro']",305,95,0.0525,0.13
+358978907,F,482,85,0.5,4,12,805,3.84,15,46,"[u'ugh', u'omg', u'lmao', u'fav', u'cuz', u'lol', u'r', u'u']",225,207,0.0231,0.3079
+17302185,F,4108,1282,5.67,4,13,805,3.62,47,10,"[u'btw', u'ugh', u'ppl', u'gf', u'vs', u'sec', u'ru', u'luv', u'ty', u'lil', u'cuz', u'lol', u'irl', u'smh', u'bf', u'omg', u'wtf', u'shoulda', u'lmao', u'ur', u'r', u'u', u'idk', u'aka']",262,176,0.0639,0.226
+326899994,M,232,116,0.15,4,15,802,8.69,13,3,"[u'congrats', u'bday', u'lol', u'bro', u'r', u'u', u'aka']",199,4,0.0099,0.9507
+535598382,F,96,72,0.49,4,13,800,1.44,11,0,"[u'omg', u'2nite', u'app', u'pls', u'u', u'msg', u'x']",205,32,0.0844,0.3207
+7.58E+17,M,175,778,6.04,4,10,798,1.35,53,35,"[u'ima', u'pro', u'omg', u'lmao', u'g', u'congrats', u'lil', u'app', u'lol', u'bro', u'dope', u'idk', u'kinda', u'smh', u'wanna', u'nah']",301,78,0.0712,0.1873
+28985628,M,156,74,0.09,4,13,796,0.98,37,12,"[u'pls', u'thx', u'bday', u'app', u'ty', u'fav', u'lol', u'r', u'u', u'omg', u'wanna']",211,1,0.0425,0.0519
+87587482,F,760,1682,11.44,4,8,795,2.28,59,146,"[u'ima', u'omg', u'nc', u'smh', u'lol', u'friggin', u'r', u'idk', u'bestie', u'jk', u'x', u'wanna']",323,76,0.0301,0.1078
+73987740,F,2677,8165,81.27,5,8,795,1.49,45,8,"[u'ikr', u'ugh', u'omg', u'congrats', u'thx', u'lol', u'u', u'kinda', u'smh', u'wanna']",318,82,0.03,0.1625
+17818643,M,328,227,2.85,5,15,793,1.53,9,0,"[u'g', u'gal', u'vs', u'r', u'u', u'wtf', u'cu']",209,191,0.005,0.3675
+293065451,F,7081,13260,8.63,4,11,792,1.1,38,326,"[u'uber', u'pls', u'g', u'ty', u'nah', u'yolo', u'lol', u'ur', u'lmk', u'u', u'idk', u'wtf', u'whoa', u'rly', u'r', u'wanna', u'pro']",323,251,0.0523,0.2561
+700420064,M,158,181,0.45,4,13,790,1.45,4,240,"[u'lil', u'til', u'wanna']",178,54,0,0.75
+405561109,M,6103,5655,71.83,5,15,786,6.41,11,8,"[u'bro', u'btw', u'sec', u'aka', u'ppl']",176,637,0.0234,0.1488
+454311887,M,1056,1830,21.96,4,9,785,2.5,24,76,"[u'uber', u'btw', u'lmao', u'g', u'app', u'lol', u'til', u'vs', u'u', u'wtf', u'x', u'whoa']",333,66,0.0576,0.5489
+21625091,M,941,321,9.62,5,9,785,3.25,13,0,"[u'congrats', u'bday', u'nah', u'imo', u'ur', u'bro', u'r', u'idk', u'wanna']",317,83,0.0325,0.1625
+251402439,M,447,444,0.38,4,11,784,1.52,24,0,"[u'bg', u'buddy', u'congrats', u'lol', u'vs', u'u']",256,15,0.2177,0.631
+1663886791,M,234,192,4.29,5,11,784,3.38,49,84,"[u'mvp', u'btw', u'ugh', u'omg', u'lmao', u'dope', u'lol', u'gf', u'vs', u'bg', u'imo', u'wtf', u'smh', u'kinda', u'brah', u'wanna', u'nah', u'idk']",250,150,0.0325,0.22
+16875015,F,327,483,2.51,4,11,783,4.01,6,71,"[u'bro', u'x', u'u', u'kinda', u'bestie']",284,106,0.041,0.2821
+45894297,F,319,239,2.09,4,13,782,1.24,27,95,"[u'uber', u'omg', u'wtf', u'nc', u'lol', u'bro', u'gf', u'fb', u'r', u'goofy', u'kinda', u'imy', u'omw', u'wanna']",239,9,0.2218,0.2661
+216917651,M,302,845,3.26,4,15,777,1.21,22,3,"[u'bae', u'lotta', u'asap', u'lil', u'hmu', u'dope', u'fav', u'cuz', u'imo', u'ppl', u'fb', u'vs', u'u', u'msg', u'r', u'wanna']",307,293,0.065,0.275
+120289094,F,230,195,0.18,4,10,776,1.65,3,236,"[u'aka', u'nc']",288,0,0,0.9965
+191652409,M,661,266,1.28,5,11,776,2.35,0,0,[],183,98,0,0.5658
+15281802,M,956,5303,0.54,4,14,772,1.77,24,1,"[u'pls', u'thx', u'bravo', u'app', u'xxx', u'asap', u'fb', u'vs', u'congrats', u'kinda', u'x']",197,29,0.0177,0.3982
+2791074552,M,1402,408,6.1,5,12,772,0.29,31,3,"[u'congrats', u'fav', u'til', u'r', u'u', u'bestie', u'aka', u'wanna']",399,1,0,0.0275
+34264687,M,783,703,0.54,4,13,770,6.15,83,5,"[u'mvp', u'r', u'bff', u'luv', u'thx', u'congrats', u'lol', u'ur', u'bro', u'aight', u'vs', u'u', u'smh', u'2day', u'sec', u'gud']",221,107,0.0183,0.1799
+64107970,F,104,218,0.79,5,9,764,3.85,69,139,"[u'pls', u'luv', u'congrats', u'nah', u'atm', u'fav', u'lol', u'ur', u'til', u'r', u'u', u'idk', u'wtf', u'rly', u'omg', u'sry', u'wanna']",314,86,0.0475,0.105
+199075597,M,213,212,0.08,5,10,759,4.42,3,2,"[u'u', u'2nite', u'ppl']",191,15,0.1311,0.5922
+64234672,M,334,303,3.35,4,8,757,0.92,28,455,"[u'thx', u'lil', u'app', u'ez', u'cuz', u'lol', u'ur', u'b4', u'smh', u'x', u'nvm', u'wanna', u'pro']",334,65,0.015,0.1504
+14576952,M,1709,1320,11.14,4,13,757,5.39,10,0,"[u'g', u'congrats', u'vs', u'lol', u'gg', u'r', u'smh']",185,215,0.0075,0.3075
+33579969,M,1107,709,3.84,4,13,754,1,28,8,"[u'btw', u'buddy', u'thx', u'lil', u'dope', u'congrats', u'hw', u'lol', u'plz', u'msg', u'nah', u'lmk', u'u', u'kinda', u'tbd', u'sec', u'tfw', u'brah', u'wanna', u'whoa']",357,43,0.0575,0.355
+1877714197,M,4123,2300,13.32,5,11,753,1.35,5,1,"[u'bro', u'pro', u'u', u'whoa', u'thx']",244,156,0.0075,0.535
+625744664,M,139,76,1.05,3,10,752,10.34,3,40,[u'nc'],251,2,0.0751,0.9802
+249783726,M,1981,724,4.56,5,10,752,1.96,2,0,"[u'omg', u'u']",209,191,0.005,0.0525
+150640394,F,261,148,0.38,4,10,751,3.69,3,60,"[u'app', u'fyi']",211,111,0.0745,0.5963
+362006085,M,879,820,3.8,4,19,747,2.65,70,4,"[u'btw', u""c'mon"", u'luv', u'ur', u'r', u'u', u'wanna']",120,82,0,0.1584
+18604137,M,565,8101,17.43,5,10,747,1.11,3,8,"[u'app', u'nah']",196,204,0.02,0.2775
+326526887,F,1430,628,1.91,4,10,745,2.52,21,121,"[u'swag', u'omg', u'bff', u'congrats', u'lil', u'fav', u'vs', u'lol', u'foxy', u'bae', u'u', u'yum', u'whoa']",196,42,0.0294,0.7605
+1053527430,F,517,6585,10.49,4,10,745,5.51,120,96,"[u'ppl', u'ugh', u'omg', u'bff', u'asap', u'lil', u'wanna', u'thx', u'lol', u'ur', u'b4', u'lmk', u'u', u'idk', u'wtf', u'kinda', u'pls', u'r', u'bestie', u'ily']",277,89,0.0956,0.123
+233264536,F,1404,1367,3.27,4,11,744,0.63,25,6,"[u'app', u'ppl', u'u', u'asap', u'thx']",344,54,0.0678,0.8015
+1726979365,M,141,237,3.33,5,8,744,2.65,26,114,"[u'ima', u'ugh', u'omg', u'lmao', u'g', u'nah', u'fav', u'bro', u'vs', u'u', u'idk', u'wtf', u'wanna']",315,84,0.0752,0.1404
+902761627,F,384,150,2.84,4,11,736,3.95,10,248,"[u'bae', u'omg', u'lmao', u'lol']",257,79,0.1577,0.503
+182129531,F,447,482,26.54,4,10,735,5.56,36,78,"[u'uber', u'omg', u'lmao', u'lil', u'nah', u'lol', u'ppl', u'bro', u'bday', u'idk', u'wtf', u'wanna', u'app']",244,173,0.0839,0.199
+965660827,M,203,210,2.34,4,10,734,1.99,27,98,"[u'uber', u'wtf', u'lmao', u'congrats', u'app', u'lol', u'sec', u'idk', u'kinda', u'smh', u'x', u'brah']",285,128,0.0557,0.201
+15554208,F,767,1747,2.25,4,16,731,7.77,123,28,"[u'wtf', u'app', u'ppl', u'b4', u'sec', u'pls', u'nvm', u'bff', u'luv', u'lil', u'nah', u'cuz', u'lol', u'irl', u'smh', u'cutie', u'bf', u'omg', u'asap', u'hmu', u'dope', u'fyi', u'lmk', u'rly', u'icymi', u'jk', u'tfw', u'bro', u'ur', u'r', u'u', u'idk', u'x', u'aka', u'sry', u'ily']",346,61,0.0835,0.2998
+111085325,M,1196,716,1.5,5,10,731,1.58,22,13,"[u'lmao', u'g', u'congrats', u'fav', u'pro', u'vs', u'lol', u'r', u'x', u'app']",328,49,0.3395,0.4907
+383965477,M,152,44,0.17,4,11,729,1.41,7,14,"[u'cutie', u'app', u'r', u'mma']",192,45,0.0169,0.7932
+426327084,F,132,307,2.78,4,11,728,2.23,19,90,"[u'btw', u'bff', u'bday', u'hmu', u'nah', u'fav', u'lol', u'vs', u'kinda', u'buddy', u'ily']",197,26,0.3318,0.4081
+990350958,F,363,359,1.77,4,11,724,8.34,44,180,"[u""c'mon"", u'lil', u'dope', u'lol', u'bro', u'bae', u'idk', u'kinda', u'smh', u'x', u'r', u'wanna']",226,55,0.0285,0.1779
+54003869,M,683,306,3.16,4,9,724,1.19,25,29,"[u'eu', u'r', u'u']",286,143,0.021,0.3776
+46326119,F,453,350,0.8,4,11,723,2.85,13,59,"[u'lil', u'aka', u'4u', u'omg', u'lol']",249,35,0.0035,0.8556
+160486240,M,77,26,0.05,4,13,721,2.96,18,5,"[u'omg', u'lmao', u'g', u'thx', u'lol', u'yawn', u'fml', u'r', u'u', u'wtf']",159,25,0.1685,0.4293
+244771024,F,1718,956,1.23,5,12,719,1.61,11,22,"[u'ugh', u'omg', u'asap', u'app', u'congrats', u'u', u'idk', u'wanna', u'pro']",206,189,0.0253,0.119
+286427000,M,831,484,6.32,4,13,716,2.22,14,2,"[u'omg', u'congrats', u'lil', u'app', u'bro', u'vs', u'idk', u'msg', u'wanna']",305,18,0.0248,0.1269
+23106715,F,181,76,0.08,5,13,715,1.91,18,0,"[u'omg', u'app', u'vs', u'lol', u'ur', u'r', u'u']",199,23,0.0856,0.5495
+384444971,F,336,138,0.34,5,14,713,0.71,2,0,"[u'fyi', u'vs']",151,105,0.2773,0.4141
+7.41E+17,M,3796,1345,62.54,5,11,713,1.64,20,0,"[u'congrats', u'lil', u'nah', u'vs', u'bro', u'goofy', u'u', u'msg']",393,7,0.045,0.0775
+2608820132,F,2049,1074,18.02,5,12,710,1.55,48,3,"[u'ugh', u'omg', u'buddy', u'cuz', u'ppl', u'r', u'u', u'wtf', u'lmao']",169,231,0.005,0.2325
+7.80E+17,F,172,206,98.44,4,9,709,7.86,35,3,"[u'lmao', u'bday', u'fav', u'lol', u'ur', u'nsfw', u'idk', u'kinda', u'armpit', u'rly', u'wanna', u'zzz']",290,107,0.0932,0.1209
+20642986,F,379,226,3.2,4,11,707,5.18,17,84,"[u'ugh', u'omg', u'lil', u'app', u'lol', u'ppl', u'r', u'aka', u'nah']",210,285,0.0202,0.1919
+379521181,M,994,1245,10.26,5,13,706,4.03,23,0,"[u'mvp', u'btw', u'thx', u'bravo', u'fyi', u'lol', u'vs', u'u', u'smh', u'aka']",175,432,0.0132,0.084
+83440577,M,631,1352,9.59,4,10,704,1.31,18,62,"[u'ima', u'lmao', u'g', u'dope', u'luv', u'bro', u'bae', u""c'mon""]",267,92,0.1838,0.3565
+3725008035,F,426,476,3.61,4,13,702,3.74,47,311,"[u'uber', u'app', u'bro', u'vs', u'ima', u'nah', u'lol', u'til', u'smh', u'imy', u'lul', u'omg', u'fav', u'plz', u'lmao', u'thx', u'bae', u'u', u'idk', u'x', u'wanna', u'ily']",319,81,0.1325,0.185
+40182547,M,131,1836,7.68,5,6,701,4.23,38,23,"[u'ima', u'sec', u'lmao', u'asap', u'app', u'nc', u'lol', u'bro', u'dope', u'idk', u'wtf', u'x', u'wanna', u'nah']",342,54,0.2525,0.3131
+360755530,F,2279,2330,29.56,4,10,700,3.1,7,8,"[u'omg', u'ty', u'fyi', u'fb', u'u', u'pls']",239,343,0.0533,0.3608
+4182769702,M,1353,417,5.83,5,11,699,3.41,32,45,"[u'congrats', u'ugh', u'ga', u'asap', u'nah', u'coz', u'imo', u'ur', u'u', u'idk', u'wtf', u'x', u'nvm', u'shoulda']",309,91,0.0325,0.2225
+4310261,M,510,221,0.96,4,9,698,8.37,2,0,"[u'x', u'vs']",234,21,0.2431,0.7608
+2353186364,M,40,24,0.39,4,14,697,1.24,6,53,"[u'r', u'omg', u'g']",247,1,0.0121,0.7823
+2348316295,M,710,629,0.62,5,17,696,5.86,29,0,"[u'eu', u'bravo', u'gl', u'u']",138,234,0.0054,0.3575
+450347172,F,143,5042,16.32,4,10,695,19.74,28,24,"[u'uber', u'kinda', u'congrats', u'ngl', u'hmu', u'nah', u'phat', u'ppl', u'til', u'r', u'sec', u'idk', u'wtf', u'msg', u'wanna', u'app']",473,127,0.1417,0.4433
+196468691,M,791,1264,7.41,4,16,695,0.6,26,0,"[u'btw', u'congrats', u'nah', u'lol', u'bro', u'r', u'u', u'smh', u'aka', u'wanna']",326,74,0.0175,0.28
+36923063,F,411,573,2.55,4,13,694,0.66,22,222,"[u'lmao', u'congrats', u'dope', u'asap', u'fav', u'ppl', u'til', u'u', u'wanna', u'nah']",215,65,0.0107,0.2964
+331061059,F,386,531,15.58,5,7,692,1.4,57,155,"[u'uber', u'lol', u'omg', u'g', u'congrats', u'bday', u'app', u'fyi', u'dope', u'plz', u'asap', u'ur', u'tbr', u'ugh', u'u', u'idk', u'wtf', u'rly', u'aka', u'wanna', u'nah']",359,41,0.035,0.0775
+484756411,M,102,96,0.63,5,12,692,3.78,5,6,"[u'dope', u'fyi', u'fav', u'congrats']",158,75,0.0601,0.5579
+30483216,F,250,235,0.29,4,15,689,2.39,2,14,"[u'vs', u'buddy']",223,0,0.0179,0.9148
+1027877382,M,465,202,1.12,4,12,685,2.54,7,92,"[u""c'mon"", u'asap', u'nah', u'congrats', u'lol', u'irl', u'jk']",197,67,0.0606,0.4242
+163626630,F,594,130,0.33,5,7,681,2.42,14,146,"[u'bday', u'congrats', u'fav', u'ugh', u'thx']",163,191,0.0537,0.2486
+2770252795,F,310,122,0.19,5,14,681,2.59,15,130,"[u'congrats', u'app', u'lol', u'ppl', u'r', u'u', u'kinda', u'jk', u'np', u'wanna']",176,207,0.0209,0.4047
+204522595,M,165,147,1.92,4,9,681,1.91,8,33,"[u'nah', u'bro', u'fml', u'irl', u'x', u'u']",265,49,0.2389,0.5701
+2654177700,M,755,624,0.71,5,12,680,2.26,20,9,"[u'ty', u'bravo', u'app', u'congrats', u'vs', u'u']",209,174,0.188,0.5144
+184229887,M,571,1299,11.86,4,11,678,10.7,24,231,"[u'uber', u'b4', u'lmao', u'bday', u'cuz', u'bro', u'ur', u'til', u'vs', u'u', u'lol', u'x', u'wanna', u'idk']",270,12,0.1312,0.9078
+1933028958,F,205,213,2.94,4,10,674,1.66,62,83,"[u'ugh', u'pls', u'buddy', u'nah', u'ur', u'bro', u'u', u'idk', u'cutie', u'wanna', u'lmao']",223,114,0.0267,0.1988
+261527551,F,1502,504,1.37,5,11,674,11.57,5,197,"[u'ugh', u'bravo', u'r', u'gal', u'fav']",169,231,0.105,0.225
+16924527,F,284,1444,2.69,4,11,673,2.94,40,57,"[u'omg', u'lmao', u'lil', u'cuz', u'lol', u'ur', u'u', u'idk', u'wtf', u'smh', u'ppl']",269,219,0.0943,0.2664
+1947282392,F,294,212,4.2,5,13,671,1.7,79,124,"[u'btw', u'ugh', u'app', u'ppl', u'pls', u'bff', u'ty', u'lol', u'til', u'fml', u'smh', u'cutie', u'bf', u'omg', u'bday', u'fav', u'fb', u'kinda', u'lmao', u'gud', u'dunno', u'atm', u'gr8', u'ur', u'u', u'sry', u'wanna', u'ily']",299,155,0.0573,0.1057
+411998774,F,522,2166,56.21,4,8,671,1.95,26,90,"[u'uber', u'pls', u'bff', u'g', u'cuz', u'lol', u'plz', u'smh', u'omg', u'wanna', u'lmao']",288,110,0.0327,0.2588
+126332517,F,415,6261,0.63,4,14,671,2.65,14,0,"[u'btw', u'asap', u'lil', u'til', u'vs', u'u', u'icymi']",194,40,0.0726,0.7991
+25118204,M,366,401,1.06,4,13,670,1.97,32,9,"[u'ima', u'btw', u'lotta', u'g', u'dope', u'cuz', u'lol', u'ppl', u'r', u'u', u'kinda', u'smh', u'whoa']",195,32,0.1101,0.2643
+335032231,F,512,350,5.1,4,9,669,1.98,41,228,"[u'uber', u'ima', u'ugh', u'omg', u'kinda', u'asap', u'bday', u'dope', u'pro', u'cuz', u'lol', u'bro', u'til', u'r', u'u', u'wtf', u'smh', u'wanna', u'nah', u'becuz', u'lmao']",305,154,0.0915,0.2745
+26243934,M,742,468,4.34,4,11,663,2.66,17,64,"[u'congrats', u'vs', u'bae', u'msg', u'tfw', u'r', u'shoulda']",265,135,0.08,0.305
+14357989,M,2273,6932,5.44,4,13,661,3.35,11,26,"[u'congrats', u'vs', u'yum', u'icymi', u'x', u'u']",160,240,0.0725,0.355
+21488060,M,881,453,1.26,6,11,660,2.14,13,200,"[u'uber', u'bf', u'ugh', u'omg', u'lol', u'kinda', u'shoulda']",196,160,0.0899,0.1685
+3972418092,F,398,384,4.61,4,9,658,2.6,62,97,"[u'pls', u'bff', u'asap', u'bday', u'nah', u'ty', u'fav', u'lol', u'ur', u'gf', u'r', u'u', u'idk', u'wtf', u'wanna', u'ily']",326,72,0.0302,0.0553
+1479696115,F,5000,1754,9.24,4,15,656,1.82,57,19,"[u'ppl', u'b4', u'bf', u'ugh', u'g', u'sry', u'til', u'dope', u'fav', u'plz', u'lol', u'ur', u'bro', u'fb', u'u', u'bestie', u'rly', u'cutie', u'brb']",244,155,0.1053,0.193
+3040058024,M,363,191,0.33,4,16,656,0.36,9,276,"[u'ugh', u'omg', u'g', u'congrats', u'pro', u'bro', u'u', u'app']",224,1,0,0.9467
+53768110,F,214,186,0.73,4,15,654,2.11,29,279,"[u'uber', u'bf', u'ugh', u'omg', u'lil', u'app', u'plz', u'lol', u'ppl', u'sec', u'idk', u'kinda', u'ez', u'u', u'ur', u'wanna']",222,7,0.0306,0.0611
+2171688045,F,360,230,0.58,5,10,654,0.49,6,34,"[u'uber', u'bday', u'nah', u'lol', u'lil', u'aka']",154,77,0.0173,0.4762
+253640868,F,191,245,5.93,4,10,650,0.7,62,120,"[u'ugh', u'omg', u'lmao', u'g', u'thx', u'lil', u'cuz', u'lol', u'ppl', u'til', u'gf', u'vs', u'u', u'idk', u'kinda', u'smh', u'rly', u'ur', u'wanna', u'sux']",215,183,0.005,0.2236
+288284266,M,895,723,0.11,5,9,649,1.02,9,58,"[u'app', u'lol', u'r', u'u', u'2day', u'x']",160,47,0.1643,0.5266
+22892780,F,366,299,0.72,4,13,646,3.84,5,73,"[u'wanna', u'omg', u'kinda', u'asap']",191,32,0.2691,0.435
+18437537,F,1140,2289,5.43,4,10,646,0.61,15,220,"[u'bent', u'lil', u'dope', u'vs', u'cuz', u'lol', u'gg', u'bae', u'u', u'aka', u'r', u'wanna']",238,161,0.0551,0.3935
+2356813646,M,529,664,9.13,4,8,646,1.52,87,64,"[u'uber', u'omg', u'lmao', u'asap', u'bozo', u'nah', u'lol', u'bro', u'vs', u'u', u'idk', u'nuh', u'smh', u'x', u'nvm', u'r', u'wanna']",308,90,0.0226,0.0578
+24896645,F,405,520,14.41,4,9,645,2.74,40,165,"[u'bae', u'omg', u'nuh', u'lil', u'nah', u'lol', u'ppl', u'bday', u'r', u'u', u'wtf', u'smh', u'kinda', u'x', u'wanna', u'app', u'lmao']",361,39,0.0075,0.4475
+99892382,F,157,220,1.69,4,11,644,10.99,31,38,"[u'ugh', u'pls', u'bff', u'ty', u'lil', u'hmu', u'thx', u'fav', u'lol', u'lmk', u'u', u'wtf', u'smh', u'omg', u'aka', u'ily']",273,81,0.0565,0.0847
+56503315,M,1061,3145,58.61,5,8,640,1.28,97,204,"[u'ima', u'lmao', u'asap', u'bozo', u'dope', u'lol', u'bro', u'vs', u'u', u'idk', u'kinda', u'smh', u'x', u'wanna']",415,223,0.0298,0.1411
+2548627680,M,232,9936,50.03,4,11,639,0.13,0,78,[],323,77,0.0175,0.1725
+329460047,F,854,561,0.64,4,13,638,0.33,6,125,"[u'bday', u'amigo', u'cul', u'fav', u'bravo']",256,144,0.105,0.5375
+380738653,F,1019,531,6.41,4,9,638,5.68,19,13,"[u'uber', u'omg', u'asap', u'lol', u'ppl', u'r', u'idk', u'wanna']",187,213,0.02,0.1275
+339335961,F,2652,4436,36.73,4,12,635,2.2,40,224,"[u'lmao', u'app', u'lol', u'idk', u'smh', u'wanna', u'nah']",206,274,0,0.1292
+67880456,F,1552,7758,18.62,5,11,634,2.22,6,62,"[u'x', u'g', u'wtf']",139,276,0.0217,0.1494
+101804462,M,1911,3354,21.74,4,13,632,1.81,39,56,"[u'omg', u'buddy', u'g', u'lil', u'app', u'cuz', u'lol', u'ppl', u'r', u'u', u'kinda', u'wanna', u'goofy', u'lmao']",194,202,0.0101,0.1136
+8.66E+17,F,590,61,0.07,5,14,625,2.93,19,8,"[u'omg', u'thx', u'app', u'lol', u'ppl', u'u', u'wtf', u'pls']",123,78,0.1592,0.3831
+2239436467,M,1045,1037,7.02,5,11,615,2.38,8,0,"[u'vs', u'g', u'wtf', u'congrats']",183,286,0.0064,0.3028
+437960152,F,1171,441,6.71,4,10,614,4.29,29,201,"[u'uber', u'mvp', u'btw', u'ugh', u'pls', u'lotta', u'thx', u'fav', u'lol', u'idk', u'kinda', u'omg', u'wanna', u'ily']",256,108,0.1236,0.3489
+2587579548,F,66,41,0.49,4,9,611,3.09,37,250,"[u'uber', u'lmao', u'congrats', u'nah', u'fav', u""i'ma"", u'bro', u'u', u'lol', u'wtf', u'smh', u'kinda', u'wanna']",270,42,0.0833,0.2212
+15290352,F,99,153,0.09,5,7,611,1.34,2,76,"[u'x', u'whoa']",209,5,0.285,0.9533
+61481161,M,485,5476,1.83,4,11,611,1.48,7,21,"[u'til', u'x', u'btw', u'lol', u'congrats']",220,41,0.1034,0.1648
+237314259,M,801,1325,86.18,4,9,609,6.65,17,16,"[u'btw', u'omg', u'lmao', u'thx', u'congrats', u'plz', u'lol', u'rofl', u'r', u'u', u'bff']",301,99,0.03,0.2425
+564058370,M,2425,835,14.43,4,9,608,1.13,22,222,"[u'bff', u'bday', u'dope', u'atm', u'lol', u'bro', u'lil', u'bae', u'idk', u'smh', u'x', u'aka', u'wanna']",277,235,0.0586,0.2012
+15755577,F,134,159,0.3,4,14,607,2.13,16,1,"[u'qq', u'pls', u'r', u'u', u'ur']",193,31,0,0.5714
+254818935,M,2028,2198,3.26,5,11,607,0.74,17,28,"[u'amigo', u'lmao', u'lol', u'bro', u'u', u'msg']",149,249,0.0075,0.2362
+1286842776,M,565,2446,7.93,4,10,606,0,0,164,[],216,184,0.035,0.07
+58099237,M,676,1181,3.48,4,8,606,1.09,28,29,"[u'ima', u'uber', u'ugh', u'pls', u'lmao', u'lil', u'til', u'gf', u'r', u'u', u'omg', u'wanna', u'bday']",381,53,0.0829,0.1037
+2908311303,M,315,541,0.31,5,10,605,5.05,11,19,"[u'buddy', u'congrats', u'nc', u'vs', u'sec', u'smh', u'wanna']",199,69,0.1343,0.2799
+235764604,F,3158,4302,55.56,6,7,604,0.43,23,30,"[u'ugh', u'lmao', u'asap', u'lol', u'til', u'wtf', u'whoa']",230,263,0.0406,0.0933
+25356518,M,4001,4198,9.12,5,11,604,4.6,11,0,"[u'btw', u'g', u'imo', u'vs', u'lol', u'icymi']",184,251,0.1839,0.3264
+20353642,F,792,447,14.51,4,11,602,1.64,11,10,"[u'mvp', u'ugh', u'lmao', u'nah', u'cuz', u'lol', u'friggin']",237,268,0.0139,0.2554
+2733821896,M,250,381,14.9,4,9,600,0.9,72,234,"[u'uber', u'ima', u'lmk', u'bday', u'scrub', u'lmao', u'congrats', u'lil', u'nah', u'fav', u'lol', u'bro', u'lotta', u'r', u'idk', u'kinda', u'smh', u'aight', u'x', u'mvp', u""c'mon""]",364,111,0.0126,0.1537
+38469445,F,7389,9415,28.99,5,12,598,3.12,17,72,"[u'uber', u'ldi', u'vs', u'bae', u'sec', u'icymi', u'u', u'whoa']",205,522,0.0055,0.2751
+43050075,M,2666,1950,22.57,5,11,596,3.61,31,0,"[u'omg', u'lmao', u'g', u'asap', u'dope', u'lol', u'ur', u'bro', u'r', u'smh', u'x', u'aka', u'ppl']",129,271,0,0.1225
+287288128,F,695,847,1,3,15,592,0.44,8,251,"[u'gal', u'btw', u'cutie', u'fav']",290,7,0.0034,0.9663
+2961022637,F,280,347,0.39,5,9,590,6.65,32,184,"[u'btw', u'omg', u'buddy', u'asap', u'bday', u'nah', u'fav', u'gf', u'u', u'imy', u'x', u'ily', u'bff']",175,63,0.0588,0.3151
+32414422,F,890,1494,2.25,5,12,589,3.4,4,45,"[u'vs', u'omg', u'ga']",147,54,0.0498,0.6866
+239072424,M,2124,637,16.29,3,10,587,5.87,23,0,"[u'uber', u'nah', u'vs', u'lol', u'fb', u'r', u'u', u'aka', u'wanna', u'whoa']",260,140,0,0.625
+389770619,M,350,821,25.89,4,7,586,1.97,85,239,"[u'uber', u'bozo', u'app', u'bro', u'vs', u'ima', u'lil', u'nah', u'cuz', u'lol', u'smh', u'sux', u'omg', u'asap', u""i'ma"", u'lmk', u'wtf', u'lmao', u'g', u'gal', u'idk', u'x', u'wanna']",493,189,0.0543,0.3006
+1462631707,F,1437,897,3.15,5,12,585,0.51,3,1,"[u'vs', u'lol']",143,212,0.1577,0.3718
+4086522675,F,198,412,0.5,4,11,584,1.21,4,0,"[u'eu', u'wu', u'r']",261,21,0.0745,0.8865
+1101851569,F,610,230,3.25,4,11,583,3.88,2,75,"[u'vs', u'g']",151,137,0.0451,0.4132
+29062533,F,793,661,3.54,4,12,581,8.46,33,18,"[u'flick', u'ugh', u'pls', u'bff', u'g', u'thx', u'app', u'lol', u'ppl', u'r', u'u', u'idk', u'irl', u'tfw', u'ur', u'dork', u'luv']",251,179,0.1372,0.2628
+31299354,F,563,533,9.92,4,10,580,0.91,16,83,"[u'uber', u'ugh', u'omg', u'congrats', u'lil', u'app', u'lol', u'r', u'u', u'wtf', u'wanna']",242,157,0.0075,0.1779
+12005052,M,627,5025,1.54,4,8,579,1.61,17,5,"[u'wak', u'g', u'congrats', u'pro', u'ppl', u'bro', u'fb', u'sec', u'x', u'wanna', u'dope']",261,170,0.1439,0.4617
+3398619013,F,497,163,1.4,5,8,576,2.04,11,31,"[u'ugh', u'omg', u'app', u'lol', u'gg', u'r', u'u', u'wtf', u'x', u'aka']",247,214,0.0868,0.2863
+16415531,M,640,726,1.64,4,12,572,4.09,41,63,"[u'wtf', u'fwiw', u'btw', u'lmao', u'g', u'congrats', u'app', u'plz', u'lol', u'ppl', u'bro', u'u', u'imo', u'kinda', u'b4', u'wanna', u'nah']",245,51,0.0811,0.25
+16221443,M,1742,2478,1.43,4,13,571,0.86,2,1,"[u'shoulda', u'congrats']",206,210,0.1803,0.363
+2345321942,F,52,86,0.18,4,9,569,5.56,16,147,"[u'omg', u'nah', u'fav', u'lol', u'ur', u'bro', u'vs', u'yum', u'kinda']",192,28,0.3318,0.5
+636559470,F,1004,1458,1.71,5,10,569,1.28,6,24,"[u'ugh', u'omg', u'congrats', u'app', u'sec', u'whoa']",183,63,0.0691,0.4309
+2172872480,M,274,159,0.11,5,11,569,2.71,3,1,"[u'vs', u'congrats', u'ur']",177,85,0.3664,0.5573
+23513200,F,443,751,16.55,4,9,566,4.01,26,60,"[u'ugh', u'pls', u'lmao', u'g', u'asap', u'lil', u'lol', u'u', u'kinda', u'omw', u'sry', u'wanna']",271,192,0.1469,0.2549
+352576995,M,880,926,13.37,4,6,566,6.98,57,47,"[u'ima', u'b4', u'lil', u'bravo', u'lol', u'bro', u'yawn', u'r', u'u', u'kinda', u'smh']",342,125,0.0814,0.2013
+627683742,F,713,2858,1.03,5,12,565,0.92,8,34,"[u'omg', u'app', u'lol', u'til', u'r', u'u']",176,70,0.122,0.374
+338065975,F,804,475,3.33,4,11,564,5.81,22,97,"[u'uber', u'bae', u'omg', u'asap', u'pro', u'plz', u'fb', u'r', u'u', u'idk', u'x', u'scrub', u'aka', u'wanna', u'brb']",224,52,0.0181,0.2428
+112935513,M,3860,3077,21.21,5,7,564,7.51,11,9,"[u'ugh', u'thx', u'lol', u'sec', u'smh', u'tc']",174,226,0.1125,0.205
+237514094,F,288,942,4.18,4,13,563,3.43,56,302,"[u'omg', u'bff', u'asap', u'lil', u'app', u'lol', u'idk', u'pro', u'ily']",220,97,0.1009,0.1356
+212017010,F,401,349,5.46,4,9,563,1.21,19,71,"[u'btw', u'ugh', u'pls', u'congrats', u'lol', u'ur', u'wanna', u'whoa']",253,146,0.1328,0.2481
+3804436033,F,943,877,5.2,4,12,563,2.35,23,141,"[u'uber', u'swag', u'omg', u'congrats', u'lol', u'til', u'ez', u'aka', u'brb']",269,50,0.1693,0.2508
+799616401,F,407,474,3.06,4,6,559,1.55,26,279,"[u'omg', u'bff', u'asap', u'nah', u'fav', u'lol', u'fb', u'wtf', u'smh', u'wanna', u'dope', u'lmao']",405,49,0.0815,0.2885
+3207444587,F,210,233,8.01,4,11,559,4.42,13,177,"[u'lmao', u'g', u'lil', u'lol', u'ur', u'u', u'wanna']",258,230,0.0246,0.1926
+22895433,M,547,250,1.14,4,12,558,0.89,19,442,"[u'buddy', u'congrats', u'lil', u'fav', u'lol', u'bday', u'r', u'thanx', u'wanna']",258,69,0.0031,0.7676
+774022633,F,677,310,8.39,4,12,556,1.29,36,437,"[u'uber', u'omg', u'buddy', u'g', u'plz', u'lol', u'cuz', u'fb', u'kinda', u'lmao', u'np', u'pervy', u'wanna', u'bff']",314,139,0.1015,0.1987
+9167972,M,189,233,4.78,4,10,552,1.09,10,49,"[u'ugh', u'congrats', u'nah', u'lol', u'aight', u'wanna', u'dope']",232,138,0.0324,0.3189
+71912694,F,542,1397,45.87,4,12,549,1.45,58,86,"[u'btw', u'ugh', u'kinda', u'ppl', u'imo', u'pls', u'buddy', u'luv', u'lil', u'lol', u'friggin', u'bf', u'omg', u'bday', u'fav', u'rly', u'wtf', u'lmao', u'thx', u'gr8', u'ur', u'r', u'u', u'wanna']",365,35,0.115,0.2425
+67939607,M,271,229,4.75,4,8,549,4.94,29,123,"[u'b4', u'lmao', u'nah', u'cuz', u'lol', u'bro', u'u', u'smh', u'x', u'wanna', u'pro']",250,149,0.1028,0.1529
+1330111626,F,276,279,11.34,4,8,548,2.11,73,117,"[u'uber', u'ikr', u'ugh', u'omg', u'lmao', u'congrats', u'bday', u'dope', u'ty', u'pls', u'lol', u'ur', u'r', u'u', u'idk', u'wtf', u'jk', u'rly', u'ppl', u'wanna', u'ily']",338,146,0.0331,0.2045
+197481542,M,199,162,0.09,4,12,548,1.47,12,0,"[u'uber', u'pls', u'congrats', u'pro', u'fyi', u'thx', u'lol', u'jk', u'x', u'app', u'wmd']",174,44,0.055,0.2569
+161118161,F,426,258,1.24,5,8,544,1.19,2,67,"[u'r', u'u']",168,52,0.0409,0.0773
+186863396,F,2336,1828,11.53,4,9,544,1.13,30,390,"[u'uber', u'vs', u'omg', u'lmao', u'congrats', u'dope', u'fav', u'cuz', u'lol', u'r', u'u', u'smh', u'x', u'wanna', u'brb']",255,225,0.0792,0.2813
+51527268,M,182,259,0.62,4,11,543,1.62,18,17,"[u'ugh', u'omg', u'g', u'asap', u'app', u'plz', u'lol', u'ur', u'vs', u'u', u'kinda', u'wanna']",204,31,0.1191,0.2255
+2289030952,M,326,251,1.76,6,9,541,1.49,17,0,"[u'btw', u'lmao', u'bday', u'pro', u'lol', u'ppl', u'r']",139,252,0.0256,0.2072
+3697974677,F,440,955,15.23,4,9,540,3.25,69,58,"[u'cutie', u'omg', u'kinda', u'nah', u'cuz', u'lol', u'ppl', u'r', u'u', u'idk', u'wtf', u'smh', u'sec', u'ur', u'wanna']",256,144,0.06,0.17
+1727055793,F,1165,334,0.13,5,11,539,2.28,9,37,"[u'ugh', u'luv', u'bday', u'lol', u'vs', u'u', u'x']",125,93,0.0413,0.3716
+149786575,F,603,1272,4.43,4,15,538,1.73,218,22,"[u'btw', u'smexy', u'pro', u'ppl', u'b4', u'omg', u'congrats', u'lol', u'til', u'irl', u'smh', u'np', u'pls', u'hmu', u'dope', u'fav', u'kinda', u'jk', u'nvm', u'bro', u'lmao', u'ty', u'ur', u'r', u'u', u'idk', u'x']",222,202,0.0165,0.1627
+913818943,F,372,195,0.59,4,15,536,3.88,41,78,"[u'bf', u'brah', u'omg', u'lmao', u'luv', u'hmu', u'dope', u'fav', u'plz', u'ppl', u'fml', u'u', u'idk', u'wtf', u'smh', u'kinda', u'x', u'aka', u'ur', u'wanna', u'app']",181,60,0.0996,0.1286
+240506778,M,374,743,3.39,5,9,533,2.11,12,47,"[u'omg', u'buddy', u'g', u'pro', u'plz', u'gf', u'pls', u'wanna', u'brb']",201,195,0.0859,0.1641
+356228855,F,368,520,3.32,3,17,529,6.16,22,44,"[u'mvp', u'ugh', u'pls', u'bday', u'pro', u'lol', u'ur', u'vs', u'u', u'idk', u'wtg', u'omg', u'sry', u'wanna', u'tbd']",220,45,0.2151,0.317
+1152742196,F,355,326,4.83,4,9,529,2.7,115,78,"[u'qq', u'uber', u'g', u'pro', u'amigo', u'ur', u'r', u'u', u'idk', u'wtf', u'eu', u'aka', u'cu']",382,42,0.066,0.1533
+14066472,M,6647,8398,2.95,5,13,528,2.21,6,1,"[u'uber', u'g', u'btw', u'dork', u'imo']",97,361,0.0044,0.131
+169009009,M,488,1334,87.35,4,8,527,1.8,138,228,"[u'ima', u'omg', u'lmao', u'g', u'asap', u'lil', u'congrats', u'cuz', u'lol', u'bro', u'kinda', u'vs', u'u', u'idk', u'wtf', u'smh', u'aight', u'x', u'r', u'wanna', u'shoulda']",438,111,0.0492,0.204
+275194802,M,304,1937,12.1,4,10,527,2.03,37,95,"[u'congrats', u'lil', u'asap', u'lol', u'ppl', u'bro', u'bday', u'r', u'u', u'idk', u'kinda', u'smh', u'imy']",205,117,0.0373,0.1335
+8.53E+17,M,288,96,0.13,5,13,524,1.94,1,10,[u'gl'],122,82,0.0392,0.4706
+7.77E+17,F,58,61,0.34,4,10,522,6.32,43,32,"[u'bf', u'kinda', u'g', u'thx', u'lil', u'pro', u'nc', u'plz', u'ppl', u'bday', u'r', u'u', u'icymi', u'ur', u'wanna', u'cuz']",218,51,0.0409,0.0595
+38806780,F,1592,1504,10.11,4,8,519,3.78,45,25,"[u'bf', u'ugh', u'omg', u'lmao', u'lil', u'nah', u'cuz', u'lol', u'bro', u'fb', u'idk', u'wtf', u'smh', u'wanna', u'bff']",314,177,0.0407,0.0733
+197747435,M,182,149,1.12,5,7,518,0.17,3,236,"[u'ugh', u'idk', u'ez']",226,5,0,0.5022
+330480506,F,161,116,0.64,4,12,516,1.4,8,135,"[u'bf', u'omg', u'buddy', u'app', u'r', u'u', u'bestie', u'x']",184,29,0.1315,0.4225
+574254117,F,923,1729,14,4,12,513,1.69,25,102,"[u'bf', u'omg', u'lmao', u'lil', u'ur', u'bro', u'fml', u'bae', u'u', u'idk']",224,128,0.1051,0.3352
+2955242018,F,92,50,0.58,5,9,512,2.15,8,12,"[u'omg', u'g', u'cuz', u'lol', u'wtf', u'adn']",163,228,0.0281,0.2225
+8.33E+17,M,645,316,0.46,5,11,510,2.5,1,7,[u'lol'],147,256,0.0968,0.2953
+361361662,M,869,714,4.78,5,9,506,2.57,26,346,"[u'mvp', u'til', u'bf', u'lmao', u'congrats', u'bday', u'lol', u'bro', u'gf', u'vs', u'idk', u'smh', u'aka']",192,123,0.0254,0.146
+164062511,M,1611,830,2.5,3,5,503,5.99,1,1,[u'g'],392,8,0.915,0.9625
+404380093,M,548,556,0.32,5,12,502,2.43,9,9,"[u'u', u'buddy', u'congrats']",139,126,0.0491,0.4453
+58820873,F,117,855,4.99,4,11,501,3.18,19,24,"[u'wanna', u'lmao', u'lol', u'ppl']",162,51,0.1455,0.2582
+255534654,M,2115,770,0.58,5,8,501,1.71,8,12,"[u'congrats', u'fav', u'lol', u'yum', u'kinda', u'aka']",138,123,0.2452,0.2989
+363479125,F,708,306,0.23,5,12,500,1.87,9,82,"[u'congrats', u'omg', u'vs', u'thx']",108,94,0.0743,0.4604
+63366367,M,855,2026,31.43,4,8,500,1.35,112,80,"[u'mvp', u'bbl', u'lmao', u'lil', u'nah', u'lol', u'bro', u'gf', u'u', u'idk', u'smh', u'aight', u'x', u'wanna']",343,57,0.04,0.34
+43727212,M,1302,2040,2.87,5,9,500,3.37,8,18,"[u'app', u'r', u'u', u'tbd', u'thx']",159,241,0.1075,0.285
+19002944,M,70,48,0.08,4,9,500,3.38,6,37,"[u'msg', u'dope', u'nc', u'lotta', u'ga']",240,18,0.2054,0.6589
+3026483090,M,169,70,0.37,4,13,496,2.23,0,84,[],172,74,0.1423,0.4228
+14363368,M,990,1264,0.6,5,10,495,1.08,14,52,"[u'btw', u'app', u'plz', u'lol', u'ppl', u'fb', u'kinda', u'x', u'tfw']",187,23,0.2143,0.3333
+107206751,F,502,370,0.29,5,9,492,2.76,4,341,"[u'bday', u'app', u'omg', u'thx']",170,54,0.2232,0.2723
+8.19E+17,F,98,98,1.27,4,9,490,0.76,46,173,"[u'omg', u'lmao', u'bday', u'nah', u'lol', u'ur', u'bro', u'wu', u'r', u'u', u'idk', u'jk', u'x', u'wanna']",237,161,0.0226,0.1181
+21984420,M,620,989,11.14,5,6,490,3.9,29,31,"[u'uber', u'til', u'lmao', u'hmu', u'lol', u'bro', u'g2g', u'u', u'wtf', u'smh', u'wanna']",322,78,0.07,0.105
+18107739,M,860,902,28.51,4,9,489,2.08,5,1,"[u'aight', u'vs', u'g', u'kinda', u'congrats']",187,213,0.025,0.1975
+19034013,M,270,195,0.7,5,4,487,0.49,3,1,"[u'u', u'wanna', u'thx']",215,260,0.2716,0.2779
+39630126,F,3119,15160,107.9,4,9,486,2.13,13,42,"[u'omg', u'lmao', u'congrats', u'fav', u'cuz', u'ppl', u'smh']",171,425,0.0084,0.0721
+79844273,M,278,506,0.53,4,10,479,3.26,99,128,"[u'uber', u'lmk', u'irl', u'omg', u'lmao', u'g', u'lil', u'hmu', u'cuz', u'lol', u'ur', u'bro', u'r', u'u', u'kinda', u'smh', u'pls', u'ppl', u'wanna', u'brb']",325,105,0.114,0.2977
+47010128,M,677,686,13.98,4,8,478,34.41,187,205,"[u'ima', u'bro', u'lmao', u'lil', u'nah', u'smh', u'lol', u'ur', u'b4', u'fb', u'bae', u'u', u'shid', u'ez', u'x', u'ppl', u'wanna', u'idk']",353,47,0.05,0.22
+16519792,F,1658,1438,3.13,4,9,477,3.44,14,164,"[u'omg', u'g', u'bravo', u'nah', u'plz', u'lol', u'bro', u'r', u'rly', u'kinda', u'aka']",161,274,0.0736,0.2299
+8.61E+17,M,826,384,0.14,4,12,477,1.47,9,12,"[u'fav', u'swag', u'u', u'ppl']",204,111,0.0508,0.2349
+2308708731,M,1569,2012,0.94,4,13,477,0.61,51,31,"[u'ima', u'lil', u'dope', u'vs', u'lol', u'ppl', u'bro', u'fml', u'r', u'u', u'idk', u'smh', u'x', u'app', u'ur', u'nah']",167,31,0.0505,0.298
+521594095,M,2425,1205,0.05,4,14,477,1.13,10,15,"[u'uber', u'amigo', u'lmao', u'g', u'ty', u'dope', u'lol', u'ga', u'cu']",111,37,0.0608,0.1892
+448242607,M,560,405,0.4,4,13,472,2.58,15,22,"[u'ugh', u'luv', u'congrats', u'fav', u'ur', u'u', u'kinda', u'tba', u'x', u'sux']",152,60,0.0047,0.5755
+567650739,F,565,556,3.79,4,11,471,0.83,20,193,"[u'ugh', u'omg', u'lmao', u'asap', u'hmu', u'lol', u'fml', u'kinda', u'wanna', u'buddy']",276,123,0.0175,0.0576
+2748024657,M,410,405,0.82,5,9,467,3.27,18,168,"[u'mvp', u'b4', u'omg', u'lmao', u'lol', u'bro', u'lmk', u'u', u'wtf', u'wanna']",160,121,0.0427,0.0819
+3767393477,F,236,232,2.62,4,10,466,2.18,24,139,"[u'uber', u'omg', u'nah', u'lol', u'u', u'idk', u'kinda', u'smh', u'wanna']",255,152,0.0246,0.145
+923964859,F,5205,4893,42.52,4,14,465,9.19,15,10,"[u'r', u'u', u'ur', u'lol', u'congrats']",194,206,0.0075,0.17
+116247297,F,444,99,0.68,5,11,464,4.56,12,37,"[u'ugh', u'congrats', u'nc', u'lol', u'idk', u'wtf']",118,111,0.0437,0.2271
+453834806,F,484,443,3.73,4,9,464,0.26,29,106,"[u'uber', u'ru', u'bf', u'bae', u'pls', u'lmao', u'g', u'lol', u'r', u'u', u'idk', u'wanna']",249,151,0.1075,0.1425
+2168951834,F,506,408,2.84,4,7,464,1.44,108,117,"[u'bf', u'omg', u'lmao', u'luv', u'bday', u'xxx', u'pls', u'fml', u'lol', u'ur', u'bro', u'fb', u'u', u'wtf', u'x', u'aka', u'wanna', u'bff']",333,66,0.0802,0.1103
+275877639,M,312,274,0.35,5,12,464,0.86,9,31,"[u'2nite', u'dope', u'vs', u'x', u'aka', u'wanna']",114,401,0.0117,0.1689
+71249976,F,236,773,21.92,5,9,463,6.31,22,123,"[u'omg', u'g', u'pro', u'lol', u'r', u'u', u'ga', u'pls', u'nvm', u'cutie', u'nah']",167,229,0.0303,0.1338
+14347014,M,2001,2579,28.44,4,9,462,2.37,4,16,"[u'app', u'ugh', u'lol', u'congrats']",202,398,0.07,0.28
+15964474,M,654,693,0.32,5,14,462,1.9,3,0,"[u'app', u'vs', u'wtf']",128,106,0.0171,0.3248
+36455427,F,566,324,1.4,5,12,461,2.92,9,39,"[u'bro', u'wanna', u'vs', u'omg', u'lol']",122,89,0.0142,0.3412
+14103384,M,345,93,0.08,4,10,460,3.85,9,1,"[u'congrats', u'r', u'u', u'wtf', u'msg', u'x', u'wanna']",157,54,0.0569,0.1185
+2466479180,M,499,584,3.11,4,11,459,0.1,62,100,"[u'ima', u'til', u'pls', u'lmao', u'g', u'ty', u'lil', u'nah', u'lol', u'ur', u'bro', u'bae', u'u', u'idk', u'kinda', u'smh', u'wanna', u'app']",180,310,0,0.049
+3122417261,F,333,270,3.75,4,11,458,2.38,82,146,"[u'ima', u'b4', u'wtf', u'shoulda', u'lmao', u'ngl', u'nah', u'cuz', u'lol', u'ppl', u'bro', u'lil', u'wu', u'r', u'u', u'kinda', u'smh', u'ur', u'wanna', u'pro', u'buddy']",239,377,0.039,0.2192
+2966903297,F,401,1300,39.3,4,8,458,0.98,45,70,"[u'wtf', u'omg', u'lmao', u'g', u'congrats', u'lil', u'lol', u'ur', u'bro', u'bae', u'u', u'idk', u'kinda', u'smh', u'ppl', u'wanna']",183,332,0.0058,0.1126
+207834926,M,884,780,3.93,7,6,455,1.51,12,8,"[u'btw', u'bday', u'atm', u'hw', u'lol', u'ur', u'np']",170,438,0.0329,0.0493
+618673,M,1865,1727,13.14,4,9,455,1.34,8,1,"[u'bg', u'omg', u'kinda', u'congrats', u'app', u'nc', u'vs', u'rpg']",190,210,0.125,0.3825
+707824168,M,1308,138,2.28,4,8,454,8.25,11,0,"[u'app', u'lol', u'ppl', u'wtf', u'smh', u'nah', u'ur', u'bak']",139,261,0.04,0.3025
+195158143,M,225,4593,4.15,4,9,446,38.26,36,307,"[u'ima', u'bae', u'omg', u'lotta', u'g', u'asap', u'lil', u'nah', u'cuz', u'bro', u'vs', u'wtf', u'smh', u'r', u'wanna', u'nuh']",425,13,0.0365,0.2922
+410024290,M,319,1743,1.03,4,13,444,0.06,0,55,[],137,143,0.0357,0.2071
+273085402,M,492,2679,17.98,4,7,444,1.56,13,75,"[u'lotta', u'lil', u'nah', u'cuz', u'lol', u'bro', u'vs', u'idk']",297,103,0.02,0.115
+70702985,M,419,726,1.56,5,13,444,1.86,7,0,"[u'ty', u'btw', u'ppl', u'idk', u'congrats']",150,201,0.0598,0.1681
+14863229,M,2565,3027,1.44,6,10,440,1.01,5,1,"[u'ppl', u'r', u'bent', u'thx']",116,190,0.0523,0.1765
+95928470,M,4008,13999,13.25,5,13,438,1.03,11,106,"[u'omg', u'pro', u'bae', u'wanna', u'lol']",285,113,0.0402,0.0402
+16436254,M,296,262,0.29,4,13,435,0.8,7,16,"[u'app', u'ppl', u'sec', u'kinda', u'ur']",129,100,0.0131,0.3974
+166475340,F,187,409,2.47,4,11,434,1.57,37,293,"[u'ugh', u'pls', u'lmao', u'asap', u'lil', u'hw', u'omw', u'idk', u'wtf', u'jk', u'omg', u'wanna']",335,234,0.0246,0.0299
+30823525,F,503,688,41.84,4,8,431,1.72,99,114,"[u'ima', u'plz', u'ugh', u'lmao', u'lil', u'nah', u'cuz', u'lol', u'ppl', u'bro', u'u', u'idk', u'wtf', u'smh', u'kinda', u'ur', u'wanna']",201,398,0,0.1402
+717848218,M,174,374,34.08,4,9,431,1.4,159,33,"[u'btw', u'app', u'vs', u'ima', u'lil', u'lol', u'til', u'smh', u'lolz', u'pro', u'omg', u'dope', u'fav', u'lmk', u'kinda', u'jk', u'nvm', u'shoulda', u'lmao', u'g', u'r', u'u', u'idk', u'x', u'wanna']",354,46,0.01,0.3225
+51194098,F,802,10931,1.51,5,12,430,1.36,9,13,"[u'g', u'congrats', u'bravo', u'fav', u'ppl', u'u']",93,132,0.0711,0.2178
+2314578588,F,765,413,0.21,4,15,430,1.76,52,147,"[u'bf', u'lmao', u'nah', u'cuz', u'ur', u'gf', u'vs', u'rly', u'idk', u'wtf', u'smh', u'2day', u'u', u'ppl', u'wanna', u'ily']",117,178,0.0136,0.0271
+144150884,F,501,171,1.22,5,7,430,1.19,9,15,"[u'wtf', u'r', u'lmao', u'lol', u'congrats']",135,289,0,0.1085
+1273362584,M,473,179,0.37,5,10,430,1.36,7,0,"[u'swag', u'iggy', u'lol', u'bro', u'bae', u'wtf']",136,67,0.0246,0.2906
+21933334,M,213,887,27.84,5,6,427,1.37,33,9,"[u'foxy', u'lmao', u'g', u'lil', u'dope', u'lol', u'nah', u'bro', u'vs', u'smh', u'x', u'r', u'app']",210,394,0.0248,0.1391
+41615720,M,526,441,15.08,4,13,426,1.09,1,8,[u'r'],139,261,0.03,0.2525
+1573048243,F,86,116,0.34,5,10,425,3.67,8,52,"[u'aka', u'r', u'u', u'g']",100,177,0.1408,0.2888
+7.19E+17,M,224,304,2.54,4,9,423,1.99,59,134,"[u'b4', u'ugh', u'omg', u'bff', u'irl', u'lil', u'hmu', u'dope', u'lol', u'ppl', u'til', u'bday', u'u', u'kinda', u'imy', u'pls', u'ur', u'wanna', u'ily']",240,226,0.0536,0.133
+116783083,M,1241,4046,1.58,5,15,422,3.03,1,6,[u'eu'],161,239,0.04,0.3875
+7.66E+17,M,704,567,4.35,4,9,422,1.02,63,54,"[u'ppl', u'scrub', u'wtf', u'lol', u'ur', u'bro', u'vs', u'u', u'idk', u'kinda', u'lvl', u'rly', u'cutie', u'lmao']",298,121,0.0072,0.105
+16703789,M,1209,615,6.65,4,11,419,2.71,11,23,"[u'uber', u'g', u'app', u'hw', u'vs', u'r', u'pro']",157,117,0.0365,0.1569
+39393024,M,729,863,27.87,4,9,419,5.1,10,107,"[u'x', u'dope', u'goofy', u""c'mon"", u'lol']",148,250,0.0678,0.1382
+304627207,M,2806,3209,56.79,4,11,416,1.53,12,85,"[u'lmao', u'congrats', u'nah', u'ppl', u'bro', u'idk', u'wanna', u'tc']",146,54,0.01,0.105
+102727190,M,155,282,0.37,4,9,416,1.6,24,90,"[u'uber', u'swag', u'pls', u'lmao', u'thx', u'nah', u'fyi', u'lol', u'ur', u'bro', u'wtf', u'vs', u'u', u'kinda', u'smh']",218,45,0.1559,0.2319
+257122019,F,888,1260,0.78,4,10,415,1.23,2,219,"[u'x', u'brb']",201,51,0.0159,0.5714
+412185850,M,102,67,1.28,4,13,415,1.48,21,3,"[u'x', u'pro', u'app']",281,1,0.0177,0.9362
+351895583,M,141,184,0.93,4,14,415,1.16,12,5,"[u'ppl', u'bro', u'fb', u'vs', u'u', u'cu']",134,83,0.023,0.1567
+45055262,M,1719,454,7.55,4,10,414,5.54,16,16,"[u'lmao', u'lol', u'vs', u'u', u'idk', u'kinda', u'wanna', u'buddy']",191,209,0.01,0.11
+47927019,M,724,335,0.17,5,13,413,3.13,2,0,[u'x'],83,125,0.0433,0.3125
+2202438636,M,855,934,8.02,4,10,412,1.34,50,6,"[u'lmao', u'wanna', u'lol', u'bro', u'u', u'idk', u'wtf', u'smh', u'lul']",218,180,0.0427,0.1357
+754233042,F,986,2234,1.54,5,10,411,1.46,3,9,"[u'congrats', u'thx']",122,211,0.027,0.3453
+1593191310,M,406,1309,13.45,4,8,410,0.78,83,140,"[u'bf', u'lmao', u'dunno', u'coz', u'lol', u'ur', u'bro', u'gf', u'r', u'u', u'kinda', u'wanna']",158,241,0.0125,0.0777
+1364688108,F,371,236,0.6,5,10,409,2.07,3,22,"[u'a3', u'u']",114,128,0.1736,0.314
+194674396,M,247,472,2.7,4,5,408,0.1,26,759,"[u'coz', u'nah', u'atm', u'lol', u'omw', u'idk', u'kinda', u'wanna']",344,213,0.0287,0.3788
+50362166,F,363,396,7.09,4,10,407,2.58,25,103,"[u'bf', u'ugh', u'omg', u'lmao', u'congrats', u'app', u'hw', u'lol', u'cuz', u'til', u'idk', u'x', u'wanna']",192,84,0.0616,0.1123
+119468179,M,43,96,0.81,4,10,405,1.03,14,27,"[u'btw', u'iggy', u'lmao', u'congrats', u'dope', u'lol', u'bro', u'vs', u'idk', u'wtf']",146,57,0.0148,0.2463
+923968328,F,417,700,3.02,4,8,404,2.21,40,67,"[u'omg', u'congrats', u'bday', u'phat', u'fav', u'ur', u'bro', u'gal', u'u', u'idk', u'imy', u'x', u'r', u'wanna', u'ily']",233,165,0.0829,0.1106
+2432418724,F,363,402,4.18,4,11,403,3.79,56,15,"[u'uber', u'bro', u'pls', u'lmao', u'lil', u'smh', u'lol', u'ur', u'til', u'fb', u'u', u'idk', u'wtf', u'jk', u'omg', u'aka', u'wanna', u'ily']",247,153,0.0375,0.0625
+7.33E+17,M,91,154,9.27,6,11,403,4.67,15,3,"[u'omg', u'kinda', u'lil', u'lol', u'ur', u'u', u'wtf']",83,316,0,0.0501
+2896428125,F,201,305,7.02,3,10,401,0.25,71,166,"[u'wtf', u'bf', u'omg', u'lmao', u'asap', u'bday', u'dope', u'vs', u'lol', u'ppl', u'bro', u'r', u'kinda', u'wanna']",356,43,0.0075,0.1429
+371916281,F,274,22,0.1,6,9,396,4.92,2,93,"[u'aka', u'ugh']",100,109,0.3014,0.4354
+65046502,M,299,258,6.03,4,9,395,0.81,35,49,"[u'ima', u'til', u'lmao', u'congrats', u'dope', u'cuz', u'lol', u'bro', u'r', u'smh', u'wanna']",218,182,0.0475,0.2025
+64595550,M,530,270,0.45,4,9,393,0.95,1,0,[u'ftw'],146,103,0.0482,0.1968
+3061870687,F,368,574,6.65,4,11,391,6.49,18,128,"[u'omg', u'fyi', u'lol', u'bro', u'vs', u'u', u'omw', u'wanna']",165,232,0.0202,0.1637
+77648117,F,611,707,11.41,4,7,390,4.05,49,173,"[u'ima', u'uber', u'lmao', u'lil', u'lol', u'ur', u'bro', u'u', u'idk', u'wtf', u'wanna', u'bff']",286,104,0.0333,0.1231
+4893812061,M,335,56,0.48,5,5,389,1.24,2,4,"[u'nah', u'vs']",253,12,0.3698,0.9472
+21120694,M,2654,1343,0.98,4,13,389,2.06,8,37,"[u'omg', u'ty', u'imo', u'r', u'wtf', u'x', u'friggin', u'wanna']",118,282,0.02,0.195
+2892198428,F,605,841,8.41,4,7,388,1.11,28,396,"[u'ugh', u'omg', u'g', u'lol', u'ur', u'fb', u'u', u'wtf', u'smh', u'wanna', u'ily']",286,114,0.05,0.16
+576146219,F,338,372,10.42,4,7,387,15.17,50,126,"[u'bf', u'omg', u'lmao', u'g', u'gf', u'bday', u'dope', u'congrats', u'lol', u'ppl', u'lil', u'u', u'idk', u'wtf', u'smh', u'pls', u'aka', u'wanna', u'whoa']",237,156,0.1094,0.3384
+567627063,M,231,249,1.15,4,9,387,1.74,14,17,"[u'bro', u'uber', u'cuz', u'wtf', u'smh']",214,46,0,0.0462
+25426866,M,259,370,4.17,4,9,384,1.4,25,66,"[u'mvp', u'omg', u'lmao', u'congrats', u'lol', u'bro', u'r', u'u', u'idk', u'smh', u'iggy', u'wanna', u'shoulda']",174,230,0.0371,0.0792
+109918417,M,1339,1471,1.18,4,16,384,1.06,77,173,"[u'luv', u'bday', u'app', u'bro', u'lil', u'aka']",258,55,0,0.7923
+173860882,M,689,1142,25.24,4,8,384,1.76,50,89,"[u'ima', u'brah', u'lmao', u'lil', u'dope', u'vs', u'lol', u'bro', u'r', u'idk', u'kinda', u'smh', u'imo', u'wanna', u'nah']",256,246,0.008,0.2908
+8.26E+17,F,129,145,9.76,5,12,383,2.68,4,400,"[u'uber', u'r', u'u', u'ga']",102,298,0.0025,0.1075
+2305079934,M,790,450,0.58,6,10,383,24.52,6,0,"[u'x', u'dope', u'g', u'smh']",62,371,0.0046,0.0878
+2202471105,F,320,519,4.93,4,9,381,7.07,15,18,"[u'ima', u'ugh', u'omg', u'lmao', u'congrats', u'hmu', u'fml', u'lmk', u'wanna']",200,229,0.0559,0.2098
+119270010,F,932,281,0.46,4,10,380,1.78,1,75,[u'vs'],133,95,0.0658,0.3816
+261905827,F,79,256,3.59,4,9,378,0.12,0,32,[],175,26,0.1144,0.1542
+635415391,F,174,99,0.43,4,8,378,0.6,10,352,"[u'bro', u'lol']",201,0,0,1
+39249483,M,516,171,0.19,4,11,378,1.77,6,21,"[u'dope', u'nc', u'lol', u'smh']",155,74,0.0699,0.4672
+2316733472,F,165,154,1.93,5,7,377,1.01,47,147,"[u'lmao', u'nah', u'lol', u'imy', u'lmk', u'kinda', u'aight', u'wanna', u'app']",176,237,0.0315,0.0533
+5415352,F,2139,1600,48.68,4,9,374,0.76,3,47,"[u'nah', u'r', u'wtf']",150,250,0.02,0.3325
+360995131,F,603,340,3.49,4,12,374,0.08,1,66,[u'cuz'],104,333,0.0297,0.032
+28482770,F,5000,3612,10.34,5,12,373,2.15,5,48,"[u'bravo', u'u', u'gr8']",110,290,0.07,0.275
+4172673892,M,160,614,1.94,4,9,373,7.95,85,81,"[u'uber', u'kinda', u'ppl', u'bro', u'bent', u'ima', u'lotta', u'luv', u'lil', u'cuz', u'lol', u'smh', u'cutie', u'fav', u'wtf', u'shoulda', u'lmao', u'g', u'ur', u'u', u'idk', u'x', u'wanna']",341,99,0.0295,0.1136
+4724631568,F,618,267,3.57,4,7,372,2.2,10,216,"[u'bro', u'bday', u'aka', u'lil', u'lol']",277,189,0.1438,0.412
+423811013,F,288,279,6.23,4,14,371,4.06,7,80,"[u'pls', u'wanna', u'g', u'wtf', u'ppl']",133,373,0.0435,0.1838
+1311882601,F,2028,854,6,4,11,371,0.57,3,31,"[u'bro', u'wanna', u'idk']",131,264,0.0025,0.2506
+2238100585,M,72,3085,1.43,4,8,369,1.79,9,16,"[u'uber', u'til', u'bro', u'vs', u'u', u'wanna', u'whoa']",236,212,0.3013,0.4866
+347620721,F,212,202,1.6,4,11,367,0.36,3,37,"[u'app', u'lol', u'wtf']",146,115,0.023,0.3985
+802799042,F,273,342,4.59,4,11,361,2.39,23,101,"[u'ugh', u'kinda', u'nah', u'plz', u'lol', u'wtf', u'lmao', u'wanna', u'buddy']",177,221,0.0025,0.0879
+1546022916,F,691,362,8.54,5,8,360,1.49,13,144,"[u'omg', u'lil', u'lol', u'kinda', u'x', u'wanna']",181,219,0.04,0.255
+236430058,M,1193,1212,2.44,5,10,360,4.06,11,5,"[u'ima', u'lol', u'imo', u'ppl', u'fb', u'perv']",89,311,0.025,0.1525
+59371690,M,5181,8114,30.68,4,6,358,0.73,21,372,"[u'omg', u'g', u'app', u'lol', u'bro', u'omw', u'smh', u'x', u'wanna']",184,235,0.0095,0.1671
+81017884,F,458,455,6.71,4,12,356,0.16,7,122,"[u'nc', u'lol', u'ur', u'wtf', u'wanna', u'shoulda']",203,97,0.0467,0.07
+178685622,F,2080,479,6.61,3,15,356,11.76,38,84,"[u'tyvm', u'omg', u'lmao', u'g', u'bday', u'atm', u'lol', u'idk', u'wtf', u'smh', u'np', u'x', u'aka', u'cutie', u'wanna']",235,269,0.0198,0.2718
+20062066,F,5296,5656,3.59,4,14,354,1.47,22,6,"[u'otoh', u'pls', u'ty', u'ur', u'r', u'sec', u'u', u'rly']",82,352,0.0023,0.129
+2349374918,F,259,424,4.58,5,9,354,3.22,15,142,"[u'omg', u'lil', u'plz', u'lol', u'vs', u'idk', u'wtf', u'wanna']",154,244,0.0226,0.0955
+69140557,M,868,1143,4.57,4,7,354,1.15,64,103,"[u'ima', u'pls', u'lmao', u'g', u'asap', u'lil', u'nah', u'lol', u'bro', u'fb', u'bae', u'omw', u'smh']",220,186,0.0099,0.2315
+202766358,M,256,302,1.44,4,7,354,2.06,59,175,"[u'uber', u'lil', u'nah', u'cuz', u'lol', u'bro', u'vs', u'u', u'smh', u'x', u'nvm', u'brah', u'wanna', u'dope']",250,107,0.0392,0.1541
+335556419,F,631,286,5.25,4,8,353,1.02,27,199,"[u'btw', u'omg', u'lmao', u'gal', u'bf', u'lol', u'cuz', u'bae', u'u', u'kinda', u'ur', u'wanna']",217,119,0.1042,0.1577
+104606970,M,989,2917,116.09,4,9,353,0.55,151,149,"[u'ima', u'swag', u'omg', u'lmao', u'g', u'lil', u'nah', u'vs', u'lol', u'ppl', u'r', u'u', u'idk', u'smh', u'np', u'x', u'app', u'wanna', u'dope']",334,66,0.0125,0.15
+244302020,F,301,366,4.73,3,9,352,0.44,36,49,"[u'ima', u'lmao', u'g', u'lil', u'cuz', u'lol', u'ppl', u'bro', u'bae', u'u', u'idk', u'wtf', u'kinda', u'wanna', u'nm']",189,60,0.012,0.0402
+2404899129,M,184,34,0.23,3,7,352,0.21,1,0,[u'smh'],265,2,0,0.985
+180250716,F,553,680,7.63,4,7,348,1.67,16,39,"[u'mvp', u'x', u'omg', u'lmao', u'lol']",198,31,0.2533,0.4148
+3335784916,M,960,1025,3.71,4,9,348,0.9,16,0,"[u'omg', u'lmao', u'luv', u'fav', u'lol', u'vs', u'u', u'tfw']",114,286,0.03,0.235
+217332182,M,355,193,0.19,4,9,348,1.05,2,7,"[u'bravo', u'buddy']",100,101,0.2935,0.3731
+453385261,M,144,475,10.18,3,9,346,0.37,32,226,"[u'lmao', u'pro', u'cuz', u'lol', u'bro', u'lmk', u'idk', u'smh', u'wanna', u'buddy']",308,185,0.0345,0.069
+7.98E+17,M,58,71,5.81,4,9,346,0.67,6,91,"[u'uber', u'lil', u'eu', u'lol']",198,403,0.005,0.1198
+624726226,F,434,670,1.29,4,9,345,2.2,85,75,"[u'bf', u'pls', u'lmao', u'luv', u'thx', u'bday', u'r', u'cuz', u'gr8', u'ur', u'gf', u'vs', u'u', u'kinda', u'smh', u'omg', u'ppl', u'wanna', u'buddy']",166,109,0.0509,0.1055
+1609695559,F,471,540,1.41,5,11,344,1.86,14,26,"[u'uber', u'mvp', u'omg', u'asap', u'lol', u'bro', u'r', u'u', u'wtf', u'imy', u'wanna', u'ily']",145,126,0.0554,0.0775
+2178868513,F,602,187,7.84,4,8,343,2.43,35,31,"[u'gg', u'swag', u'pls', u'ikr', u'bday', u'fav', u'plz', u'lol', u'ur', u'bro', u'bae', u'u', u'idk', u'wtf', u'eu', u'nvm', u'r', u'lul']",228,170,0.0176,0.1005
+7.29E+17,M,881,218,6.46,4,11,343,5.69,5,15,"[u'amigo', u'pro', u'vs', u'app', u'lol']",198,204,0.0249,0.1393
+2497456668,F,563,413,2.6,5,8,342,6.01,35,204,"[u'mvp', u'flick', u'omg', u'kinda', u'thx', u'lil', u'lol', u'ur', u'til', u'u', u'idk', u'wtf', u'pls']",190,110,0.0367,0.1833
+7.08E+17,F,160,138,2.15,4,9,342,2.63,27,221,"[u'bf', u'omg', u'lmao', u'dope', u'ppl', u'bae', u'idk', u'smh', u'aka', u'wanna', u'nah']",176,245,0.0333,0.2185
+97804840,M,901,1815,23.13,4,7,341,2.28,78,29,"[u'buddy', u'bday', u'phat', u'plz', u'lol', u'ppl', u'bro', u'r', u'wtf', u'smh', u'aka', u'wanna']",235,165,0.0375,0.17
+1633493004,M,127,197,51.62,4,8,335,2.17,28,4,"[u'ugh', u'zzz', u'asap', u'nah', u'ppl', u'shoulda', u'r', u'u', u'kinda', u'aight', u'tfw', u'ur', u'wanna', u'whoa', u'lmao']",221,179,0.105,0.145
+2958952777,M,539,481,2.96,4,7,332,0.95,36,76,"[u'ima', u'lmao', u'asap', u'hmu', u'pro', u'xxx', u'cuz', u'lol', u'gf', u'goofy', u'wtf', u'x', u'wanna', u'dope', u'lotta']",215,231,0.0561,0.1345
+3080565497,F,134,814,1.36,5,13,331,6.82,7,1,[u'thx'],66,366,0.0324,0.1366
+22680051,M,901,753,7.65,4,8,328,1.1,37,33,"[u'omg', u""c'mon"", u'nah', u'cuz', u'lol', u'ppl', u'fb', u'u', u'idk', u'smh', u'x', u'wanna', u'uw', u'lmao']",200,278,0.0397,0.1946
+230811757,F,127,62,0.3,3,10,327,0.96,15,194,"[u'uber', u'ugh', u'omg', u'lmao', u'bday', u'dope', u'lol', u'til', u'fb', u'wtf', u'x']",221,38,0.2278,0.2934
+1352311117,F,272,405,8.32,4,13,326,3.89,12,34,"[u'ugh', u'pls', u'nah', u'ur', u'u', u'smh', u'ppl']",139,61,0.065,0.17
+154259575,F,110,272,5.02,4,7,326,2,14,55,"[u'omg', u'lmao', u'bday', u'fav', u'til', u'u', u'wtf', u'wanna', u'buddy']",178,234,0.0388,0.0704
+35652393,M,240,246,1.16,4,10,325,3.02,27,39,"[u'wtf', u'lmao', u'asap', u'app', u'lol', u'ur', u'bro', u'irl', u'imo', u'kinda', u'u']",204,63,0.1161,0.2809
+418432063,M,74,148,3.76,4,12,323,3.49,27,59,"[u'ima', u'uber', u'omg', u'lmao', u'lol', u'ppl', u'irl', u'idk', u'lolz', u'wanna', u'u']",193,200,0.0356,0.1527
+1069651819,M,53,34,0.61,4,10,322,1.68,19,74,"[u'bf', u'ugh', u'lol', u'ppl', u'bro', u'gf', u'r', u'u', u'idk', u'nuh', u'wanna']",131,269,0.025,0.1425
+349262442,M,413,400,1.79,5,9,320,0.25,1,8,[u'smh'],129,70,0.0854,0.1759
+472267631,M,300,226,0.24,4,13,318,1.71,21,51,"[u'btw', u'ugh', u'omg', u'asap', u'lil', u'fav', u'plz', u'lol', u'r', u'u', u'wtf', u'smh', u'lmk', u'wanna', u'whoa']",170,107,0.0939,0.2491
+453711822,F,504,775,9.73,4,6,317,1.17,44,266,"[u'ima', u'uber', u'omg', u'lmao', u'yolo', u'lol', u'ur', u'bae', u'u', u'idk', u'smh', u'x']",245,153,0.0427,0.1156
+37499827,M,811,1955,46.71,5,8,315,5.35,28,88,"[u'omg', u'lmao', u'luv', u'lil', u'nah', u'lol', u'bent', u'bro', u'bday', u'fb', u'wtf', u'smh', u'app', u'buddy']",235,164,0.0702,0.2707
+36886466,F,995,1287,14.15,4,8,313,1.05,7,8,"[u'bae', u'idk', u'lol', u'congrats']",123,380,0.004,0.1789
+450719287,F,367,594,10.74,3,11,312,6.97,23,13,"[u'ugh', u'pls', u'omg', u'thx', u'lol', u'ur', u'r', u'irl', u'wtf', u'lmk', u'aight', u'rly', u'sry', u'u', u'ily']",137,547,0.0263,0.1038
+21656554,M,739,574,0.43,4,10,311,3.9,15,23,"[u'uber', u'ugh', u'congrats', u'app', u'lol', u'u']",100,165,0.0151,0.1849
+1426796401,M,610,709,15.7,4,7,310,2.09,27,277,"[u'ima', u'wtf', u'kinda', u'g', u'congrats', u'lil', u'nah', u'xxx', u'bro', u'bae', u'u', u'idk', u'lmk', u'wanna', u'bent']",343,143,0.0123,0.2551
+227858126,F,4249,6019,20.38,4,11,309,0.71,112,673,"[u'ima', u'bro', u'ugh', u'omg', u'lmao', u'lil', u'lol', u'til', u'goofy', u'u', u'idk', u'wtf', u'smh', u'kinda', u'lmk', u'wanna', u'shoulda']",400,347,0.0214,0.1673
+1183797884,F,445,294,0.53,5,9,307,3.35,37,31,"[u'buddy', u'gtg', u'bday', u'fav', u'vs', u'hw', u'lol', u'ur', u'lmk', u'rly', u'2day', u'u', u'r', u'wanna', u'ily']",130,83,0.0986,0.1502
+18869762,M,142,226,0.57,4,11,306,3.52,6,1,"[u'ld', u'ugh', u'ty', u'bravo', u'u', u'eu']",164,86,0.02,0.624
+73964857,M,383,982,9.88,3,7,304,0.71,76,152,"[u'ima', u'til', u'lmao', u'g', u'lil', u'nah', u'lol', u'bro', u'vs', u'idk', u'wtf', u'wanna']",208,189,0.0202,0.1914
+729623,M,2223,1431,1.64,5,9,304,1.65,9,8,"[u'uber', u'app', u'vs', u'smh']",99,326,0.0235,0.0894
+1125174824,F,142,692,8.25,4,9,303,2.1,9,71,"[u'omg', u'g', u'lol', u'ppl', u'wtf', u'wanna', u'ily']",153,376,0.0359,0.2023
+276243858,M,706,300,1.97,4,7,302,2.62,37,179,"[u'omg', u'g', u'congrats', u'lil', u'dope', u'gud', u'lol', u'bro', u'vs', u'u', u'idk', u'ga', u'smh', u'app', u'wanna', u'pro']",198,167,0.0329,0.3562
+313714634,M,555,980,20.7,4,7,302,0.84,57,115,"[u'lmao', u'hmu', u'dope', u'lol', u'bro', u'u', u'idk', u'smh', u'aka', u'wanna']",216,264,0.0167,0.1333
+3105207616,F,324,376,8.91,4,10,301,2.33,35,84,"[u'ugh', u'omg', u'lmao', u'lil', u'dope', u'smh', u'fav', u'lol', u'b4', u'kinda', u'x', u'pls', u'wanna']",151,49,0.025,0.115
+349529778,M,767,417,7.38,4,10,301,1.86,15,26,"[u'bro', u'cuz', u'g', u'lol', u'smh']",120,76,0.0612,0.2806
+39238184,M,10031,11249,2.42,4,10,301,1.3,2,7,"[u'tfw', u'nah']",102,131,0.1803,0.2489
+331786912,M,38,10,0.32,3,9,301,5.24,10,0,"[u'thx', u'fyi', u'lol', u'u', u'wtf', u'jk', u'whiz', u'shoulda']",212,96,0.039,0.5195
+2870738619,F,837,1700,14.58,3,9,298,0.72,26,130,"[u'ima', u'bf', u'omg', u'lmao', u'app', u'bro', u'goofy', u'smh', u'pls', u'aka', u'wanna', u'ily']",211,269,0.0125,0.1875
+3115680503,F,110,140,2.26,4,8,297,2.19,15,96,"[u'bf', u'lmao', u'lil', u'lol', u'bro', u'nvm']",179,373,0.0453,0.1087
+37711837,F,1496,525,1.53,4,14,297,1.21,2,2,"[u'u', u'cuz']",76,312,0.0387,0.134
+854097302,M,269,426,1.79,5,10,297,0.31,29,11,"[u'ikr', u'til', u'pls', u'bday', u'nah', u'cuz', u'lol', u'ur', u'bro', u'vs', u'u', u'idk', u'whoa']",126,136,0.0534,0.1031
+3073886583,M,138,125,0.29,4,10,296,1.87,10,13,"[u'omg', u'wtf', u'lil', u'plz', u'bae', u'lmk', u'wanna', u'lmao']",128,95,0.0897,0.3318
+327619038,M,704,752,11.59,5,7,296,1.34,17,33,"[u'lmao', u'nah', u'imo', u'bro', u'lol', u'wanna', u'dope']",172,227,0.0451,0.1579
+595064344,F,346,382,0.49,4,10,294,2.42,18,6,"[u'ugh', u'pls', u'getcha', u'pro', u'fav', u'lol', u'ur', u'fb', u'u', u'idk', u'omg', u'app']",123,125,0.1169,0.2379
+838620744,F,1357,1929,29.27,4,7,294,0.48,53,200,"[u'bf', u'omg', u'buddy', u'lil', u'nah', u'cuz', u'lol', u'plz', u'til', u'u', u'idk', u'wtf', u'kinda', u'brah', u'wanna', u'lmao']",302,139,0.0068,0.2063
+23517680,M,1021,705,11.65,5,7,291,2.29,39,1,"[u'buddy', u'cuz', u'lol', u'ur', u'u', u'wanna']",161,239,0.0875,0.1025
+1278766008,F,182,3356,41.05,3,10,289,10.49,74,8,"[u'ikr', u'btw', u'omg', u'lmao', u'bday', u'lol', u'ur', u'bro', u'gf', u'vs', u'u', u'idk', u'wtf', u'smh', u'pls', u'wanna', u'ily']",274,126,0.04,0.15
+953976768,F,511,391,6.23,4,11,287,1.38,2,87,"[u'omg', u'wanna']",107,290,0,0.0176
+166618066,F,267,557,20.16,4,8,286,0.39,4,273,"[u'wanna', u'u', u'whoah']",97,103,0.015,0.025
+97803592,M,895,920,24.79,4,9,286,0.68,36,151,"[u'pro', u'dope', u'shid', u'bro', u'lol', u'wanna', u'nah']",284,121,0.0099,0.1037
+496716252,M,1549,1603,11.02,5,4,285,7.77,11,164,"[u'asap', u'bday', u'fav', u'lil', u'vs', u'omw', u'x']",200,282,0.0021,0.0166
+251847448,F,460,1580,26.59,4,8,284,1.28,77,137,"[u'ima', u'bg', u'omg', u'lmao', u'asap', u'lil', u'nah', u'lol', u'ur', u'bro', u'bae', u'u', u'wtf', u'smh', u'wanna']",207,79,0.0559,0.4476
+1979650400,F,5422,4931,17.54,5,10,281,2.13,1,82,[u'lol'],95,305,0.025,0.09
+3365940021,M,354,257,1.44,4,8,279,0.75,12,17,"[u'ugh', u'app', u'lol', u'sec', u'idk', u'wanna']",158,240,0.0201,0.1457
+274192363,M,540,1063,15.72,4,10,277,2,19,251,"[u'atm', u'dope', u'coz', u'imo', u'ur', u'bro', u'u', u'lol', u'kinda', u'wanna', u'nah']",128,271,0.0125,0.2431
+20766608,F,941,283,3.32,5,13,275,4.57,1,58,[u'omg'],67,515,0,0.0893
+46284889,M,405,475,1.77,5,11,274,1.14,3,4,"[u'msg', u'app', u'u']",88,203,0.0034,0.0619
+8.78E+17,M,290,50,0.07,5,13,270,3.4,4,8,"[u'btw', u'vs', u'u', u'thx']",62,8,0.2286,0.3857
+165133290,F,373,535,11.03,3,8,268,0.76,14,432,"[u'ima', u'omg', u'idk', u'wtf', u'ez', u'x', u'wanna']",237,288,0.0114,0.1448
+852232825,F,176,234,0.85,6,8,268,2.5,6,443,"[u'lmao', u'plz', u'bro', u'u', u'idk', u'shoulda']",90,237,0.0153,0.0245
+614619025,F,998,1759,21.22,5,10,267,1.42,13,61,"[u'bday', u'u', u'lmao', u'ur']",94,304,0,0.0352
+363970212,F,350,361,4.01,4,10,263,1.46,42,19,"[u'pls', u'lmao', u'lol', u'ppl', u'g2g', u'r', u'u', u'smh', u'ur', u'wanna']",169,293,0.0411,0.1883
+1264587050,M,120,182,3.45,4,8,260,3.16,46,32,"[u'ima', u'tyvm', u'ugh', u'pls', u'lmao', u'ty', u'hmu', u'nah', u'jk', u""i'ma"", u'bro', u'smh', u'omg', u'wanna']",180,205,0.0156,0.1325
+7.51E+17,F,146,100,0.36,4,10,257,5.5,24,50,"[u'ima', u'swag', u'omg', u'asap', u'lol', u'bro', u'r', u'rly', u'idk', u'wtf', u'wanna']",203,58,0.0383,0.1609
+325642963,M,1132,640,13.13,4,8,256,3.53,33,100,"[u'ima', u'mvp', u'lmao', u'lil', u'nah', u'lol', u'bro', u'getcha', u'sec', u'idk', u'x', u'wanna']",209,329,0.0112,0.1636
+552066542,F,314,289,1.92,3,9,255,0.75,27,176,"[u'hml', u'lmao', u'hmu', u'lol', u'bro', u'r', u'idk', u'smh', u'wanna']",203,192,0.0684,0.1468
+281782304,M,2209,1163,9.67,4,7,251,3.2,3,21,"[u'nah', u'app', u'whoa']",130,298,0.1285,0.25
+236059931,F,756,805,5.44,4,9,250,2.56,16,385,"[u'ugh', u'wtf', u'lil', u'nah', u'lol', u'bae', u'u', u'idk', u'kinda', u'wanna']",142,255,0.0202,0.1486
+1518902456,M,72,101,2.43,5,6,248,1,1,176,[u'x'],180,67,0.2267,0.3239
+701713493,F,298,935,11.34,4,7,246,0.57,12,154,"[u'gf', u'ugh', u'omg', u'lmao', u'lol']",196,195,0.0384,0.1841
+3355560119,F,324,517,23.67,4,11,240,2.4,43,57,"[u'bf', u'omg', u'lmao', u'dope', u'lol', u'ur', u'til', u'r', u'u', u'idk', u'wtf', u'x', u'wanna']",138,349,0.0431,0.1478
+832331616,M,2330,1121,0.95,5,5,240,1.44,3,0,"[u'pro', u'u', u'ic']",204,31,0.4043,0.4681
+21962696,M,726,871,29.93,4,6,238,1.07,25,68,"[u'foxy', u'til', u'wtf', u'bday', u'nah', u'ur', u'bro', u'lil', u'vs', u'u', u'lmk', u'smh', u'wanna', u'dope']",284,512,0.0188,0.2136
+239387944,M,685,605,2.05,4,7,238,1.42,5,15,"[u'bro', u'cya', u'vs', u'u', u'ur']",143,93,0.0763,0.1568
+3426757245,M,510,596,31.98,4,7,237,1.12,34,262,"[u'lmao', u'nah', u'lol', u'bro', u'vs', u'idk', u'wtf', u'smh']",304,388,0.0072,0.2717
+1188122869,F,1672,668,10.55,4,11,233,1.6,3,3,"[u'hmu', u'fav', u'ily']",101,326,0.0164,0.2014
+71950034,F,703,1150,44.7,4,6,231,4.38,8,167,"[u'ima', u'omg', u'lol', u'bro', u'nvm', u'wanna']",145,253,0.0251,0.2312
+434665994,M,758,1108,15.98,4,7,225,1.24,33,70,"[u'ugh', u'omg', u'lmao', u'g', u'lol', u'bro', u'fb', u'u', u'idk', u'smh', u'omw', u'cutie', u'wanna', u'shoulda']",161,236,0.0327,0.1159
+294266848,M,529,619,5.37,4,8,224,0.89,8,80,"[u'pls', u'lil', u'pro', u'lol', u'g2g', u'x', u'tfw']",167,243,0.0146,0.0463
+373242264,F,444,225,4.71,5,11,221,12.48,0,71,[],57,340,0.0202,0.0907
+15097291,M,2283,3263,8.25,5,11,221,1.63,2,5,"[u'r', u'ur']",67,333,0.0525,0.1525
+3191470374,F,173,461,7.93,5,5,220,4.87,7,349,"[u'cuz', u'hw', u'u', u'idk', u'cul', u'wanna']",245,155,0.035,0.1375
+51316075,M,2947,1162,40.61,6,8,219,0,2,38,"[u'vs', u'asap']",54,346,0,0.0275
+3177417898,F,426,649,7.3,5,5,218,1.81,0,412,[],277,196,0.0042,0.1332
+360783956,M,475,1030,20.65,4,5,217,1.39,47,447,"[u'nm', u'nvm', u'lmao', u'lol', u'smh']",275,125,0.015,0.4625
+3298720128,F,579,873,11.13,4,7,216,3.26,19,120,"[u'omg', u'lmao', u'lil', u'nah', u'lol', u'bae', u'goofy', u'smh', u'wanna']",229,170,0.0852,0.2782
+144573620,M,209,327,11.35,4,10,216,0,37,41,"[u'ima', u'omg', u'lmao', u'lol', u'ppl', u'bro', u'u', u'wanna']",123,76,0.0603,0.1759
+3015728993,F,36,1487,28.74,3,7,212,3.85,91,55,"[u'ugh', u'kinda', u'bro', u'omg', u'ima', u'bbl', u'lil', u'lol', u'fml', u'smh', u'cutie', u'whoa', u'pls', u'hmu', u'fav', u'lmk', u'rly', u'wtf', u'lmao', u'ur', u'r', u'u', u'idk', u'wanna']",354,75,0.0513,0.3566
+502154092,F,659,911,12.77,4,12,212,0.06,25,27,"[u'uber', u'bf', u'ugh', u'pls', u'buddy', u'cuz', u'lol', u'ur', u'bro', u'gf', u'fml', u'idk', u'wtf', u'imy', u'omg', u'bff']",140,60,0.025,0.115
+381092637,M,444,86,0.39,7,6,212,16.17,3,102,"[u'dunno', u'ugh', u'imo']",95,118,0.0376,0.0986
+401780556,M,244,145,3.09,4,10,209,2.62,10,148,"[u'luv', u'cuz', u'lol', u'smh', u'x', u'wanna']",127,267,0.0076,0.1218
+7.80E+17,F,34,23,0.43,4,10,204,0.08,20,123,"[u'wtf', u'omg', u'lmao', u'lol', u'idk']",118,158,0.0471,0.3152
+169335548,F,596,608,7.74,4,9,203,3.72,21,60,"[u'wtf', u'ugh', u'omg', u'lmao', u'jk', u'cuz', u'lol', u'fb', u'idk', u'kinda', u'smh', u'wanna', u'shoulda']",133,116,0.0281,0.2048
+8.26E+17,F,719,419,7.47,6,11,203,2.25,6,4,"[u'r', u'u', u'lol', u'ur']",49,449,0.002,0.0201
+56023149,M,129,39,0.31,6,11,203,1.17,1,1,[u'lil'],38,362,0.015,0.075
+186944989,F,967,1271,18.07,4,8,201,1.77,4,122,"[u'wanna', u'goofy', u'fav', u'lol']",130,269,0.0175,0.1003
+16666386,F,578,617,1.93,6,2,201,1.83,6,4,"[u'dunno', u'whoa', u'lol', u'congrats']",190,210,0.025,0.4425
+1881427795,F,705,401,2.18,3,8,200,0.82,37,55,"[u'lmao', u'lil', u'nah', u'bro', u'omw', u'wtf', u'smh', u'wanna']",167,280,0.0089,0.1096
+8.74E+17,M,1078,151,0.03,6,10,198,3.14,1,4,[u'idk'],41,25,0.2273,0.5303
+34706237,F,971,1019,1.21,5,10,197,3.11,4,10,"[u'pls', u'u']",47,208,0.0471,0.1333
+1462375867,M,382,422,4.03,3,7,197,0.39,48,127,"[u'ima', u'goof', u'swag', u'til', u'lmao', u'lul', u'nah', u'cuz', u'lol', u'ppl', u'bro', u'gf', u'u', u'wtf', u'nvm', u'wanna', u'cu', u'ily']",275,123,0.0377,0.1884
+78491791,F,0,787,3.83,3,7,191,0.24,27,47,"[u'ima', u'ugh', u'ym', u'airhead', u'lil', u'lol', u'bro', u'vs', u'wtf', u'x', u'omg', u'wanna']",389,11,0,0.0025
+246987651,F,341,522,15.31,3,9,189,1.19,11,79,"[u'iggy', u'lmao', u'lol', u'idk']",155,258,0.0073,0.0751
+3642267201,M,4771,2345,4.53,6,5,185,1.87,17,213,"[u'omg', u'lmao', u'ur', u'bro', u'ppl', u'wanna']",109,91,0.145,0.21
+940139167,F,827,497,5.03,3,13,184,1.54,22,95,"[u'bf', u'omg', u'kinda', u'fav', u'cuz', u'lol', u'ppl', u'r', u'u', u'idk', u'wtf', u'ur', u'wanna']",128,202,0,0.0333
+562861824,F,773,1421,12.56,3,9,183,1.24,25,241,"[u'ugh', u'lmao', u'g', u'asap', u'lil', u'fav', u'hw', u'lol', u'ppl', u'r', u'idk', u'wtf', u'ur', u'wanna']",208,109,0.0315,0.1514
+330534683,F,495,742,8.42,5,5,182,2.87,31,144,"[u'pls', u'lmao', u'luv', u'atm', u'lol', u'ur', u'til', u'lmk', u'u', u'wanna', u'shoulda']",127,183,0.0355,0.0645
+29603039,F,5157,5381,4.65,5,11,182,1.31,0,49,[],68,363,0.0232,0.1183
+2298374070,F,90,267,4.07,3,7,181,4.61,20,62,"[u'bf', u'lmao', u'fb', u'lol', u'ur', u'fml', u'lmk', u'u']",146,303,0.0111,0.0713
+349189246,M,101,259,8.03,4,6,181,0.49,48,20,"[u'uber', u'ima', u'swag', u'asap', u'cuz', u'lol', u'bro', u'goofy', u'idk', u'smh', u'wanna']",325,84,0.0147,0.088
+388043128,M,103,53,0.03,5,14,175,3.14,5,2,"[u'app', u'ur', u'u', u'congrats']",39,46,0.0824,0.2353
+3112292285,F,403,2139,37.59,4,7,173,27.36,29,40,"[u'x', u'ld', u'pls', u'thx', u'bday', u'fav', u'ur', u'lil', u'vs', u'rly', u'jk', u'u', u'nvm']",188,212,0.0925,0.1375
+3675477976,M,106,226,1.94,4,6,173,2.91,17,104,"[u'ima', u'lmao', u'lil', u'lol', u'bro', u'bday', u'u', u'idk', u'wanna']",207,191,0.0352,0.108
+6624992,M,281,209,3.22,4,19,173,1.31,4,0,"[u'pro', u'aka', u'nm', u'kinda']",48,351,0.0326,0.0501
+3067833514,M,132,153,0.94,5,5,168,0.36,20,57,"[u'lmao', u'g', u'asap', u'lol', u'bro', u'bae', u'u', u'wtf', u'smh', u'imy', u'wanna', u'buddy', u'luv']",152,126,0.0791,0.1439
+167589855,F,1349,412,1.21,5,7,167,1.97,2,82,"[u'omg', u'lol']",58,435,0.0061,0.073
+8.21E+17,M,68,43,0.63,5,7,165,1.87,16,141,"[u'ugh', u'omg', u'lmao', u'congrats', u'fav', u'lol', u'bro', u'omw', u'u']",103,97,0.11,0.245
+2165884464,F,994,1114,11.52,3,10,164,2.3,31,83,"[u'lmao', u'lil', u'gal', u'lol', u'ur', u'b4', u'r', u'u', u'smh']",129,265,0.0178,0.0914
+621388040,F,101,368,1.48,4,7,161,1.21,2,6,"[u'bro', u'wtf']",104,112,0.0648,0.1528
+438017737,F,515,660,0.85,4,9,161,1.32,13,133,"[u'omg', u'lmao', u'lol', u'hml', u'bae', u'x', u'aka', u'cutie', u'wanna', u'ily']",123,176,0.0669,0.1739
+312669197,M,585,754,8.67,4,10,160,0.89,11,26,"[u'uber', u'lmao', u'congrats', u'lol', u'bro', u'omw']",50,349,0.005,0.0426
+2296052821,F,440,350,4.39,4,7,156,0.98,18,38,"[u'ugh', u'omg', u'bff', u'nah', u'ur', u'u', u'wtf', u'cutie', u'wanna']",117,281,0.0427,0.0905
+65757522,F,350,448,4.92,4,6,151,0.22,33,112,"[u'bro', u'lmao', u'asap', u'lil', u'nah', u'smh', u'lol', u'til', u'gal', u'wtf', u'armpit']",137,260,0,0.1108
+1183360344,M,508,204,0.9,6,10,151,1.31,2,25,"[u'u', u'g']",43,354,0,0.0378
+191687585,F,278,260,1.41,4,7,146,1.93,9,23,"[u'lmao', u'lol', u'ur', u'r', u'u', u'idk']",112,121,0.2275,0.279
+769782883,F,1728,1404,20.52,4,7,142,5.9,16,83,"[u'dope', u'lol', u'bro', u'u', u'idk', u'smh', u'wanna']",121,312,0.0624,0.1617
+65790301,F,95,149,5.11,3,10,140,0.75,17,47,"[u'uber', u'omg', u'lmao', u'fav', u'lol', u'ppl', u'bro', u'bae', u'idk']",156,284,0.0182,0.0614
+1367101226,F,681,679,6.87,5,6,140,0.32,9,68,"[u'bf', u'scrub', u'lmao', u'congrats', u'lol', u'idk', u'wanna']",96,302,0.0226,0.0729
+3895635995,M,87,46,0.92,4,12,140,3.16,2,14,"[u'bae', u'omg']",52,198,0.012,0.08
+1311403220,F,420,938,10.62,4,8,138,1.82,25,31,"[u'bf', u'lmao', u'lil', u'fav', u'lol', u'ur', u'r', u'u', u'idk', u'smh', u'nvm', u'cutie', u'wanna', u'ily']",101,410,0.0059,0.0744
+7.26E+17,M,42,30,0.01,5,9,137,0,1,2,[u'u'],17,1,0.1111,0.3333
+280805057,M,1095,749,4.44,3,7,136,0.31,24,108,"[u'ima', u'bf', u'lmao', u'nah', u'lol', u'ppl', u'bro', u'idk', u'wtf', u'wanna', u'dope']",123,289,0,0.1019
+255387754,M,599,696,7.36,3,4,135,1.93,47,165,"[u'bro', u'x', u'luv', u'dope', u'lol', u'hml', u'goofy', u'u', u'idk', u'wtf', u'smh', u'omw', u'r', u'wanna']",261,175,0.0206,0.3005
+2523829678,F,447,412,2.87,5,6,131,2.43,4,10,"[u'fyi', u'bestie', u'lol', u'congrats']",87,313,0.0725,0.21
+1798825874,F,372,458,2.6,4,4,126,6.4,6,28,"[u'u', u'lmao', u'ur']",80,167,0.0202,0.2389
+8.00E+17,F,747,318,1.77,4,10,122,0.7,11,122,"[u'ima', u'ugh', u'lmao', u'nah', u'til', u'gf', u'smh', u'wanna']",112,102,0.0467,0.1121
+91632039,F,407,564,2.39,4,10,119,12.66,14,10,"[u'ugh', u'omg', u'lmao', u'ngl', u'ur', u'u', u'wanna']",52,347,0,0.0175
+1287180175,M,472,682,16.69,4,9,110,0,1,63,[u'cul'],89,308,0,0.0453
+255688564,M,2906,1637,2.74,5,18,108,11.51,0,0,[],39,361,0.0025,0.03
+534743394,M,569,60,0.16,7,11,107,1.21,0,11,[],21,388,0.0098,0.0196
+2405086729,F,1524,173,0.74,5,10,101,0.91,0,0,[],32,325,0.0252,0.0868
+350993275,F,638,1069,7.46,4,7,95,10.34,6,10,"[u'omg', u'ugh', u'wanna', u'pls', u'smh']",62,132,0.067,0.134
+1710540721,M,1183,1263,9.01,4,8,92,0.84,5,38,"[u'til', u'app', u'vs', u'g']",68,331,0.0201,0.0576
+102844990,F,308,633,10.1,4,8,89,14.73,7,27,"[u'fav', u'nah', u'omg']",38,390,0,0.0257
+1360245018,F,152,190,1.14,4,7,85,1.17,1,53,[u'wanna'],45,393,0.032,0.0639
+2978343963,M,4933,4088,4.46,5,8,78,10.14,6,13,"[u'bday', u'omg', u'u', u'lol']",35,392,0.0234,0.0445
+114622880,F,518,2269,61.42,5,4,75,25.96,1,18,[u'nah'],96,103,0.1106,0.3266
+946907978,F,380,555,21.71,4,5,62,2.13,10,41,"[u'lmao', u'ppl', u'bro', u'r', u'u', u'wanna']",56,340,0.0152,0.0732
+1628609808,F,1265,274,1.1,4,9,60,1.66,4,93,"[u'ima', u'omg', u'fav']",49,368,0.0144,0.0695
+4336465760,F,482,293,15.08,4,8,44,0.44,2,16,"[u'gf', u'pls']",26,360,0.0078,0.0181
+36165991,F,488,369,6.6,3,7,38,0.24,14,1,"[u'lmao', u'luv', u'app', u'hw', u'ur', u'gf', u'u']",52,344,0.0101,0.0581
+2188040201,F,824,220,1.85,5,3,35,0,5,53,"[u'kinda', u'luv', u'thx']",22,378,0.0025,0.0475
+3006183257,F,36,7,0,6,3,26,9.52,0,0,[],6,2,0.375,0.5
+28848909,M,1182,936,23.13,3,3,5,6.25,0,0,[],5,517,0.0019,0.0096

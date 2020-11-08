@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # initialize stream
     streamListener = StreamListener()
     stream = tweepy.Stream(auth=api.auth, listener=streamListener, tweet_mode='extended')
-    tags = ['#USElections2020']
+    tags = ['#USElections2020', "USElections", "Elections2020"]
 
     while True:
         try:
