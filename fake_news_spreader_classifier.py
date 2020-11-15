@@ -9,7 +9,6 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
@@ -63,7 +62,7 @@ def slang_count(text):
 
 # function to count RTs, User mentions, hashtags, urls
 def count_relics(text):
-    retweets = len(re.findall('#RT#', text))
+    retweets = len(re.findall('RT', text))
     user_mentions = len(re.findall('#USER#', text))
     hashtags = len(re.findall('#HASHTAG#', text))
     urls = len(re.findall('#URL#', text))
@@ -72,7 +71,7 @@ def count_relics(text):
 
 # function to clean relics of dataset
 def clean_relics(text):
-    text = re.sub(r"#RT#", "", text)
+    text = re.sub(r"RT", "", text)
     text = re.sub(r"#USER#", "", text)
     text = re.sub(r"#HASHTAG#", "", text)
     text = re.sub(r"#URL#", "", text)
@@ -94,13 +93,11 @@ def full_capitalized_count(text):
 
 
 def main():
-    data_combined = pd.read_csv("dataset/data_csv/data_combined.csv", sep=",", encoding="utf8")
-
-    print(data_combined['tweet_text'])
-
-    data_combined['avg_word_count'] = data_combined['tweet_text'].str.split().str.len() / 300
+    # data_combined = pd.read_csv("dataset/data_csv/data_combined.csv", sep=",", encoding="utf8")
+    data_combined = pd.read_csv("dataset/data_csv/LIWC2015_Results.csv", sep=",", encoding="utf8")
 
     # count various readability features
+    data_combined['avg_word_count'] = data_combined['tweet_text'].str.split().str.len() / 300
     data_combined['slang_count'] = 0
     data_combined['emoji_count'] = 0
     data_combined['capitalized_count'] = 0
@@ -125,6 +122,7 @@ def main():
     # convert to lower and remove punctuation or special characters
     data_combined['tweet_text'] = data_combined['tweet_text'].str.lower()
     data_combined['tweet_text'] = data_combined['tweet_text'].apply(cleanPunc)
+    data_combined['tweet_text'] = data_combined['tweet_text'].apply(clean_relics)
 
     print(data_combined['url_count'])
     print(data_combined.head())
@@ -135,6 +133,13 @@ def main():
          'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']]
     print(data_readability.head())
 
+    # keep only LIWC related data by dropping everything else from the data_combined df
+    data_liwc = data_combined.drop(
+        ['user_id', 'tweet_text', 'ground_truth', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count',
+         'full_capitalized_count', 'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count'], axis=1)
+
+    print(data_liwc.columns)
+
     # convert description to tf idf vector and pickle save vectorizer
     vectorizer = TfidfVectorizer(stop_words='english', max_features=10000, ngram_range=(1, 3))
     vectors = vectorizer.fit_transform(data_combined['tweet_text'])
@@ -143,20 +148,18 @@ def main():
     # save sparse tfidf vectors to dataframe to use with other features
     vectors_pd = pd.DataFrame(vectors.toarray())
 
+    print(vectors_pd)
+    print(data_liwc)
+
     # use scaler to scale our data to [0,1] range
-    scaler = MinMaxScaler()
-    data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-                      'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']] = scaler.fit_transform(
-        data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-                          'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']])
+    # scaler = MinMaxScaler()
+    # data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
+    #                  'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']] = scaler.fit_transform(
+    #    data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
+    #                      'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']])
 
     # separate our data to features/labels - X, y
-    X = pd.concat([vectors_pd, data_readability['avg_word_count'], data_readability['emoji_count'],
-                   data_readability['slang_count'], data_readability['capitalized_count'],
-                   data_readability['full_capitalized_count'], data_readability['retweets_count'],
-                   data_readability['user_mentions_count'],
-                   data_readability['hashtags_count'],
-                   data_readability['url_count']], axis=1)
+    X = pd.concat([vectors_pd, data_readability, data_liwc], axis=1)
     y = data_combined['ground_truth']
 
     print(X)
@@ -173,7 +176,8 @@ def main():
         "Decision Tree",
         "Random Forest",
         "AdaBoost",
-        "Naive Bayes"]
+        "Naive Bayes",
+        "XGBoost"]
 
     classifiers = [
         KNeighborsClassifier(),
@@ -182,7 +186,8 @@ def main():
         DecisionTreeClassifier(),
         RandomForestClassifier(),
         AdaBoostClassifier(),
-        GaussianNB()]
+        GaussianNB(),
+        XGBoost()]
 
     # try with several different classifiers to find best one
 

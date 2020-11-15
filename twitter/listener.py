@@ -4,11 +4,13 @@ import sys
 import pymongo
 import tweepy
 
+import config as cfg
+
 # Authorization tokens
-consumer_key = 'v0xKMKsBMFN5h2WUmWTG1leh8'
-consumer_secret = 'rsSy7BfKhXU61ktvbn7VF9SHbCcTNZJ65xcvYWcc8dLhzAEbuY'
-access_key = '133859328-QITghlxAxmVaDJim41H7hxmDSzTUk2pusFVPc6sS'
-access_secret = 'ZJUF0Enx27RYltuz2cB7ItFxhinBlZx38PinZqEvmae5T'
+consumer_key = cfg.consumer_key
+consumer_secret = cfg.consumer_secret
+access_key = cfg.access_key
+access_secret = cfg.access_secret
 
 # Connect to mongodb
 client = pymongo.MongoClient('localhost', 27017)

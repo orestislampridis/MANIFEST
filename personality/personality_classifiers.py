@@ -2,10 +2,7 @@ import pickle
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, hamming_loss
 from sklearn.model_selection import train_test_split
-from sklearn.multioutput import RegressorChain
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from skmultilearn.problem_transform import ClassifierChain
@@ -22,6 +19,8 @@ file_personalities = "personality-data.txt"
 
 data_tweets = pd.read_csv(file_tweets, sep=",", encoding="utf8", index_col=0)
 data_personalities = pd.read_csv(file_personalities, sep="\t", encoding="utf8", index_col=10)
+
+print(data_tweets)
 
 # Join the two dataframes together
 merged_df = pd.merge(data_tweets, data_personalities, on='twitter_uid', how='inner')

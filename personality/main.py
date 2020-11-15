@@ -2,14 +2,15 @@ import csv
 
 import pandas as pd
 import tweepy
-
-# authorization tokens
 from tweepy import TweepError
 
-consumer_key = 'v0xKMKsBMFN5h2WUmWTG1leh8'
-consumer_secret = 'rsSy7BfKhXU61ktvbn7VF9SHbCcTNZJ65xcvYWcc8dLhzAEbuY'
-access_key = '133859328-QITghlxAxmVaDJim41H7hxmDSzTUk2pusFVPc6sS'
-access_secret = 'ZJUF0Enx27RYltuz2cB7ItFxhinBlZx38PinZqEvmae5T'
+import config as cfg
+
+# authorization tokens
+consumer_key = cfg.consumer_key
+consumer_secret = cfg.consumer_secret
+access_key = cfg.access_key
+access_secret = cfg.access_secret
 
 
 def get_user_ids(api):
@@ -19,20 +20,6 @@ def get_user_ids(api):
     # screen name of the account to be fetched
     user_ids = data['twitter_uid'].tolist()
     return user_ids
-
-
-def create_separated_csv(filename, user_ids):
-    csvfile = open(filename + "_separated.csv", 'w')
-    c = csv.writer(csvfile)
-    # write the header row for CSV file
-    c.writerow(["twitter_uid",
-                "statuses"])
-    # add each member to the csv
-    for id in user_ids:
-        user_info = get_userinfo(name)
-        c.writerow(user_info)
-    # close and save the CSV
-    csvfile.close()
 
 
 def create_combined_csv(api, filename, user_ids):
