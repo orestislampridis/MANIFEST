@@ -3,6 +3,7 @@ import pickle
 import re
 
 import pandas as pd
+import xgboost as xgb
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -94,7 +95,13 @@ def full_capitalized_count(text):
 
 def main():
     # data_combined = pd.read_csv("dataset/data_csv/data_combined.csv", sep=",", encoding="utf8")
-    data_combined = pd.read_csv("dataset/data_csv/LIWC2015_Results.csv", sep=",", encoding="utf8")
+    data_liwc = pd.read_csv("dataset/data_csv/LIWC2015_Results.csv", sep=",", encoding="utf8")
+    data_personality = pd.read_csv("personality/users_with_personality.csv", sep=",", encoding="utf8")
+
+    # Join the two dataframes together
+    data_combined = pd.merge(data_liwc, data_personality, on='user_id', how='inner')
+
+    print(data_combined)
 
     # count various readability features
     data_combined['avg_word_count'] = data_combined['tweet_text'].str.split().str.len() / 300
@@ -127,16 +134,21 @@ def main():
     print(data_combined['url_count'])
     print(data_combined.head())
 
-    # keep only the columns that we need
+    # keep only the columns that we need for the readability features
     data_readability = data_combined[
         ['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
          'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']]
     print(data_readability.head())
 
+    # keep only personality data
+    data_personality = data_combined[['E', 'AVOIDANCE', 'C', 'O', 'N', 'A', 'ANXIETY']]
+    print(data_personality.head())
+
     # keep only LIWC related data by dropping everything else from the data_combined df
     data_liwc = data_combined.drop(
         ['user_id', 'tweet_text', 'ground_truth', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count',
-         'full_capitalized_count', 'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count'], axis=1)
+         'full_capitalized_count', 'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count', 'E',
+         'AVOIDANCE', 'C', 'O', 'N', 'A', 'ANXIETY'], axis=1)
 
     print(data_liwc.columns)
 
@@ -159,7 +171,7 @@ def main():
     #                      'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']])
 
     # separate our data to features/labels - X, y
-    X = pd.concat([vectors_pd, data_readability, data_liwc], axis=1)
+    X = pd.concat([vectors_pd, data_readability, data_liwc, data_personality], axis=1)
     y = data_combined['ground_truth']
 
     print(X)
@@ -187,10 +199,11 @@ def main():
         RandomForestClassifier(),
         AdaBoostClassifier(),
         GaussianNB(),
-        XGBoost()]
+        xgb.XGBClassifier(objective="binary:logistic", random_state=42)]
 
     # try with several different classifiers to find best one
 
+    best_clf = None
     best_classifier = ""
     best_accuracy = 0
 
@@ -207,6 +220,7 @@ def main():
         print("\n")
 
         if best_accuracy < accuracy_score(y_test, y_pred):
+            best_clf = clf
             best_classifier = name
             best_accuracy = accuracy_score(y_test, y_pred)
 
@@ -214,8 +228,8 @@ def main():
     print("Best accuracy:", best_accuracy)
 
     # save the model to disk
-    # filename = 'adaboost_final.sav'
-    # pickle.dump(clf, open(filename, 'wb'))
+    filename = best_classifier + '_final.sav'
+    pickle.dump(best_clf, open(filename, 'wb'))
 
     # data_combined['tweet_text'] = data_combined.tweet_text.apply(clean_text)
     # data_combined['tweet_text'] = [list2string(list) for list in data_combined['tweet_text']]

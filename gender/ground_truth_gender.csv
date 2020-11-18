@@ -1,4 +1,4 @@
-ID,Gender,Friends_count,Followers_count,Avg_Tweet,Avg_Word_length,Avg_Sentence_length,Avg_Punctuation,Avg_Capitalized_Words,Avg_Slang_words,Avg_emojis,Avg_words_found,tweets,retweets,images,urls
+twitter_uid,Gender,Friends_count,Followers_count,Avg_Tweet,Avg_Word_length,Avg_Sentence_length,Avg_Punctuation,Avg_Capitalized_Words,Avg_Slang_words,Avg_emojis,Avg_words_found,tweets,retweets,images,urls
 259065232,M,48,157,5.84,6,11,3905,3.78,10,0,"[u'uber', u'r', u'vs', u'u']",469,0,0.0021,0.0235
 2979295036,M,834,520,7.06,6,14,3289,3.43,197,477,"[u'btw', u'omg', u'buddy', u'g', u'congrats', u'fav', u'ur', u'bro', u'r', u'u', u'wtf', u'kinda', u'luv']",434,50,0.0517,0.5888
 132647115,M,380,217,0.57,5,12,3170,16.88,5,873,"[u'bro', u'x', u'r', u'u', u'lol']",300,15,0.073,0.946
