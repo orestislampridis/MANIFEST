@@ -1,6 +1,7 @@
 import re
 
 import pandas as pd
+
 from personality_features import get_lang_based_scores
 
 
@@ -13,12 +14,15 @@ def clean_relics(text):
     return text
 
 
-# read our dataset
-tweets = pd.read_csv("../dataset/data_csv/data_separated.csv", sep=",", encoding="utf8")
-tweets = tweets.drop(['ground_truth'], axis=1)
-tweets.rename(columns={'tweet_text': 'text'}, inplace=True)
+def get_personality_features(df):
+    # read our dataset
+    tweets = pd.read_csv("../dataset/data_csv/data_separated.csv", sep=",", encoding="utf8")
+    tweets = tweets.drop(['ground_truth'], axis=1)
+    tweets.rename(columns={'tweet_text': 'text'}, inplace=True)
 
-tweets['text'] = tweets['text'].apply(clean_relics)
+    tweets['text'] = tweets['text'].apply(clean_relics)
 
-users_with_personality = get_lang_based_scores(tweets)  # returns a df with user_id and personality scores
-users_with_personality.to_csv("users_with_personality.csv", index=False)
+    users_with_personality = get_lang_based_scores(tweets)  # returns a df with user_id and personality scores
+    print(users_with_personality)
+    # users_with_personality.to_csv("users_with_personality.csv", index=False)
+    return users_with_personality

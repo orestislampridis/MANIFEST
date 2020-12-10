@@ -1,5 +1,5 @@
 """
-Pre-processing for cleaning the text in the personality data
+Pre-processing for cleaning the text data
 """
 import re
 import string

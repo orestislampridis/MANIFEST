@@ -15,7 +15,7 @@ access_secret = cfg.access_secret
 # Connect to mongodb
 client = pymongo.MongoClient('localhost', 27017)
 db = client['master_thesis_db']
-collection = db['us_elections']
+collection = db['us_elections_new']
 
 
 # StreamListener class inherits from tweepy.StreamListener and overrides on_status/on_error methods.
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # complete authorization and initialize API endpoint
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_key, access_secret)
-    api = tweepy.API(auth)
+    api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
     # initialize stream
     streamListener = StreamListener()
