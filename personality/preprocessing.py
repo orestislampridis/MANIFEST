@@ -4,12 +4,9 @@ Pre-processing for cleaning the text data
 import re
 import string
 
-import nltk
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
-
-nltk.download('wordnet')
 
 
 def get_contractions():
@@ -103,12 +100,15 @@ def strip_links(text):
 
 def strip_all_entities(text):
     # delete usernames
-    text = re.sub(r'@\S+', '', text)
+    try:
+        text = re.sub(r'@\S+', '', text)
 
-    # remove punctuation from each word (Replace hashtags with space, keeping hashtag context)
-    for separator in string.punctuation:
-        if separator not in ["'"]:
-            text = text.replace(separator, '')
+        # remove punctuation from each word (Replace hashtags with space, keeping hashtag context)
+        for separator in string.punctuation:
+            if separator not in ["'"]:
+                text = text.replace(separator, '')
+    except TypeError:
+        text = ''
 
     return text
 
@@ -145,6 +145,7 @@ def clean_text(text):
     text = re.sub(r"user", "", text)
     text = re.sub(r"hashtag", "", text)
     text = re.sub(r"url", "", text)
+    text = re.sub(r"amp", "", text)
 
     # replace consecutive non-ASCII characters
     text = re.sub(r'[^\x00-\x7F]+', '', text)

@@ -1,12 +1,18 @@
 import json
+import pickle
 import re
-import sys
 
 import numpy as np
+import pandas as pd
 import tweepy
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
 
 import config as cfg
+import fake_news_spreader_feature_extraction as feature_extraction
 from Twitter_API import TwitterAPI
+from preprocessing import clean_text
 
 
 def upgrade_to_work_with_single_class(SklearnPredictor):
@@ -45,7 +51,6 @@ access_key = cfg.access_key
 access_secret = cfg.access_secret
 
 
-
 def list2string(list):
     return ','.join(map(str, list))
 
@@ -77,101 +82,88 @@ if __name__ == "__main__":
 
     twitter_api = TwitterAPI()
 
-    with open('covid_filtered_replies_tweet_ids.json', 'r') as fp:
+    with open('detailed_super_dict.json', 'r') as fp:
         data_tweet_ids = json.load(fp)
 
-    # Remove tweets that have less than 10 replies
-    for index, value in list(data_tweet_ids.items()):
-        if len(value) < 10 or len(value) > 200:
-            del data_tweet_ids[index]
-
-    no_of_replies_list = list()
-    for index, value in data_tweet_ids.items():
-        no_of_replies_list.append(len(value))
-
-    print(no_of_replies_list)
-    print(sum(no_of_replies_list) / len(no_of_replies_list))
+    """
     print(len(data_tweet_ids))
-    sys.exit()
+    seen = []
+
+    for k, val in list(data_tweet_ids.items()):
+        if val in seen:
+            del data_tweet_ids[k]
+        else:
+            seen.append(val)
+
+    for x in data_tweet_ids.items():
+        print(x)
+
+    """
+    print(len(data_tweet_ids['results']))
+
     predicted_labels = list()
     true_labels = list()
 
-    dictionary = {
-        'results': []
-    }
+    for item in data_tweet_ids['results']:
+        features_df = pd.DataFrame(columns=['user_id', 'text', 'tweet_text'])
 
-    for index, value in data_tweet_ids.items():
+        tweet_id = item['tweet_id']
+        user_id = item['user_id']
+        text = item['text']
+        tweet_text = item['tweet_text']
 
-        tweet_id = index
-        df = pd.DataFrame(columns=['user_id', 'text', 'tweet_text'])
-
-        try:
-            user_id, tweet_text = twitter_api.get_tweet_text(tweet_id)
-        except TypeError:
-            continue
-
-        print(tweet_id)
         print(user_id)
+        print(text)
         print(tweet_text)
 
-        # catch exception when user id doesn't exist
-        try:
-            # fetching the statuses
-            statuses = api.user_timeline(user_id=user_id, count=100)
-        except TweepError:
-            continue
-
-        s = """"""
-        # printing the statuses
-        for status in statuses:
-            s += status.text
-
         temp_df = pd.DataFrame({'user_id': user_id,
-                                'text': s,
+                                'text': text,
                                 'tweet_text': tweet_text}, index=[0])
 
-        df = df.append(temp_df, ignore_index=True)
+        features_df = features_df.append(temp_df, ignore_index=True)
 
-        for tweet_id in value:
+        for reply in item['replies']:
+            tweet_id = reply['tweet_id']
+            user_id = reply['user_id']
+            text = reply['text']
+            tweet_text = reply['tweet_text']
 
-            try:
-                user_id, tweet_text = twitter_api.get_tweet_text(tweet_id)
-            except TypeError:
-                continue
-
-            # print(tweet_id)
-            # print(user_id)
-            # print(tweet_text)
-
-            # catch exception when user id doesn't exist
-            try:
-                # fetching the statuses
-                statuses = api.user_timeline(user_id=user_id, count=100)
-            except TweepError:
-                continue
-
-            s = """"""
-            for status in statuses:
-                s += status.text
+            print(user_id)
+            print(text)
+            print(tweet_text)
 
             temp_df = pd.DataFrame({'user_id': user_id,
-                                    'text': s,
+                                    'text': text,
                                     'tweet_text': tweet_text}, index=[0])
 
-            df = df.append(temp_df, ignore_index=True)
-            df = df.drop_duplicates()
+            features_df = features_df.append(temp_df, ignore_index=True)
+            features_df = features_df.drop_duplicates()
 
-        data_readability = feature_extraction.get_readability_features(df)
+        print(features_df)
 
-        df['text'] = df.text.apply(clean_text)
-        df['text'] = [list2string(list) for list in df['text']]
+        # count various readability features
+        data_readability = feature_extraction.get_readability_features(features_df)
 
-        data_tfidf = feature_extraction.get_tfidf_vectors_from_pickle(df[['user_id', 'text']])
+        # get personality features
+        data_personality = feature_extraction.get_personality_features(features_df)
+
+        # convert to lower and remove punctuation or special characters
+        features_df['text'] = features_df['text'].str.lower()
+        features_df['text'] = features_df['text'].apply(cleanPunc)
+        features_df['text'] = features_df['text'].apply(clean_relics)
+
+        # get sentiment features from cleaned text
+        data_sentiment = feature_extraction.get_sentiment_features(features_df)
+
+        # get gender features from cleaned text
+        data_gender = feature_extraction.get_gender_features(features_df)
+
+        data_tfidf = feature_extraction.get_tf_idf_features(features_df[['user_id', 'text']])
 
         i = 0
         features = list()
-
-        features.append([data_tfidf, data_readability])
+        features.append(
+            [data_tfidf, data_readability, data_sentiment, data_personality, data_gender])
 
         for feature_combination in features:
             features = pd.concat([i.set_index('user_id') for i in feature_combination], axis=1, join='outer')
@@ -183,9 +175,9 @@ if __name__ == "__main__":
             clf = pickle.load(open(filename, 'rb'))
 
             y = clf.predict(X)
-            df['label'] = y
+            features_df['label'] = y
 
-            final_df = (df[['tweet_text', 'label']])
+            final_df = (features_df[['tweet_text', 'label']])
 
             print(final_df)
 

@@ -7,12 +7,7 @@ import requests
 import config as cfg
 
 
-class TwitterAPI:
-    """
-    Class that connects to a Twitter developer account and fetches data via the API
-    """
-    api = None
-    auth = None
+class LimeTabularExplainer:
 
     def __init__(self):
         self.token = cfg.bearer_token
@@ -22,7 +17,7 @@ class TwitterAPI:
         headers = {"Authorization": '%s %s' % (self.prefix, self.token)}
 
         # By default, the endpoint only returns id and text
-        params = 'expansions=author_id'
+        params = ''
 
         retries = 1
         success = False
@@ -30,20 +25,12 @@ class TwitterAPI:
             try:
                 response = requests.get("https://api.twitter.com/2/tweets/" + str(tweet_id),
                                         params=params, headers=headers)
-                print(response)
-
-                if response.status_code == 429:
-                    wait = 60
-                    print('Too many requests! Waiting %s secs and re-trying...' % wait)
-                    time.sleep(wait)
-                    continue
+                # print(response)
 
                 success = True
                 try:
-                    print(response.json())
-                    author_id = response.json()['data']['author_id']
                     text = response.json()['data']['text']
-                    return author_id, text
+                    return text
                 except KeyError:
                     logging.info("Tweet doesn't exist anymore")
                     return None

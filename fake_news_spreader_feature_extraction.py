@@ -3,9 +3,13 @@ import os
 import pickle
 import re
 
+import emoji
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
+from textblob import TextBlob
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+from emotion.EmojiEmotionFeature import EmojiEmotionFeature
 from personality_features import get_lang_based_scores
 
 __location__ = os.path.realpath(
@@ -41,6 +45,18 @@ def emoji_count(text):
     return counter
 
 
+# function to count negation words
+def negation(tokens: list):
+    negations = ["not", "no"]
+    negative = 0
+
+    for token in tokens:
+        if token in negations:
+            negative = 1
+
+    return negative
+
+
 # function to count slang words
 def slang_count(text):
     slang_data = []
@@ -57,6 +73,57 @@ def slang_count(text):
             if slang == word:
                 counter += 1
     return counter
+
+
+def demoji(tokens):
+    """
+    This function describes each emoji with a text that can be later used for vectorization and ML predictions
+    :param tokens:
+    :return:
+    """
+    emoji_description = []
+    for token in tokens:
+        detect = emoji.demojize(token)
+        emoji_description.append(detect)
+    return emoji_description
+
+
+def get_emotion(doc):
+    """
+    This method used to detect emoji. All the emoji are separating in 4 categories anger, fear, joy, sadness and
+    all of the detected emoji add a value to their category.
+    :param doc: Array of string tokens
+    :return: anger, fear, joy, sadness average value
+    """
+    emoji_emo = EmojiEmotionFeature()
+    emojies = demoji(doc)
+    emoji_emotion_values = []
+    for e in emojies:
+        if emoji_emo.is_emoji_name_like(e):
+
+            if emoji_emo.exists_emoji_name(e):
+                emotions = emoji_emo.emotions_of_emoji_named(e)
+                emoji_emotion_values.append(emotions)
+
+    if len(emoji_emotion_values) > 0:
+        anger_total = 0
+        fear_total = 0
+        joy_total = 0
+        sadness_total = 0
+
+        for emotions in emoji_emotion_values:
+            anger_total += emotions[0]
+            fear_total += emotions[1]
+            joy_total += emotions[2]
+            sadness_total += emotions[3]
+
+        anger = anger_total / len(emoji_emotion_values)
+        fear = fear_total / len(emoji_emotion_values)
+        joy = joy_total / len(emoji_emotion_values)
+        sadness = sadness_total / len(emoji_emotion_values)
+
+        return anger, fear, joy, sadness
+    return 0, 0, 0, 0
 
 
 # function to count RTs, User mentions, hashtags, urls
@@ -176,3 +243,56 @@ def get_gender_features(df):
     df['gender'] = y
 
     return df[['user_id', 'gender']]
+
+
+def get_sentiment_features(df):
+    vader = SentimentIntensityAnalyzer()
+
+    df['anger'] = 0
+    df['fear'] = 0
+    df['joy'] = 0
+    df['sadness'] = 0
+    df['negation'] = 0
+    df['vader_score'] = 0
+    df['textblob_score'] = 0
+
+    vader_score = []
+    textblob_score = []
+
+    for i in range(0, len(df)):
+        df['anger'], df['fear'], df['joy'], df['sadness'] = get_emotion(df['text'].iloc[i])
+        df['negation'] = negation(df['text'].iloc[i])
+        k = vader.polarity_scores(df['text'].iloc[i])
+        l = TextBlob(df['text'].iloc[i]).sentiment
+
+        vader_score.append(k)
+        textblob_score.append(l)
+
+    vader_compound_score = pd.DataFrame.from_dict(vader_score)
+    textblob_polarity_score = pd.DataFrame.from_dict(textblob_score)
+
+    df['vader_compound_score'] = vader_compound_score['compound']
+    df['textblob_polarity_score'] = textblob_polarity_score['polarity']
+
+    return df[['user_id', 'anger', 'fear', 'joy', 'sadness', 'negation',
+               'vader_compound_score', 'textblob_polarity_score']]
+
+
+def get_tf_idf_features(df):
+    vectorizer = pickle.load(open("tfidf_fake_news.pkl", "rb"))
+
+    vectors = vectorizer.transform(df['text'])
+
+    # save sparse tfidf vectors to dataframe to use with other features
+    vectors_pd = pd.DataFrame(vectors.toarray())
+    X = pd.concat([vectors_pd], axis=1)
+
+    # load gender classifier
+    filename = 'models/XGBoost_tfidf_0.6933333333333334.sav'
+    clf = pickle.load(open(filename, 'rb'))
+
+    y = clf.predict(X)
+    print(y)
+    df['tf_idf'] = y
+
+    return df[['user_id', 'tf_idf']]

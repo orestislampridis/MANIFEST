@@ -15,7 +15,7 @@ access_secret = cfg.access_secret
 # Connect to mongodb
 client = pymongo.MongoClient('localhost', 27017)
 db = client['master_thesis_db']
-collection = db['us_elections_new']
+collection = db['covid_19']
 
 
 # StreamListener class inherits from tweepy.StreamListener and overrides on_status/on_error methods.
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # initialize stream
     streamListener = StreamListener()
     stream = tweepy.Stream(auth=api.auth, listener=streamListener, tweet_mode='extended')
-    tags = ['#USElections2020', "USElections", "Elections2020"]
+    tags = ['coronavirus', "covid", "covid19"]
 
     while True:
         try:
