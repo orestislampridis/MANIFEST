@@ -4,26 +4,25 @@ import re
 import numpy as np
 import pandas as pd
 import xgboost as xgb
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.model_selection import LeaveOneOut, cross_val_score
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 
 import fake_news_spreader_feature_extraction as feature_extraction
+# function to clean relics of dataset
+from preprocessing import clean_text
 
 
 # function to clean the word of any punctuation or special characters
 # we keep slang and emojis as they might aid in differentiating between fake and real news spreaders
-# TODO: improve text preprocessing
-def cleanPunc(sentence):
-    cleaned = re.sub(r'[?|!|\'|"|#]', r'', sentence)
-    cleaned = re.sub(r'[.|,|)|(|\|/]', r' ', cleaned)
-    cleaned = cleaned.strip()
-    cleaned = cleaned.replace("\n", " ")
-    return cleaned
 
 
-# function to clean relics of dataset
 def clean_relics(text):
     text = re.sub(r"RT", "", text)
+    text = re.sub(r"rt", "", text)
     text = re.sub(r"#USER#", "", text)
     text = re.sub(r"#HASHTAG#", "", text)
     text = re.sub(r"#URL#", "", text)
@@ -39,9 +38,8 @@ def main():
         ['text', 'ground_truth'], axis=1)
 
     # convert to lower and remove punctuation or special characters
-    data_combined['text'] = data_combined['text'].str.lower()
-    data_combined['text'] = data_combined['text'].apply(cleanPunc)
     data_combined['text'] = data_combined['text'].apply(clean_relics)
+    data_combined['text'] = data_combined['text'].apply(clean_text)
 
     data_tfidf = feature_extraction.get_tfidf_vectors(data_combined[['user_id', 'text']])
 
@@ -67,23 +65,23 @@ def main():
 
         # try many classifiers to find the best performing
         names = [
-            # "Nearest Neighbors",
-            # "Linear SVC",
-            # "RBF SVM",
-            # "Decision Tree",
+            "Nearest Neighbors",
+            "Linear SVC",
+            "RBF SVM",
+            "Decision Tree",
             "Random Forest",
-            # "AdaBoost",
-            # "Naive Bayes",
+            "AdaBoost",
+            "Naive Bayes",
             "XGBoost"]
 
         classifiers = [
-            # KNeighborsClassifier(),
-            # SVC(kernel="linear", C=0.025),
-            # SVC(gamma=2, C=1),
-            # DecisionTreeClassifier(),
+            KNeighborsClassifier(),
+            SVC(kernel="linear", C=0.025),
+            SVC(gamma=2, C=1),
+            DecisionTreeClassifier(),
             RandomForestClassifier(),
-            # AdaBoostClassifier(),
-            # GaussianNB(),
+            AdaBoostClassifier(),
+            GaussianNB(),
             xgb.XGBClassifier(objective="binary:logistic", random_state=42)]
 
         # try with several different classifiers to find best one
@@ -104,8 +102,6 @@ def main():
             cv_accuracy = np.mean(scores)
 
             print("Cross validation accuracy:", cv_accuracy)
-            print("Cross validation standard deviation:", cv_std)
-
             print("\n")
 
             if best_accuracy < cv_accuracy:
@@ -117,7 +113,7 @@ def main():
         print("Best accuracy: \n", best_accuracy)
 
         # save the model to disk
-        filename = 'models/' + str(best_classifier) + '_' + str(feature_names[i]) + '_' + str(
+        filename = 'models/tf_idf_classifer_' + str(best_classifier) + '_' + str(
             best_accuracy) + '.sav'
         pickle.dump(best_clf, open(filename, 'wb'))
         i += 1

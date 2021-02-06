@@ -2,12 +2,17 @@ import pickle
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
+from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.model_selection import LeaveOneOut, cross_val_score
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from xgboost import XGBClassifier
 
 
 def main():
-    df = pd.read_csv("complete_features_with_labels_and_ids", sep=",", encoding="utf8")
+    df = pd.read_csv("final_complete_features_with_labels_and_ids", sep=",", encoding="utf8")
 
     data_tfidf = df[['user_id', 'tf_idf']]
     data_readability = df[
@@ -29,8 +34,8 @@ def main():
         # "tfidf",
         # "tfidf_readability",
         # "tfidf_readability_sentiment",
-        "tfidf_readability_sentiment_personality_gender",
-        # "tfidf_readability_sentiment_liwc_personality_gender",
+        # "tfidf_readability_sentiment_personality_gender",
+        "tfidf_readability_sentiment_liwc_personality_gender",
         # "tfidf_readability_sentiment",
         # "tfidf_readability_sentiment_personality",
         # "tfidf_readability_sentiment_gender",
@@ -43,9 +48,9 @@ def main():
     # features.append([data_tfidf])
     # features.append([data_tfidf, data_readability, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
-    features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
-    # features.append(
-    #    [data_tfidf, data_readability, data_sentiment, data_liwc, data_personality, data_gender, data_ground_truth])
+    # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
+    features.append(
+        [data_tfidf, data_readability, data_sentiment, data_liwc, data_personality, data_gender, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_gender, data_ground_truth])
@@ -70,25 +75,27 @@ def main():
 
         # try many classifiers to find the best performing
         names = [
-            # "Nearest Neighbors",
-            # "Linear SVC",
-            # "RBF SVM",
-            # "Decision Tree",
+            "Nearest Neighbors",
+            "SVM",
+            "Decision Tree",
             "Random Forest"
-            # "AdaBoost",
-            # "Naive Bayes",
-            # "XGBoost"
+            "AdaBoost",
+            "Multinomial Naive Bayes",
+            "Logistic Regression"
+            "Gradient Boosting"
+            "XGBoost"
         ]
 
         classifiers = [
-            # KNeighborsClassifier(),
-            # SVC(kernel="linear", C=0.025),
-            # SVC(gamma=2, C=1),
-            # DecisionTreeClassifier(),
-            RandomForestClassifier()
-            # AdaBoostClassifier(),
-            # GaussianNB(),
-            # xgb.XGBClassifier(objective="binary:logistic", random_state=42)
+            KNeighborsClassifier(),
+            SGDClassifier(),
+            DecisionTreeClassifier(),
+            RandomForestClassifier(),
+            AdaBoostClassifier(),
+            MultinomialNB(),
+            LogisticRegression(),
+            GradientBoostingClassifier(),
+            XGBClassifier(objective="binary:logistic", random_state=42)
         ]
 
         best_clf = None
