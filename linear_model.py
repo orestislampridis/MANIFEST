@@ -27,7 +27,6 @@ def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
         if idx == 0:
             writer.writerow(["idx", "tweet_text", "lr_pred", "bb_pred", "replies"])
 
-        print(tweet_text)
         writer.writerow([idx, tweet_text, predicted_labels, true_labels, replies])
 
 
