@@ -1,17 +1,10 @@
 import csv
-import warnings
-
-from pandas.core.common import SettingWithCopyWarning
-
-warnings.simplefilter(action='ignore', category=FutureWarning)
-warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
-warnings.simplefilter(action='ignore', category=UserWarning)
-
 import json
 import pickle
-import re
+import warnings
 
 import pandas as pd
+from pandas.core.common import SettingWithCopyWarning
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -19,26 +12,9 @@ from sklearn.metrics import accuracy_score
 import fake_news_spreader_feature_extraction as feature_extraction
 from preprocessing import clean_text
 
-
-def list2string(list):
-    return ','.join(map(str, list))
-
-
-def cleanPunc(sentence):
-    cleaned = re.sub(r'[?|!|\'|"|#]', r'', sentence)
-    cleaned = re.sub(r'[.|,|)|(|\|/]', r' ', cleaned)
-    cleaned = cleaned.strip()
-    cleaned = cleaned.replace("\n", " ")
-    return cleaned
-
-
-# function to clean relics of dataset
-def clean_relics(text):
-    text = re.sub(r"RT", "", text)
-    text = re.sub(r"#USER#", "", text)
-    text = re.sub(r"#HASHTAG#", "", text)
-    text = re.sub(r"#URL#", "", text)
-    return text
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
 
 
 def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
