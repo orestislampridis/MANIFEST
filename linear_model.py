@@ -1,3 +1,4 @@
+import csv
 import warnings
 
 from pandas.core.common import SettingWithCopyWarning
@@ -40,28 +41,31 @@ def clean_relics(text):
     return text
 
 
+def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
+    """
+        Creates csv with results for further analysis
+        :return:
+        """
+    with open('output/' + dataset_name + '_' + 'results' + '.csv', mode='a', encoding="utf-8") as file:
+        writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        if idx == 0:
+            writer.writerow(["idx", "tweet_text", "lr_pred", "bb_pred", "replies"])
+
+        print(tweet_text)
+        writer.writerow([idx, tweet_text, predicted_labels, true_labels, replies])
+
+
 if __name__ == "__main__":
+
+    dataset_name = 'us_elections'
     with open('dataset/replies_dataset/detailed_super_dict.json', 'r') as fp:
         data_tweet_ids = json.load(fp)
 
-    """
-    print(len(data_tweet_ids))
-    seen = []
-
-    for k, val in list(data_tweet_ids.items()):
-        if val in seen:
-            del data_tweet_ids[k]
-        else:
-            seen.append(val)
-
-    for x in data_tweet_ids.items():
-        print(x)
-
-    """
     print(len(data_tweet_ids['results']))
 
     predicted_labels = list()
     true_labels = list()
+    idx = 0
 
     for item in data_tweet_ids['results']:
         features_df = pd.DataFrame(columns=['user_id', 'text', 'tweet_text'])
@@ -99,17 +103,16 @@ if __name__ == "__main__":
         # get personality features
         data_personality = feature_extraction.get_personality_features(features_df)
 
-        # convert to lower and remove punctuation or special characters
-        features_df['text'] = features_df['text'].str.lower()
-        features_df['text'] = features_df['text'].apply(cleanPunc)
-        features_df['text'] = features_df['text'].apply(clean_relics)
-
-        # get sentiment features from cleaned text
+        # get sentiment features
         data_sentiment = feature_extraction.get_sentiment_features(features_df)
+
+        # apply all pre-processing steps
+        features_df['text'] = features_df['text'].apply(clean_text)
 
         # get gender features from cleaned text
         data_gender = feature_extraction.get_gender_features(features_df)
 
+        # get tf-idf label
         data_tfidf = feature_extraction.get_tf_idf_features(features_df[['user_id', 'text']])
 
         i = 0
@@ -123,7 +126,7 @@ if __name__ == "__main__":
             X = features
 
             # load fake news spreader classifier
-            filename = "classifiers/fake_news/XGBoost_tfidf_readability_sentiment_personality_gender_0.87.sav"
+            filename = "classifiers/fake_news/Random Forest_tfidf_readability_sentiment_personality_gender_0.8200000000000001.sav"
             clf = pickle.load(open(filename, 'rb'))
 
             y = clf.predict(X)
@@ -131,8 +134,9 @@ if __name__ == "__main__":
 
             final_df = (features_df[['tweet_text', 'label']])
 
+            print(final_df['tweet_text'])
             final_df['tweet_text'] = final_df.tweet_text.apply(clean_text)
-            final_df['tweet_text'] = [list2string(list) for list in final_df['tweet_text']]
+            print(final_df['tweet_text'])
 
             instance_df = final_df.loc[[0]]
             final_df = final_df.iloc[1:]
@@ -174,11 +178,14 @@ if __name__ == "__main__":
 
             y_instance = clf.predict(instance_vector)[0]
             y_proba = clf.predict_proba(instance_vector)[0]
+            no_of_replies = len(item['replies'])
 
+            print(idx)
             print(instance_tweet_text)
             print('BB prediction:', true_label)
             print('LR prediction:', y_instance)
             print('with probability: :', y_proba[y_instance])
+            print('number of replies: :', no_of_replies)
 
             # Print the weights assigned by the linear model for each word/feature in the instance to explain
             weights = clf.coef_
@@ -194,10 +201,11 @@ if __name__ == "__main__":
             model_weights['words'] = model_weights['features'].map(inv_map)
             print(model_weights.head(n=20))
 
+            create_csv(idx, instance_tweet_text, y_instance, true_label, no_of_replies)
+            # final_df.to_csv('tweets_replies_labels.csv', mode='a', header=True)
+            idx += 1
             predicted_labels.append(y_instance)
             true_labels.append(true_label)
-
-            # final_df.to_csv('tweets_replies_labels.csv', mode='a', header=True)
 
     print(len(predicted_labels))
     print(predicted_labels)

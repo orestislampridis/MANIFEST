@@ -1,14 +1,16 @@
 import pickle
+import warnings
 
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
-from sklearn.linear_model import LogisticRegression, SGDClassifier
-from sklearn.model_selection import LeaveOneOut, cross_val_score
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import SGDClassifier
+from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
+
+warnings.filterwarnings('ignore')
 
 
 def main():
@@ -29,13 +31,18 @@ def main():
          'gender', 'ground_truth'], axis=1)
     data_ground_truth = df[['user_id', 'ground_truth']]
 
+    print(data_sentiment['anger'].sort_values(ascending=False, kind='quicksort'))
+    print(data_sentiment['fear'].sort_values(ascending=False, kind='quicksort'))
+    print(data_sentiment['joy'].sort_values(ascending=False, kind='quicksort'))
+    print(data_sentiment['sadness'].sort_values(ascending=False, kind='quicksort'))
+
     i = 0
     feature_names = [
         # "tfidf",
         # "tfidf_readability",
         # "tfidf_readability_sentiment",
-        # "tfidf_readability_sentiment_personality_gender",
-        "tfidf_readability_sentiment_liwc_personality_gender",
+        "tfidf_readability_sentiment_personality_gender",
+        # "tfidf_readability_sentiment_liwc_personality_gender",
         # "tfidf_readability_sentiment",
         # "tfidf_readability_sentiment_personality",
         # "tfidf_readability_sentiment_gender",
@@ -48,9 +55,9 @@ def main():
     # features.append([data_tfidf])
     # features.append([data_tfidf, data_readability, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
-    # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
-    features.append(
-        [data_tfidf, data_readability, data_sentiment, data_liwc, data_personality, data_gender, data_ground_truth])
+    features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
+    # features.append(
+    #    [data_tfidf, data_readability, data_sentiment, data_liwc, data_personality, data_gender, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_ground_truth])
     # features.append([data_tfidf, data_readability, data_sentiment, data_gender, data_ground_truth])
@@ -69,7 +76,9 @@ def main():
         X = features.drop(['ground_truth'], axis=1).reset_index(drop=True)
         y = features[['ground_truth']].values.ravel()
         print(X)
-
+        print(y)
+        print(X.shape)
+        print(y.shape)
         # train-test split
         # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -78,11 +87,11 @@ def main():
             "Nearest Neighbors",
             "SVM",
             "Decision Tree",
-            "Random Forest"
+            "Random Forest",
             "AdaBoost",
-            "Multinomial Naive Bayes",
-            "Logistic Regression"
-            "Gradient Boosting"
+            # "Multinomial Naive Bayes",
+            # "Logistic Regression",
+            "Gradient Boosting",
             "XGBoost"
         ]
 
@@ -92,8 +101,8 @@ def main():
             DecisionTreeClassifier(),
             RandomForestClassifier(),
             AdaBoostClassifier(),
-            MultinomialNB(),
-            LogisticRegression(),
+            # MultinomialNB(),
+            # LogisticRegression(),
             GradientBoostingClassifier(),
             XGBClassifier(objective="binary:logistic", random_state=42)
         ]
@@ -103,23 +112,20 @@ def main():
         best_accuracy = 0
 
         for clf, name in zip(classifiers, names):
-
             print("Classifier:", name)
-            clf.fit(X, y)
 
-            loo = LeaveOneOut()
-            scores = cross_val_score(clf, X, y, scoring='accuracy', cv=loo)
-
-            print(np.shape(scores))
-            # cv_std = np.std(scores)
-            cv_accuracy = np.mean(scores)
-
-            print("Leave one out cross validation accuracy:", cv_accuracy)
-            # print("Cross validation standard deviation:", cv_std)
-
-            print("\n")
+            accuracy = cross_val_score(clf, X, y, scoring='accuracy', cv=10)
+            print('Accuracy', np.mean(accuracy))
+            recall = cross_val_score(clf, X, y, scoring='recall', cv=10)
+            print('Recall', np.mean(recall))
+            precision = cross_val_score(clf, X, y, cv=10, scoring='precision')
+            print('Precision', np.mean(precision))
+            f1 = cross_val_score(clf, X, y, cv=10, scoring='f1')
+            print('F1', np.mean(f1))
+            cv_accuracy = np.mean(accuracy)
 
             if best_accuracy <= cv_accuracy:
+                clf.fit(X, y)
                 best_clf = clf
                 best_classifier = name
                 best_accuracy = cv_accuracy

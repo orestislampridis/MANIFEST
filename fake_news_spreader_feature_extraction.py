@@ -122,11 +122,6 @@ def get_emotion(doc):
         joy = joy_total / len(emoji_emotion_values)
         sadness = sadness_total / len(emoji_emotion_values)
 
-        print(anger)
-        print(fear)
-        print(joy)
-        print(sadness)
-
         return anger, fear, joy, sadness
     return 0, 0, 0, 0
 
@@ -165,7 +160,7 @@ def full_capitalized_count(text):
 
 def get_tfidf_vectors(df):
     # convert description to tf idf vector and pickle save vectorizer
-    vectorizer = TfidfVectorizer(stop_words='english', max_features=10000, ngram_range=(1, 3), min_df=0.01, max_df=0.90)
+    vectorizer = TfidfVectorizer(stop_words='english', max_features=1000, ngram_range=(1, 3), min_df=0.01, max_df=0.90)
     vectors = vectorizer.fit_transform(df['text'])
     pickle.dump(vectorizer, open("tfidf_fake_news.pkl", "wb"))  # save tfidf vector
 
@@ -237,7 +232,7 @@ def get_gender_features(df):
     X = pd.concat([vectors_pd, data_readability], axis=1)
 
     # load gender classifier
-    filename = './gender/Random Forest_0.7017543859649122_final.sav'
+    filename = './gender/XGBoost_0.7426900584795322_final.sav'
     clf = pickle.load(open(filename, 'rb'))
 
     y = clf.predict(X)
@@ -294,7 +289,7 @@ def get_tf_idf_features(df):
     X = pd.concat([vectors_pd], axis=1)
 
     # load stored tf-idf classifier
-    filename = 'models/tf_idf_classifer_Random Forest_0.71.sav'
+    filename = 'models/tf_idf_classifier_Naive Bayes_0.7733333333333333.sav'
     clf = pickle.load(open(filename, 'rb'))
 
     y = clf.predict(X)

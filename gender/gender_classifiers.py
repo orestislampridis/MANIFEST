@@ -80,6 +80,9 @@ best_clf = None
 for clf, name in zip(classifiers, names):
 
     print("Classifier:", name)
+    print(X_train)
+    print(y_train)
+
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
 

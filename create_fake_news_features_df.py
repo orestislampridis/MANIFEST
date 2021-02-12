@@ -21,12 +21,17 @@ def main():
     # get personality features
     data_personality = feature_extraction.get_personality_features(data_combined)
 
+    # get sentiment features
+    data_sentiment = feature_extraction.get_sentiment_features(data_combined)
+
+    print(data_sentiment['anger'])
+    print(data_sentiment['fear'])
+    print(data_sentiment['joy'])
+    print(data_sentiment['sadness'])
+
     # convert to lower and remove punctuation or special characters
     data_combined['text'] = data_combined['text'].apply(clean_relics)
     data_combined['text'] = data_combined['text'].apply(clean_text)
-
-    # get sentiment features from cleaned text
-    data_sentiment = feature_extraction.get_sentiment_features(data_combined)
 
     # get gender features from cleaned text
     data_gender = feature_extraction.get_gender_features(data_combined)

@@ -1,5 +1,4 @@
 import json
-import re
 
 import tweepy
 from tweepy import TweepError
@@ -12,28 +11,6 @@ consumer_key = cfg.consumer_key
 consumer_secret = cfg.consumer_secret
 access_key = cfg.access_key
 access_secret = cfg.access_secret
-
-
-def list2string(list):
-    return ','.join(map(str, list))
-
-
-def cleanPunc(sentence):
-    cleaned = re.sub(r'[?|!|\'|"|#]', r'', sentence)
-    cleaned = re.sub(r'[.|,|)|(|\|/]', r' ', cleaned)
-    cleaned = cleaned.strip()
-    cleaned = cleaned.replace("\n", " ")
-    return cleaned
-
-
-# function to clean relics of dataset
-def clean_relics(text):
-    text = re.sub(r"RT", "", text)
-    text = re.sub(r"#USER#", "", text)
-    text = re.sub(r"#HASHTAG#", "", text)
-    text = re.sub(r"#URL#", "", text)
-    return text
-
 
 if __name__ == "__main__":
     # authorization of consumer key and consumer secret
