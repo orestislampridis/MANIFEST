@@ -3,126 +3,127 @@ import warnings
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
-from sklearn.linear_model import SGDClassifier
-from sklearn.model_selection import cross_val_score
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import cross_val_score, train_test_split
+
+from utils import random_search, grid_search
 
 warnings.filterwarnings('ignore')
 
 
 def main():
-    df = pd.read_csv("final_complete_features_with_labels_and_ids", sep=",", encoding="utf8")
+    df = pd.read_csv("scaled_final_complete_features_with_labels_and_ids", sep=",", encoding="utf8")
 
-    data_tfidf = df[['user_id', 'tf_idf']]
+    data_tfidf = df[[str(x) for x in range(1000)]]
     data_readability = df[
-        ['user_id', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
+        ['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
          'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']]
     data_sentiment = df[
-        ['user_id', 'anger', 'fear', 'joy', 'sadness', 'negation', 'vader_compound_score', 'textblob_polarity_score']]
-    data_personality = df[['user_id', 'E', 'AVOIDANCE', 'C', 'O', 'N', 'A', 'ANXIETY']]
-    data_gender = df[['user_id', 'gender']]
-    data_liwc = df.drop(
-        ['tf_idf', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-         'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count', 'anger', 'fear', 'joy', 'sadness',
-         'negation', 'vader_compound_score', 'textblob_polarity_score', 'E', 'AVOIDANCE', 'C', 'O', 'N', 'A', 'ANXIETY',
-         'gender', 'ground_truth'], axis=1)
-    data_ground_truth = df[['user_id', 'ground_truth']]
-
-    print(data_sentiment['anger'].sort_values(ascending=False, kind='quicksort'))
-    print(data_sentiment['fear'].sort_values(ascending=False, kind='quicksort'))
-    print(data_sentiment['joy'].sort_values(ascending=False, kind='quicksort'))
-    print(data_sentiment['sadness'].sort_values(ascending=False, kind='quicksort'))
+        ['anger', 'fear', 'joy', 'sadness', 'negation', 'vader_compound_score', 'textblob_polarity_score']]
+    data_personality = df[['extraversion', 'avoidance', 'conscientiousness', 'openness', 'neuroticism',
+                           'agreeableness', 'anxiety']]
+    data_gender = df[['gender']]
+    data_liwc = df[['Analytic', 'Clout', 'Authentic', 'Tone']]
+    data_ground_truth = df[['ground_truth']]
 
     i = 0
     feature_names = [
-        # "tfidf",
-        # "tfidf_readability",
-        # "tfidf_readability_sentiment",
-        "tfidf_readability_sentiment_personality_gender",
-        # "tfidf_readability_sentiment_liwc_personality_gender",
-        # "tfidf_readability_sentiment",
-        # "tfidf_readability_sentiment_personality",
-        # "tfidf_readability_sentiment_gender",
-        # "readability_sentiment_personality_gender",
-        # "readability_sentiment_personality",
-        # "readability_sentiment_gender"
+        "phase_C_tfidf_readability_sentiment_personality_gender",
+        # "explanations_readability_sentiment_personality_gender",
+        # "explanations_readability_sentiment_personality_gender_liwc"
     ]
 
     features = list()
-    # features.append([data_tfidf])
-    # features.append([data_tfidf, data_readability, data_ground_truth])
-    # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
     features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
-    # features.append(
-    #    [data_tfidf, data_readability, data_sentiment, data_liwc, data_personality, data_gender, data_ground_truth])
-    # features.append([data_tfidf, data_readability, data_sentiment, data_ground_truth])
-    # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_ground_truth])
-    # features.append([data_tfidf, data_readability, data_sentiment, data_gender, data_ground_truth])
     # features.append([data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
-    # features.append([data_readability, data_sentiment, data_personality, data_ground_truth])
-    # features.append([data_readability, data_sentiment, data_gender, data_ground_truth])
+    # features.append([data_readability, data_sentiment, data_personality, data_gender, data_liwc, data_ground_truth])
 
     for feature_combination in features:
         print("feature_combination: " + str(feature_names[i]))
 
-        features = pd.concat([i.set_index('user_id') for i in feature_combination], axis=1, join='outer')
+        features = pd.concat([i for i in feature_combination], axis=1)
 
-        print(features)
+        # print(features)
         features.to_csv('features_with_labels_and_ids')
 
         X = features.drop(['ground_truth'], axis=1).reset_index(drop=True)
         y = features[['ground_truth']].values.ravel()
-        print(X)
-        print(y)
-        print(X.shape)
-        print(y.shape)
+        # print(X)
+        # print(y)
+        # print(X.shape)
+        # print(y.shape)
+
         # train-test split
-        # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
         # try many classifiers to find the best performing
-        names = [
-            "Nearest Neighbors",
+        clf_names = [
+            # "knn",
+            # "Naive Bayes",
+            "Logistic Regression",
             "SVM",
-            "Decision Tree",
             "Random Forest",
-            "AdaBoost",
-            # "Multinomial Naive Bayes",
-            # "Logistic Regression",
-            "Gradient Boosting",
-            "XGBoost"
-        ]
-
-        classifiers = [
-            KNeighborsClassifier(),
-            SGDClassifier(),
-            DecisionTreeClassifier(),
-            RandomForestClassifier(),
-            AdaBoostClassifier(),
-            # MultinomialNB(),
-            # LogisticRegression(),
-            GradientBoostingClassifier(),
-            XGBClassifier(objective="binary:logistic", random_state=42)
+            "Gradient Boosting"
         ]
 
         best_clf = None
         best_classifier = ""
         best_accuracy = 0
 
-        for clf, name in zip(classifiers, names):
+        for name in clf_names:
             print("Classifier:", name)
 
+            # Perform random search or grid search for each clf to find the best hyper-parameters
+            if name == "KNN":
+                clf = random_search.get_knn_random_grid(X_train, y_train)
+
+            if name == "Naive Bayes":
+                clf = random_search.get_NB_random_grid(X_train, y_train)
+
+            if name == "Logistic Regression":
+                # clf = random_search.get_logistic_regression_random_grid(X_train, y_train)
+                clf = grid_search.get_logistic_regression_grid_search(X_train, y_train)
+
+            if name == "SVM":
+                # clf = random_search.get_SVM_random_grid(X_train, y_train)
+                clf = grid_search.get_SVM_grid_search(X_train, y_train)
+
+            if name == "Random Forest":
+                # clf = random_search.get_random_forest_random_grid(X_train, y_train)
+                clf = grid_search.get_random_forest_grid_search(X_train, y_train)
+
+            if name == "Gradient Boosting":
+                # clf = random_search.get_gradient_boosting_random_grid(X_train, y_train)
+                clf = grid_search.get_gradient_boosting_grid_search(X_train, y_train)
+
+            clf.fit(X_train, y_train)
+            y_preds = clf.predict(X_test)
+
+            # Training accuracy
+            print("The training accuracy is: ")
+            print(accuracy_score(y_train, clf.predict(X_train)))
+
+            # Test accuracy
+            print("The test accuracy is: ")
+            print(accuracy_score(y_test, y_preds))
+
+            # Classification report
+            print("Classification report")
+            print(classification_report(y_test, y_preds))
+
+            # Cross validation scoring
+            print("Cross validation scoring")
             accuracy = cross_val_score(clf, X, y, scoring='accuracy', cv=10)
-            print('Accuracy', np.mean(accuracy))
-            recall = cross_val_score(clf, X, y, scoring='recall', cv=10)
-            print('Recall', np.mean(recall))
+            print('Accuracy:', np.mean(accuracy))
             precision = cross_val_score(clf, X, y, cv=10, scoring='precision')
-            print('Precision', np.mean(precision))
+            print('Precision:', np.mean(precision))
+            recall = cross_val_score(clf, X, y, scoring='recall', cv=10)
+            print('Recall:', np.mean(recall))
             f1 = cross_val_score(clf, X, y, cv=10, scoring='f1')
-            print('F1', np.mean(f1))
+            print('F1:', np.mean(f1))
+
             cv_accuracy = np.mean(accuracy)
+            print("\n")
 
             if best_accuracy <= cv_accuracy:
                 clf.fit(X, y)

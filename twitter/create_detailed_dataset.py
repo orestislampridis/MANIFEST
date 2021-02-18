@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     twitter_api = TwitterAPI()
 
-    with open('uselections_filtered_replies_tweet_ids.json', 'r') as fp:
+    with open('covid_filtered_replies_tweet_ids.json', 'r') as fp:
         data_tweet_ids = json.load(fp)
 
     # Remove tweets that have less than 10 replies
@@ -103,5 +103,5 @@ if __name__ == "__main__":
 
         print(dictionary)
 
-    with open('detailed_super_dict.json', 'w') as fp:
+    with open('covid_detailed_super_dict.json', 'w') as fp:
         json.dump(dictionary, fp)

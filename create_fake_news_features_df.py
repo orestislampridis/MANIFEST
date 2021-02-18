@@ -1,8 +1,13 @@
+import warnings
+
 import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
 
 import fake_news_spreader_feature_extraction as feature_extraction
 from fake_news_spreader_feature_extraction import clean_relics
-from preprocessing import clean_text
+from utils.preprocessing import clean_text
+
+warnings.filterwarnings('ignore')
 
 
 def main():
@@ -15,19 +20,26 @@ def main():
     data_liwc = data_combined.drop(
         ['text', 'ground_truth'], axis=1)
 
+    data_liwc = data_liwc[['user_id', 'Analytic', 'Clout', 'Authentic', 'Tone']]
+
+    # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    #    print(data_liwc)
+
     # count various readability features
     data_readability = feature_extraction.get_readability_features(data_combined)
 
     # get personality features
     data_personality = feature_extraction.get_personality_features(data_combined)
+    data_personality.rename(
+        columns={'ANXIETY': 'anxiety', 'E': 'extraversion', 'A': 'agreeableness', 'O': 'openness',
+                 'C': 'conscientiousness', 'N': 'neuroticism', 'AVOIDANCE': 'avoidance'}, inplace=True)
+
+    # print(data_personality.columns)
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+        print(data_personality)
 
     # get sentiment features
     data_sentiment = feature_extraction.get_sentiment_features(data_combined)
-
-    print(data_sentiment['anger'])
-    print(data_sentiment['fear'])
-    print(data_sentiment['joy'])
-    print(data_sentiment['sadness'])
 
     # convert to lower and remove punctuation or special characters
     data_combined['text'] = data_combined['text'].apply(clean_relics)
@@ -36,19 +48,8 @@ def main():
     # get gender features from cleaned text
     data_gender = feature_extraction.get_gender_features(data_combined)
 
-    print(data_combined.columns.values.tolist())
-    data_tfidf = feature_extraction.get_tf_idf_features(data_combined[['user_id', 'text']])
-
-    # tf_idf_model = pickle
-
-    # use scaler to scale our data to [0,1] range
-    # scaler = MinMaxScaler()
-    # data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-    #                  'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']] = scaler.fit_transform(
-    #    data_readability[['avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-    #                      'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']])
-
-    # separate our data to features/labels - X, y
+    # get tf-idf features from cleaned text
+    data_tfidf = feature_extraction.get_tfidf_vectors(data_combined[['user_id', 'text']])
 
     print("tf-idf")
     print(data_tfidf.columns.values.tolist())
@@ -66,7 +67,7 @@ def main():
     i = 0
 
     feature_names = [
-        "tfidf_readability_liwc_personality_gender",
+        "tfidf_readability_sentiment_liwc_personality_gender",
     ]
 
     features = list()
@@ -79,8 +80,15 @@ def main():
         features = pd.concat([i.set_index('user_id') for i in feature_combination], axis=1, join='outer')
 
         print(features)
+        features.to_csv('final_final_complete_features_with_labels_and_ids')
 
-        features.to_csv('final_complete_features_with_labels_and_ids')
+        # use scaler to scale our data to [0,1] range
+        x = features.values  # returns a numpy array
+        scaler = MinMaxScaler()
+        x_scaled = scaler.fit_transform(x)
+        df = pd.DataFrame(x_scaled, columns=features.columns)
+        print(df)
+        df.to_csv('scaled_final_complete_features_with_labels_and_ids')
 
 
 if __name__ == "__main__":

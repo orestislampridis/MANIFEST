@@ -6,6 +6,7 @@ import re
 import emoji
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import MinMaxScaler
 from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -158,8 +159,8 @@ def full_capitalized_count(text):
     return len(t)
 
 
+# function to convert text to tf idf vector and pickle save vectorizer
 def get_tfidf_vectors(df):
-    # convert description to tf idf vector and pickle save vectorizer
     vectorizer = TfidfVectorizer(stop_words='english', max_features=1000, ngram_range=(1, 3), min_df=0.01, max_df=0.90)
     vectors = vectorizer.fit_transform(df['text'])
     pickle.dump(vectorizer, open("tfidf_fake_news.pkl", "wb"))  # save tfidf vector
@@ -172,6 +173,7 @@ def get_tfidf_vectors(df):
     return new_df
 
 
+# function to load trained vectorizer and transform new text for predictions
 def get_tfidf_vectors_from_pickle(df):
     vectorizer = pickle.load(open("tfidf_fake_news.pkl", 'rb'))
 
@@ -182,6 +184,23 @@ def get_tfidf_vectors_from_pickle(df):
     new_df = pd.concat([df, vectors_pd], axis=1)
 
     return new_df
+
+
+def get_features_for_gender(df):
+    df['avg_word_count'] = df['text'].str.split().str.len() / 300
+    df['slang_count'] = 0
+    df['emoji_count'] = 0
+    df['capitalized_count'] = 0
+    df['full_capitalized_count'] = 0
+
+    for i in range(0, len(df)):
+        df['slang_count'].iloc[i] = slang_count(df['text'].iloc[i])
+        df['emoji_count'].iloc[i] = emoji_count(df['text'].iloc[i])
+        df['capitalized_count'].iloc[i] = capitalized_count(df['text'].iloc[i])
+        df['full_capitalized_count'].iloc[i] = full_capitalized_count(df['text'].iloc[i])
+
+    return df[
+        ['user_id', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count']]
 
 
 def get_readability_features(df):
@@ -223,16 +242,24 @@ def get_personality_features(df):
 def get_gender_features(df):
     vectorizer = pickle.load(open("./gender/tfidf_gender.pkl", "rb"))
 
-    data_readability = get_readability_features(df).drop(['user_id'], axis=1)
+    data_readability = get_readability_features(df).drop(['user_id', 'hashtags_count', 'user_mentions_count'], axis=1)
     vectors = vectorizer.transform(df['text'])
 
     # save sparse tfidf vectors to dataframe to use with other features
     vectors_pd = pd.DataFrame(vectors.toarray())
 
-    X = pd.concat([vectors_pd, data_readability], axis=1)
+    features = pd.concat([vectors_pd, data_readability], axis=1)
+
+    # use scaler to scale our data to [0,1] range
+    x = features.values  # returns a numpy array
+    scaler = MinMaxScaler()
+    x_scaled = scaler.fit_transform(x)
+    X = pd.DataFrame(x_scaled, columns=features.columns)
+    print(X)
+    print(X.columns)
 
     # load gender classifier
-    filename = './gender/XGBoost_0.7426900584795322_final.sav'
+    filename = 'classifiers/gender/Naive Bayes_0.708029197080292_final.sav'
     clf = pickle.load(open(filename, 'rb'))
 
     y = clf.predict(X)
@@ -277,23 +304,3 @@ def get_sentiment_features(df):
 
     return df[['user_id', 'anger', 'fear', 'joy', 'sadness', 'negation',
                'vader_compound_score', 'textblob_polarity_score']]
-
-
-def get_tf_idf_features(df):
-    vectorizer = pickle.load(open("tfidf_fake_news.pkl", "rb"))
-
-    vectors = vectorizer.transform(df['text'])
-
-    # save sparse tfidf vectors to dataframe to use with other features
-    vectors_pd = pd.DataFrame(vectors.toarray())
-    X = pd.concat([vectors_pd], axis=1)
-
-    # load stored tf-idf classifier
-    filename = 'models/tf_idf_classifier_Naive Bayes_0.7733333333333333.sav'
-    clf = pickle.load(open(filename, 'rb'))
-
-    y = clf.predict(X)
-    print(y)
-    df['tf_idf'] = y
-
-    return df[['user_id', 'tf_idf']]

@@ -10,11 +10,24 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 import fake_news_spreader_feature_extraction as feature_extraction
-from preprocessing import clean_text
+from utils.preprocessing import clean_text
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.simplefilter(action='ignore', category=SettingWithCopyWarning)
 warnings.simplefilter(action='ignore', category=UserWarning)
+
+
+def create_homophily_csv(idx, tweet_text, predicted_labels, true_labels, replies):
+    """
+        Creates csv with results only for those that have all the same label in the replies
+        :return:
+        """
+    with open('output/' + dataset_name + '_' + 'homophily_final_results' + '.csv', mode='a', encoding="utf-8") as file:
+        writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        if idx == 0:
+            writer.writerow(["idx", "tweet_text", "homophily_pred", "bb_pred", "replies"])
+
+        writer.writerow([idx, tweet_text, predicted_labels, true_labels, replies])
 
 
 def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
@@ -22,7 +35,7 @@ def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
         Creates csv with results for further analysis
         :return:
         """
-    with open('output/' + dataset_name + '_' + 'results' + '.csv', mode='a', encoding="utf-8") as file:
+    with open('output/' + dataset_name + '_' + 'final_results' + '.csv', mode='a', encoding="utf-8") as file:
         writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         if idx == 0:
             writer.writerow(["idx", "tweet_text", "lr_pred", "bb_pred", "replies"])
@@ -33,7 +46,7 @@ def create_csv(idx, tweet_text, predicted_labels, true_labels, replies):
 if __name__ == "__main__":
 
     dataset_name = 'us_elections'
-    with open('dataset/replies_dataset/detailed_super_dict.json', 'r') as fp:
+    with open('replies_dataset/us_elections_detailed_super_dict.json', 'r') as fp:
         data_tweet_ids = json.load(fp)
 
     print(len(data_tweet_ids['results']))
@@ -88,7 +101,7 @@ if __name__ == "__main__":
         data_gender = feature_extraction.get_gender_features(features_df)
 
         # get tf-idf label
-        data_tfidf = feature_extraction.get_tf_idf_features(features_df[['user_id', 'text']])
+        data_tfidf = feature_extraction.get_tfidf_vectors_from_pickle(features_df[['user_id', 'text']])
 
         i = 0
         features = list()
@@ -101,7 +114,7 @@ if __name__ == "__main__":
             X = features
 
             # load fake news spreader classifier
-            filename = "classifiers/fake_news/Random Forest_tfidf_readability_sentiment_personality_gender_0.8200000000000001.sav"
+            filename = "classifiers/fake_news/Gradient Boosting_phase_C_tfidf_readability_sentiment_personality_gender_0.7300000000000001.sav"
             clf = pickle.load(open(filename, 'rb'))
 
             y = clf.predict(X)
@@ -109,12 +122,12 @@ if __name__ == "__main__":
 
             final_df = (features_df[['tweet_text', 'label']])
 
-            print(final_df['tweet_text'])
             final_df['tweet_text'] = final_df.tweet_text.apply(clean_text)
-            print(final_df['tweet_text'])
 
             instance_df = final_df.loc[[0]]
             final_df = final_df.iloc[1:]
+
+            no_of_replies = len(item['replies'])
 
             vectorizer = TfidfVectorizer(stop_words='english', min_df=0.01, max_df=0.90)
 
@@ -136,6 +149,8 @@ if __name__ == "__main__":
                 print(true_label)
                 predicted_labels.append(y_instance)
                 true_labels.append(true_label)
+                create_homophily_csv(idx, instance_tweet_text, y_instance, true_label, no_of_replies)
+
                 continue
 
             clf = LogisticRegression()
@@ -153,13 +168,12 @@ if __name__ == "__main__":
 
             y_instance = clf.predict(instance_vector)[0]
             y_proba = clf.predict_proba(instance_vector)[0]
-            no_of_replies = len(item['replies'])
 
             print(idx)
             print(instance_tweet_text)
             print('BB prediction:', true_label)
             print('LR prediction:', y_instance)
-            print('with probability: :', y_proba[y_instance])
+            print('with probability: :', y_proba[int(y_instance)])
             print('number of replies: :', no_of_replies)
 
             # Print the weights assigned by the linear model for each word/feature in the instance to explain

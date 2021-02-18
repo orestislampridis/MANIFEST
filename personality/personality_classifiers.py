@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from skmultilearn.problem_transform import ClassifierChain
 
-from preprocessing import clean_text
+from utils.preprocessing import clean_text
 
 
 def list2string(list):
