@@ -24,7 +24,7 @@ import twint
 from numpy import int64
 
 import config as cfg
-from connect_mongo import read_mongo
+from utils.connect_mongo import read_mongo
 
 
 def get_conversation_id(tweet_id):
