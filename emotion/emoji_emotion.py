@@ -1,3 +1,5 @@
+# anger, fear, joy, sadness
+
 emoji_emotions = {
     ":person_surfing:": [0.12, 0.195, 0.08800000000000001, 0.222],
     ":locked:": [0.146, 0.141, 0.196, 0.212],

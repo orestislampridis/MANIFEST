@@ -61,7 +61,7 @@ def negation(tokens: list):
 # function to count slang words
 def slang_count(text):
     slang_data = []
-    with open(os.path.join(__location__, "slang.txt"), 'r', encoding="utf8") as exRtFile:
+    with open(os.path.join(__location__, "utils/slang.txt"), 'r', encoding="utf8") as exRtFile:
         exchReader = csv.reader(exRtFile, delimiter=':')
 
         for row in exchReader:
@@ -255,8 +255,6 @@ def get_gender_features(df):
     scaler = MinMaxScaler()
     x_scaled = scaler.fit_transform(x)
     X = pd.DataFrame(x_scaled, columns=features.columns)
-    print(X)
-    print(X.columns)
 
     # load gender classifier
     filename = 'classifiers/gender/Naive Bayes_0.708029197080292_final.sav'

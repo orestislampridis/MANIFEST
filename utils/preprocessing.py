@@ -176,3 +176,42 @@ def clean_text(text):
 
     # return filtered_text
     return ' '.join(tokenized_text)
+
+
+# Method to clean tweets for the linear model pre-processing
+def clean_text_lm(text):
+    # remove entities and links
+    text = remove_punctuation(strip_links(text))
+
+    # remove rt and via in case of tweet data
+    text = text.lower()
+    text = re.sub(r"rt", "", text)
+    text = re.sub(r"via", "", text)
+    text = re.sub(r"user", "", text)
+    text = re.sub(r"hashtag", "", text)
+    text = re.sub(r"url", "", text)
+    text = re.sub(r"amp", "", text)
+
+    # replace consecutive non-ASCII characters
+    text = re.sub(r'[^\x00-\x7F]+', '', text)
+
+    # remove emojis from text
+    text = emoji_pattern.sub(r'', text)
+
+    # tokenize text
+    tokenized_text = word_tokenize(text)
+
+    filtered_text = []
+    # looping through conditions
+    for word in tokenized_text:
+        # check tokens against stop words, emoticons and punctuations
+        if (word not in stop_words and word not in emoticons and word not in string.punctuation and not word.isspace()
+            and 2 < len(word) < 42) or word in whitelist:
+            filtered_text.append(word)
+
+    # lemmatize / stem words
+    # tokenized_text = lemmatizing(filtered_text)
+    # text = stemming(filtered_text)
+
+    # return filtered_text
+    return ' '.join(tokenized_text)

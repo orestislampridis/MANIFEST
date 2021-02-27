@@ -22,5 +22,5 @@ if __name__ == "__main__":
 
     df = df.loc[s0.union(s1)]
     print(df)
-    df_eval = df[['idx', 'tweet_text']]
+    df_eval = df[['idx', 'tweet_text', 'bb_pred', 'lr_pred']]
     df_eval.to_csv("../output/us_elections_eval_dataset.csv", mode='w', index=False)
