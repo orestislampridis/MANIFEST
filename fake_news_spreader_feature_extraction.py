@@ -211,8 +211,8 @@ def get_readability_features(df):
     df['full_capitalized_count'] = 0
     df['retweets_count'] = 0
     df['user_mentions_count'] = 0
-    df['hashtags_count'] = 0
-    df['url_count'] = 0
+    # df['hashtags_count'] = 0
+    # df['url_count'] = 0
 
     for i in range(0, len(df)):
         df['slang_count'].iloc[i] = slang_count(df['text'].iloc[i])
@@ -223,12 +223,12 @@ def get_readability_features(df):
         retweets, user_mentions, hashtags, urls = count_relics(df['text'].iloc[i])
         df['retweets_count'].iloc[i] = retweets
         df['user_mentions_count'].iloc[i] = user_mentions
-        df['hashtags_count'].iloc[i] = hashtags
-        df['url_count'].iloc[i] = urls
+        # df['hashtags_count'].iloc[i] = hashtags
+        # df['url_count'].iloc[i] = urls
 
     return df[
         ['user_id', 'avg_word_count', 'emoji_count', 'slang_count', 'capitalized_count', 'full_capitalized_count',
-         'retweets_count', 'user_mentions_count', 'hashtags_count', 'url_count']]
+         'retweets_count', 'user_mentions_count']]
 
 
 def get_personality_features(df):

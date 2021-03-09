@@ -23,6 +23,5 @@ def get_personality_features(df):
     tweets['text'] = tweets['text'].apply(clean_relics)
 
     users_with_personality = get_lang_based_scores(tweets)  # returns a df with user_id and personality scores
-    print(users_with_personality)
     # users_with_personality.to_csv("users_with_personality.csv", index=False)
     return users_with_personality

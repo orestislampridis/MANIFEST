@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import cross_val_score, train_test_split
 
-from utils import random_search, grid_search
+from utils import random_search
 
 warnings.filterwarnings('ignore')
 
@@ -28,13 +28,17 @@ def main():
 
     i = 0
     feature_names = [
-        "phase_C_tfidf_readability_sentiment_personality_gender",
+        "explanations_tfidf",
+        # "phase_C_tfidf_readability_sentiment_personality_gender",
+        # "phase_C_tfidf_readability_sentiment_personality_gender",
         # "explanations_readability_sentiment_personality_gender",
         # "explanations_readability_sentiment_personality_gender_liwc"
     ]
 
     features = list()
-    features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
+    features.append([data_tfidf, data_ground_truth])
+    # features.append([data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
+    # features.append([data_tfidf, data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
     # features.append([data_readability, data_sentiment, data_personality, data_gender, data_ground_truth])
     # features.append([data_readability, data_sentiment, data_personality, data_gender, data_liwc, data_ground_truth])
 
@@ -59,7 +63,7 @@ def main():
         # try many classifiers to find the best performing
         clf_names = [
             # "knn",
-            # "Naive Bayes",
+            "Naive Bayes",
             "Logistic Regression",
             "SVM",
             "Random Forest",
@@ -81,20 +85,20 @@ def main():
                 clf = random_search.get_NB_random_grid(X_train, y_train)
 
             if name == "Logistic Regression":
-                # clf = random_search.get_logistic_regression_random_grid(X_train, y_train)
-                clf = grid_search.get_logistic_regression_grid_search(X_train, y_train)
+                clf = random_search.get_logistic_regression_random_grid(X_train, y_train)
+                # clf = grid_search.get_logistic_regression_grid_search(X_train, y_train)
 
             if name == "SVM":
-                # clf = random_search.get_SVM_random_grid(X_train, y_train)
-                clf = grid_search.get_SVM_grid_search(X_train, y_train)
+                clf = random_search.get_SVM_random_grid(X_train, y_train)
+                # clf = grid_search.get_SVM_grid_search(X_train, y_train)
 
             if name == "Random Forest":
-                # clf = random_search.get_random_forest_random_grid(X_train, y_train)
-                clf = grid_search.get_random_forest_grid_search(X_train, y_train)
+                clf = random_search.get_random_forest_random_grid(X_train, y_train)
+                # clf = grid_search.get_random_forest_grid_search(X_train, y_train)
 
             if name == "Gradient Boosting":
-                # clf = random_search.get_gradient_boosting_random_grid(X_train, y_train)
-                clf = grid_search.get_gradient_boosting_grid_search(X_train, y_train)
+                clf = random_search.get_gradient_boosting_random_grid(X_train, y_train)
+                # clf = grid_search.get_gradient_boosting_grid_search(X_train, y_train)
 
             clf.fit(X_train, y_train)
             y_preds = clf.predict(X_test)
