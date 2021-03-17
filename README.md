@@ -6,4 +6,6 @@ In addition, to the best of our knowledge, this is the first work that aims to p
 
 ## References
 
+F. Rangel, P. Rosso, B. Ghanem, A. Giachanou. [Profiling Fake News Spreaders on Twitter](https://zenodo.org/record/4039435#.YFHgv50zZPZ). Zenodo, February 2020
+
 D. Karanatsiou, P. Sermpezis, J. Gruda, K. Kafetsios, I. Dimitriadis, A. Vakali. [My tweets bring all the traits to the yard: Predicting personality and relational traits in Online Social Networks](https://arxiv.org/abs/2009.10802). arXiv preprint arXiv:2009.10802 (2020).
