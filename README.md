@@ -4,6 +4,8 @@ Fake news spreading is an ever increasing phenomenon which is deeply tied with t
 
 In addition, to the best of our knowledge, this is the first work that aims to provide a fully explainable setup that evaluates fake news spreading based on users credibility applied to public discussions on Twitter threads and aiming for a comprehensive way to combat fake news circulation. The way we approach this is by utilizing the predictions made by the fake news spreader classifier built before on the users that took part in the discussion of a specific twitter thread and then by learning an interpretable linear model in that space. The explanations consist of example-based explanations and word feature importance. Quantitative evaluation shows that the linear model is able to accurately imitate the predictions of the more complex fake news spreader classifier with a high accuracy. Qualitative evaluation shows that the explanations are reasonable and intuitive and could prove fruitful for combating the propagation of fake news.
 
+## Comments
+
 For the fake news spreader dataset please request it via Zenodo [here](https://zenodo.org/record/3692319#.YFs3CK8zZPY) and afterwards put the data in a new dir called data inside the dataset folder.
 
 ## References
