@@ -6,7 +6,7 @@ In addition, to the best of our knowledge, this is the first work that aims to p
 
 ## Comments
 
-For the fake news spreader dataset please request it via Zenodo [here](https://zenodo.org/record/3692319#.YFs3CK8zZPY) and afterwards put the data in a new dir called data inside the dataset folder.
+For the fake news spreader dataset please request it via Zenodo [here](https://zenodo.org/record/3692319#.YFs3CK8zZPY) and afterwards put the data in a new directory called data inside the dataset folder.
 
 ## References
 
