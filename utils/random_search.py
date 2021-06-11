@@ -7,6 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import RandomizedSearchCV, ShuffleSplit, GridSearchCV
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
 
 n_jobs = -1
 
@@ -301,3 +302,43 @@ def get_gradient_boosting_random_grid(x_train, y_train):
     best_gbc = random_search.best_estimator_
     print(best_gbc)
     return best_gbc
+
+
+def get_neural_network_random_grid(x_train, y_train):
+    # Create the random grid
+    random_grid = {
+        'hidden_layer_sizes': [(100, 100, 100), (50, 50), (100,)],
+        'activation': ['tanh', 'relu'],
+        'solver': ['sgd', 'adam'],
+        'alpha': [0.0001, 0.05],
+        'learning_rate': ['constant', 'adaptive'],
+    }
+
+    pprint(random_grid)
+
+    # First create the base model to tune
+    nn = MLPClassifier(max_iter=200)
+
+    # Definition of the random search
+    random_search = RandomizedSearchCV(estimator=nn,
+                                       param_distributions=random_grid,
+                                       n_iter=50,
+                                       scoring='accuracy',
+                                       cv=3,
+                                       verbose=1,
+                                       random_state=42,
+                                       n_jobs=n_jobs)
+
+    # Fit the random search model
+    random_search.fit(x_train, y_train)
+
+    print("The best hyperparameters from Random Search are:")
+    print(random_search.best_params_)
+    print("")
+    print("The mean accuracy of a model with these hyperparameters is:")
+    print(random_search.best_score_)
+
+    best_nn = random_search.best_estimator_
+    print(best_nn)
+
+    return best_nn

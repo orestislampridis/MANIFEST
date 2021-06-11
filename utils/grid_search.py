@@ -3,6 +3,7 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import ShuffleSplit, GridSearchCV
+from sklearn.neural_network import MLPClassifier
 
 n_jobs = -1
 
@@ -214,3 +215,44 @@ def get_gradient_boosting_grid_search(x_train, y_train):
     best_gbc = grid_search.best_estimator_
     print(best_gbc)
     return best_gbc
+
+
+def get_neural_network_grid_search(x_train, y_train):
+    # fake news spreader phase C classifier random search best hyper-parameters
+    # {'subsample': 0.5, 'n_estimators': 800, 'min_samples_split': 30, 'min_samples_leaf': 2, 'max_features': 'sqrt',
+    # 'max_depth': 40, 'learning_rate': 0.1}
+
+    # Create the parameter grid based on the results of random search
+    hidden_layer_sizes = [100, 100, 100]
+    activation = ['sqrt']
+    solver = [1, 2, 4]
+    alpha = [20, 30, 40]
+    learning_rate = [800]
+
+    param_grid = {
+        'hidden_layer_sizes': [(100, 100, 100), (50, 50), (100,)],
+        'activation': ['tanh', 'relu'],
+        'solver': ['sgd', 'adam'],
+        'alpha': [0.0001, 0.05],
+        'learning_rate': ['constant', 'adaptive'],
+    }
+
+    # Create a base model
+    nn = MLPClassifier(max_iter=200)
+
+    # Manually create the splits in CV in order to be able to fix a random_state
+    cv_sets = ShuffleSplit(n_splits=3, test_size=.33, random_state=42)
+
+    # Instantiate the grid search model
+    grid_search = GridSearchCV(estimator=nn,
+                               param_grid=param_grid,
+                               scoring='accuracy',
+                               cv=cv_sets,
+                               verbose=1,
+                               n_jobs=n_jobs)
+
+    # Fit the grid search to the data
+    grid_search.fit(x_train, y_train)
+    best_nn = grid_search.best_estimator_
+    print(best_nn)
+    return best_nn
